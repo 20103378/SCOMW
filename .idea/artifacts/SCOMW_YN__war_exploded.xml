@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" build-on-make="true" name="SCOMW(YN):war exploded">
+    <output-path>$PROJECT_DIR$/classes/artifacts/SCOMW_YN__war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="SCOMW(YN)" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="module" name="druid-0.2.20.jar" module-name="SCOMW(YN)" />
+          <element id="library" level="module" name="fastjson-1.1.37.jar" module-name="SCOMW(YN)" />
+          <element id="library" level="project" name="lib" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="SCOMW(YN)/web/Web" />
+    </root>
+  </artifact>
+</component>

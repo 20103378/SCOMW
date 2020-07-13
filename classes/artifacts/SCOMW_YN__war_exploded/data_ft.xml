@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+  <state id="default_point">
+    <color>0xFF0000</color>
+    <size>5</size>
+  </state>
+  <state id="refresh_rate">
+    <color>1000</color>
+  </state>
+  <state id="background_color">
+    <color>1000</color>
+  </state>
+  <state id="map_switch">
+    <color>1</color>
+  </state>
+  <state id="point">
+    <devid>D1842</devid>
+    <name>8122B YD 非电量监测A相,2018-12-09 11:41:05</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-15,90</loc>
+  </state>
+  <state id="point">
+    <devid>D1847</devid>
+    <name>8122B YD 非电量监测B相,2018-12-09 11:46:03</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-15,91</loc>
+  </state>
+  <state id="point">
+    <devid>D1852</devid>
+    <name>8122B YD 非电量监测C相,2018-12-09 11:41:04</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-15,92</loc>
+  </state>
+  <state id="point">
+    <devid>D1857</devid>
+    <name>8121B YY 非电量监测A相,2018-12-09 11:51:06</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-15,93</loc>
+  </state>
+  <state id="point">
+    <devid>D1862</devid>
+    <name>8121B YY 非电量监测B相,2018-12-09 11:46:04</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-15,94</loc>
+  </state>
+  <state id="point">
+    <devid>D1867</devid>
+    <name>8121B YY 非电量监测C相,2018-12-09 11:41:05</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-15,95</loc>
+  </state>
+  <state id="point">
+    <devid>D1872</devid>
+    <name>8222B YD 非电量监测A相,2018-12-09 11:21:03</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-15,96</loc>
+  </state>
+  <state id="point">
+    <devid>D1877</devid>
+    <name>8222B YD 非电量监测B相,2018-12-09 11:16:04</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-15,97</loc>
+  </state>
+  <state id="point">
+    <devid>D1882</devid>
+    <name>8222B YD 非电量监测C相,2018-12-09 11:36:04</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-15,98</loc>
+  </state>
+  <state id="point">
+    <devid>D1887</devid>
+    <name>8221B YY 非电量监测A相,2018-12-09 11:41:04</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-15,99</loc>
+  </state>
+  <state id="point">
+    <devid>D1892</devid>
+    <name>8221B YY 非电量监测B相,2018-12-09 11:46:05</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-16,90</loc>
+  </state>
+  <state id="point">
+    <devid>D1897</devid>
+    <name>8221B YY 非电量监测C相,2018-12-09 11:26:04</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-16,91</loc>
+  </state>
+  <state id="point">
+    <devid>D1899</devid>
+    <name>8212B YD 非电量监测B相,2018-12-09 11:50:49</name>
+    <dtype>5</dtype>
+    <info>514</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-16,92</loc>
+  </state>
+  <state id="point">
+    <devid>D1906</devid>
+    <name>8211B YY 非电量监测A相,2018-12-09 11:33:19</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-16,93</loc>
+  </state>
+  <state id="point">
+    <devid>D1913</devid>
+    <name>8211B YY 非电量监测C相,2018-12-09 11:52:10</name>
+    <dtype>5</dtype>
+    <info>514</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-16,94</loc>
+  </state>
+  <state id="point">
+    <devid>D1920</devid>
+    <name>8112B YD 非电量监测A相,2018-12-09 11:33:12</name>
+    <dtype>5</dtype>
+    <info>514</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-16,95</loc>
+  </state>
+  <state id="point">
+    <devid>D1927</devid>
+    <name>8111B YY 非电量监测A相,2018-12-09 11:34:23</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-16,96</loc>
+  </state>
+  <state id="point">
+    <devid>D1941</devid>
+    <name>8211B YY 非电量监测B相,2018-12-09 11:33:54</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-16,97</loc>
+  </state>
+  <state id="point">
+    <devid>D1948</devid>
+    <name>8111B YY 非电量监测B相,2018-12-09 11:33:36</name>
+    <dtype>5</dtype>
+    <info>514</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-16,98</loc>
+  </state>
+  <state id="point">
+    <devid>D1955</devid>
+    <name>8112B YD 非电量监测C相,2018-12-09 11:51:27</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-16,99</loc>
+  </state>
+  <state id="point">
+    <devid>D1969</devid>
+    <name>8111B YY 非电量监测C相,2018-12-09 11:32:50</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-17,90</loc>
+  </state>
+  <state id="point">
+    <devid>D1976</devid>
+    <name>8212B YD 非电量监测C相,2018-12-09 11:31:18</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-17,91</loc>
+  </state>
+  <state id="point">
+    <devid>D1983</devid>
+    <name>8112B YD 非电量监测B相,2018-12-09 11:51:47</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-17,92</loc>
+  </state>
+  <state id="point">
+    <devid>D1990</devid>
+    <name>8212B YD 非电量监测A相,2018-12-09 11:33:13</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-17,93</loc>
+  </state>
+  <state id="point">
+    <devid>D1997</devid>
+    <name>公用1工况 #1 01B非电量监测A相,2018-12-09 11:31:26</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-17,94</loc>
+  </state>
+  <state id="point">
+    <devid>D1998</devid>
+    <name>公用1工况 #2 02B非电量监测A相,2018-12-09 11:31:26</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-17,95</loc>
+  </state>
+  <state id="point">
+    <devid>D1999</devid>
+    <name>公用1工况 #1 01B非电量监测B相,2018-12-09 11:31:26</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-17,96</loc>
+  </state>
+  <state id="point">
+    <devid>D2000</devid>
+    <name>公用1工况 #2 02B非电量监测B相,2018-12-09 11:31:26</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-17,97</loc>
+  </state>
+  <state id="point">
+    <devid>D2001</devid>
+    <name>公用1工况 #1 01B非电量监测C相,2018-12-09 11:31:26</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-17,98</loc>
+  </state>
+  <state id="point">
+    <devid>D2002</devid>
+    <name>公用1工况 #2 02B非电量监测C相,2018-12-09 11:31:26</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-17,99</loc>
+  </state>
+  <state id="point">
+    <devid>D2004</devid>
+    <name>公用2工况#1 01B非电量监测A相,2018-12-09 11:34:46</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-18,90</loc>
+  </state>
+  <state id="point">
+    <devid>D2005</devid>
+    <name>公用2工况#1 01B非电量监测B相,2018-12-09 11:34:46</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-18,91</loc>
+  </state>
+  <state id="point">
+    <devid>D2006</devid>
+    <name>公用2工况#1 01B非电量监测C相,2018-12-09 11:34:46</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-18,92</loc>
+  </state>
+  <state id="point">
+    <devid>D2007</devid>
+    <name>公用2工况#2 02B非电量监测A相,2018-12-09 11:34:46</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-18,93</loc>
+  </state>
+  <state id="point">
+    <devid>D2008</devid>
+    <name>公用2工况#2 02B非电量监测B相,2018-12-09 11:34:46</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-18,94</loc>
+  </state>
+  <state id="point">
+    <devid>D2009</devid>
+    <name>公用2工况#2 02B非电量监测C相,2018-12-09 11:34:46</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-18,95</loc>
+  </state>
+  <state id="point">
+    <devid>D2011</devid>
+    <name>主控/极1低工况 1# 13B非电量监测A相,2018-12-09 11:34:16</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-18,96</loc>
+  </state>
+  <state id="point">
+    <devid>D2012</devid>
+    <name>主控/极1低工况 2# 14B非电量监测A相,2018-12-09 11:34:16</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-18,97</loc>
+  </state>
+  <state id="point">
+    <devid>D2013</devid>
+    <name>主控/极1低工况 1# 13B非电量监测B相,2018-12-09 11:34:16</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-18,98</loc>
+  </state>
+  <state id="point">
+    <devid>D2014</devid>
+    <name>主控/极1低工况 2# 14B非电量监测B相,2018-12-09 11:34:16</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-18,99</loc>
+  </state>
+  <state id="point">
+    <devid>D2015</devid>
+    <name>主控/极1低工况 1# 13B非电量监测C相,2018-12-09 11:34:16</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-19,90</loc>
+  </state>
+  <state id="point">
+    <devid>D2016</devid>
+    <name>主控/极1低工况 2# 14B非电量监测C相,2018-12-09 11:34:16</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-19,91</loc>
+  </state>
+  <state id="point">
+    <devid>D2018</devid>
+    <name>主控/极2低工况 #1 23B非电量监测A相,2018-12-09 11:34:22</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-19,92</loc>
+  </state>
+  <state id="point">
+    <devid>D2019</devid>
+    <name>主控/极2低工况 #2 24B非电量监测A相,2018-12-09 11:34:22</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-19,93</loc>
+  </state>
+  <state id="point">
+    <devid>D2020</devid>
+    <name>主控/极2低工况 #1 23B非电量监测B相,2018-12-09 11:34:22</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-19,94</loc>
+  </state>
+  <state id="point">
+    <devid>D2021</devid>
+    <name>主控/极2低工况 #2 24B非电量监测B相,2018-12-09 11:34:22</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-19,95</loc>
+  </state>
+  <state id="point">
+    <devid>D2022</devid>
+    <name>主控/极2低工况 #1 23B非电量监测C相,2018-12-09 11:34:22</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-19,96</loc>
+  </state>
+  <state id="point">
+    <devid>D2023</devid>
+    <name>主控/极2低工况 #2 24B非电量监测C相,2018-12-09 11:34:22</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-19,97</loc>
+  </state>
+  <state id="point">
+    <devid>D2025</devid>
+    <name>辅控/极1高工况 1# 11B非电量监测A相,2018-12-09 11:32:05</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-19,98</loc>
+  </state>
+  <state id="point">
+    <devid>D2026</devid>
+    <name>辅控/极1高工况 2# 12B非电量监测A相,2018-12-09 11:32:05</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-19,99</loc>
+  </state>
+  <state id="point">
+    <devid>D2027</devid>
+    <name>辅控/极1高工况 1# 11B非电量监测B相,2018-12-09 11:32:05</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-20,90</loc>
+  </state>
+  <state id="point">
+    <devid>D2028</devid>
+    <name>辅控/极1高工况 2# 12B非电量监测B相,2018-12-09 11:32:05</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-20,91</loc>
+  </state>
+  <state id="point">
+    <devid>D2029</devid>
+    <name>辅控/极1高工况 1# 11B非电量监测C相,2018-12-09 11:32:05</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-20,92</loc>
+  </state>
+  <state id="point">
+    <devid>D2030</devid>
+    <name>辅控/极1高工况 2# 12C非电量监测C相,2018-12-09 11:32:05</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-20,93</loc>
+  </state>
+  <state id="point">
+    <devid>D2032</devid>
+    <name>辅控/极2高工况 1# 21B非电量监测A相,2018-12-09 11:33:42</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-20,94</loc>
+  </state>
+  <state id="point">
+    <devid>D2033</devid>
+    <name>辅控/极2高工况 2# 22B非电量监测A相,2018-12-09 11:33:42</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-20,95</loc>
+  </state>
+  <state id="point">
+    <devid>D2034</devid>
+    <name>辅控/极2高工况 1# 21B非电量监测B相,2018-12-09 11:33:42</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-20,96</loc>
+  </state>
+  <state id="point">
+    <devid>D2035</devid>
+    <name>辅控/极2高工况 2# 22B非电量监测B相,2018-12-09 11:33:42</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-20,97</loc>
+  </state>
+  <state id="point">
+    <devid>D2036</devid>
+    <name>辅控/极2高工况 1# 21B非电量监测C相,2018-12-09 11:33:42</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-20,98</loc>
+  </state>
+  <state id="point">
+    <devid>D2037</devid>
+    <name>辅控/极2高工况 2# 22B非电量监测C相,2018-12-09 11:33:42</name>
+    <dtype>5</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-20,99</loc>
+  </state>
+  <state id="point">
+    <devid>D1839</devid>
+    <name>8122B YD 油色谱监测A相,2018-12-09 08:00:00</name>
+    <dtype>1</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-21,90</loc>
+  </state>
+  <state id="point">
+    <devid>D1844</devid>
+    <name>8122B YD 油色谱监测B相,2018-12-09 08:00:00</name>
+    <dtype>1</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-21,91</loc>
+  </state>
+  <state id="point">
+    <devid>D1849</devid>
+    <name>8122B YD 油色谱监测C相,2018-12-09 08:00:00</name>
+    <dtype>1</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-21,92</loc>
+  </state>
+  <state id="point">
+    <devid>D1854</devid>
+    <name>8121B YY 油色谱监测A相,2018-12-09 08:00:00</name>
+    <dtype>1</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-21,93</loc>
+  </state>
+  <state id="point">
+    <devid>D1859</devid>
+    <name>8121B YY 油色谱监测B相,2018-12-09 08:00:00</name>
+    <dtype>1</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-21,94</loc>
+  </state>
+  <state id="point">
+    <devid>D1864</devid>
+    <name>8121B YY 油色谱监测C相,2018-12-09 08:00:00</name>
+    <dtype>1</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-21,95</loc>
+  </state>
+  <state id="point">
+    <devid>D1869</devid>
+    <name>8222B YD 油色谱监测A相,2018-12-09 08:00:00</name>
+    <dtype>1</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-21,96</loc>
+  </state>
+  <state id="point">
+    <devid>D1874</devid>
+    <name>8222B YD 油色谱监测B相,2018-12-09 08:00:00</name>
+    <dtype>1</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-21,97</loc>
+  </state>
+  <state id="point">
+    <devid>D1879</devid>
+    <name>8222B YD 油色谱监测C相,2018-12-09 08:00:00</name>
+    <dtype>1</dtype>
+    <info>514</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-21,98</loc>
+  </state>
+  <state id="point">
+    <devid>D1884</devid>
+    <name>8221B YY 油色谱监测A相,2018-12-09 08:00:00</name>
+    <dtype>1</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-21,99</loc>
+  </state>
+  <state id="point">
+    <devid>D1889</devid>
+    <name>8221B YY 油色谱监测B相,2018-12-09 08:00:00</name>
+    <dtype>1</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-22,90</loc>
+  </state>
+  <state id="point">
+    <devid>D1894</devid>
+    <name>8221B YY 油色谱监测C相,2018-12-09 08:00:00</name>
+    <dtype>1</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-22,91</loc>
+  </state>
+  <state id="point">
+    <devid>D1904</devid>
+    <name>8212B YD 油色谱监测B相,2018-11-22 08:00:00</name>
+    <dtype>1</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-22,92</loc>
+  </state>
+  <state id="point">
+    <devid>D1911</devid>
+    <name>8211B YY 油色谱监测A相,2018-11-22 12:00:00</name>
+    <dtype>1</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-22,93</loc>
+  </state>
+  <state id="point">
+    <devid>D1918</devid>
+    <name>8211B YY 油色谱监测C相,2018-11-22 12:00:00</name>
+    <dtype>1</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-22,94</loc>
+  </state>
+  <state id="point">
+    <devid>D1925</devid>
+    <name>8112B YD 油色谱监测A相,2018-11-22 12:00:00</name>
+    <dtype>1</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-22,95</loc>
+  </state>
+  <state id="point">
+    <devid>D1932</devid>
+    <name>8111B YY  油色谱监测A相,2018-11-22 12:00:00</name>
+    <dtype>1</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-22,96</loc>
+  </state>
+  <state id="point">
+    <devid>D1933</devid>
+    <name>8212B YD 油色谱监测C相,2018-11-22 12:00:00</name>
+    <dtype>1</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-22,97</loc>
+  </state>
+  <state id="point">
+    <devid>D1946</devid>
+    <name>8211B YY 油色谱监测B相,2018-11-22 12:00:00</name>
+    <dtype>1</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-22,98</loc>
+  </state>
+  <state id="point">
+    <devid>D1953</devid>
+    <name>8111B YY 油色谱监测B相,2018-11-22 12:00:00</name>
+    <dtype>1</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-22,99</loc>
+  </state>
+  <state id="point">
+    <devid>D1960</devid>
+    <name>8112B YD 油色谱监测C相,2018-11-22 12:00:00</name>
+    <dtype>1</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-23,90</loc>
+  </state>
+  <state id="point">
+    <devid>D1974</devid>
+    <name>8111B YY 油色谱监测C相,2018-11-22 12:00:00</name>
+    <dtype>1</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-23,91</loc>
+  </state>
+  <state id="point">
+    <devid>D1988</devid>
+    <name>8112B YD 油色谱监测B相,2018-11-22 12:00:00</name>
+    <dtype>1</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-23,92</loc>
+  </state>
+  <state id="point">
+    <devid>D1995</devid>
+    <name>8212B YD 油色谱监测A相,2018-11-22 08:00:00</name>
+    <dtype>1</dtype>
+    <info>512</info>
+    <data>0,0,0,0,0,0,0,0,0,0,0</data>
+    <loc>-23,93</loc>
+  </state>
+</map>
+
