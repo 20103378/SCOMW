@@ -289,11 +289,11 @@
             <version>1.0</version>
         </dependency>
 
-<!--        <dependency>-->
-<!--            <groupId>aopalliance</groupId>-->
-<!--            <artifactId>aopalliance</artifactId>-->
-<!--            <version>${aopalliance.version}</version>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>aopalliance</groupId>
+            <artifactId>aopalliance</artifactId>
+            <version>${aopalliance.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>org.aspectj</groupId>
@@ -352,25 +352,25 @@
         </dependency>
 
 
-        <!-- html解析相关 -->
-        <!-- nekohtml html解析工具 -->
-        <dependency>
-            <groupId>net.sourceforge.nekohtml</groupId>
-            <artifactId>nekohtml</artifactId>
-            <version>${nekohtml.version}</version>
-        </dependency>
+<!--        &lt;!&ndash; html解析相关 &ndash;&gt;-->
+<!--        &lt;!&ndash; nekohtml html解析工具 &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>net.sourceforge.nekohtml</groupId>-->
+<!--            <artifactId>nekohtml</artifactId>-->
+<!--            <version>${nekohtml.version}</version>-->
+<!--        </dependency>-->
 
-        <dependency>
-            <groupId>jaxen</groupId>
-            <artifactId>jaxen</artifactId>
-            <version>${jaxen.version}</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>jaxen</groupId>-->
+<!--            <artifactId>jaxen</artifactId>-->
+<!--            <version>${jaxen.version}</version>-->
+<!--        </dependency>-->
 
-        <dependency>
-            <groupId>oro</groupId>
-            <artifactId>oro</artifactId>
-            <version>${oro.version}</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>oro</groupId>-->
+<!--            <artifactId>oro</artifactId>-->
+<!--            <version>${oro.version}</version>-->
+<!--        </dependency>-->
 
         <!-- <scope>provided</scope> -->
 
