@@ -1,5 +1,7 @@
 package com.base.page;
 
+import lombok.Data;
+
 import java.util.ArrayList;
 
 /**
@@ -7,6 +9,7 @@ import java.util.ArrayList;
  * @version 2.0
  */
 // oracle,sqlserver,mysql分页技术
+@Data
 public class Pager {
 
 	private int pageId = 1; // 当前页
@@ -27,29 +30,6 @@ public class Pager {
 
 	private int[] indexs;
 
-
-	public int getLength() {
-		return length;
-	}
-
-	public void setLength(int length) {
-		this.length = length;
-	}
-
-	public int[] getIndexs() {
-		int len = getEndIndex() - getStartIndex() + 1;
-		indexs = new int[len];
-		ArrayList a;
-		for (int i = 0; i < len; i++) {
-			indexs[i] = (getStartIndex() + i);
-		}
-		return indexs;
-	}
-
-	public void setIndexs(int[] indexs) {
-		this.indexs = indexs;
-	}
-
 	public int getStartIndex() {
 		startIndex = pageId - (length / 2);
 		if (startIndex < 1) {
@@ -69,10 +49,6 @@ public class Pager {
 		endIndex = (getStartIndex() + length) <= getPageCount() ? (getStartIndex() + length)
 				: getPageCount();
 		return endIndex;
-	}
-
-	public void setEndIndex(int endIndex) {
-		this.endIndex = endIndex;
 	}
 
 	public Pager() {
@@ -114,69 +90,14 @@ public class Pager {
 		return condition;
 	}
 
-	public void setOrderDirection(boolean orderDirection) {
-		this.orderDirection = orderDirection;
-	}
-
-	public boolean isOrderDirection() {
-		return orderDirection;
-	}
 
 	public void setOrderField(String orderField) {
 		this.orderField = orderField;
 	}
 
-	public String getOrderField() {
-		return orderField;
-	}
-
-	public void setPageCount(int pageCount) {
-		this.pageCount = pageCount;
-	}
-
-	public int getPageCount() {
-		return pageCount;
-	}
-
-	public void setPageId(int pageId) {
-		this.pageId = pageId;
-	}
-
-	public int getPageId() {
-		return pageId;
-	}
-
-	public void setPageOffset(int pageOffset) {
-		this.pageOffset = pageOffset;
-	}
-
-	public int getPageOffset() {
-		return pageOffset;
-	}
-
-	public void setPageSize(int pageSize) {
-		this.pageSize = pageSize;
-	}
-
-	public int getPageSize() {
-		return pageSize;
-	}
-
-	public void setPageTail(int pageTail) {
-		this.pageTail = pageTail;
-	}
-
-	public int getPageTail() {
-		return pageTail;
-	}
 
 	public void setRowCount(int rowCount) {
 		this.rowCount = rowCount;
 		this.doPage();
 	}
-
-	public int getRowCount() {
-		return rowCount;
-	}
-
 }

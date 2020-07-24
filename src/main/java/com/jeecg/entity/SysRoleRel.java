@@ -1,10 +1,14 @@
 package com.jeecg.entity;
 
 import com.base.entity.BaseEntity;
+import lombok.Data;
 
-
+@Data
 public class SysRoleRel extends BaseEntity {
-		private Integer roleId;//   角色主键 sys_role.id	private Integer objId;//   关联主键 type=0管理sys_menu.id, type=1关联sys_user.id	private Integer relType;//   关联类型 0=菜单,1=用户
+	
+	private Integer roleId;//   角色主键 sys_role.id
+	private Integer objId;//   关联主键 type=0管理sys_menu.id, type=1关联sys_user.id
+	private Integer relType;//   关联类型 0=菜单,1=用户
 	
 	/**
  	 * 枚举
@@ -29,6 +33,4 @@ public class SysRoleRel extends BaseEntity {
 			return null;
 		}
 	}
-	
-		public Integer getRoleId() {	    return this.roleId;	}	public void setRoleId(Integer roleId) {	    this.roleId=roleId;	}	public Integer getObjId() {	    return this.objId;	}	public void setObjId(Integer objId) {	    this.objId=objId;	}	public Integer getRelType() {	    return this.relType;	}	public void setRelType(Integer relType) {	    this.relType=relType;	}
 }

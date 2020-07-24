@@ -5,11 +5,10 @@ $(function(){
 	jeecg.deviceHealthState.showSelect();//下拉框加载
 	jeecg.deviceHealthState.showDevice();//设备展示
 	setInterval("jeecg.deviceHealthState.showDevice()",5*60*1000);
-	jeecg.deviceHealthState.comboxint();
+	jeecg.deviceHealthState.comboxint();//设备类型
 	
 });
 jeecg.deviceHealthState = function(){
-	//alert("showDevice");
     var _this = {
 		setEditWin:function(){
 			 deviceWin = $('#ShowDevice-window').window({
@@ -43,66 +42,43 @@ jeecg.deviceHealthState = function(){
 			}
 		},
     showSelect:function(){
-    	var chart=[];
     	$.ajax({
         	async: false,
         	cache: false,
         	type: 'POST',
         	url: ctxPath + '/treeDevice/getSpaceName.do',
         	success: function(data){
-        		var Sel;
-	            Sel=data;//提取data为rows
-	            //alert(JSON.stringify(Sel))
-	            //循环用于Sel.refname去重复||nn[]ajax内共享
-	            var nn=[];
-	            var nid=[];
-	            for(var j=0;j<Sel.length;j++){
-	            	nn.push(Sel[j].text);
-	            	nid.push(Sel[j].id);
-	            }
-	          //循环用于向chart插入refname，为动态下拉框提供元素
-	            chart.push({"text":"全部","value":"0"});
-	            for(var j=0;j<nn.length;j++){
-	            	chart.push({"text":nn[j],"value":nn[j]});//将chart组合为columns
-	            }
-	            $("#DeviceArea").combobox("loadData", chart);
-	            $("#DeviceArea").combobox('select',chart[0].value);
+        		debugger
+				data.space.push({"text":"全部","value":"0"});
+	            $("#DeviceArea").combobox("loadData", data.space);
+	            $("#DeviceArea").combobox('select', data.space[0].value);
+
+				data.deviceType.push({"text":"全部","value":"0"});
+				$("#DeviceType").combobox("loadData", data.deviceType);
+				$("#DeviceType").combobox('select',data.deviceType[data.deviceType.length-1].value);
         	}
     	});
     },
     showDevice:function(){
-    	var curr_time = new Date();
-    	var month=curr_time.getMonth()+1;
-//    	var month=curr_time.getMonth();
-    	var date=curr_time.getDate();
-    	var otherData;
-    	var remarkData;
-    	if(month<10){
-    		month="0"+month;
-    	}
-    	if(date<10){
-    		date="0"+date;
-    	}
-    	var time=curr_time.getFullYear()+"-"+month+'-'+date;
     	$.ajax({
         	async: false,
         	cache: false,
         	type: 'POST',
-        	url: ctxPath + '/treeDevice/getOtherImgList.do?SampleTime='+time,
+        	url: ctxPath + '/treeDevice/getOtherImgList.do',
         	success: function(data){
         		otherData=data;
         	}
     	});
 
-    	$.ajax({
-        	async: false,
-        	cache: false,
-        	type: 'POST',
-        	url: ctxPath + '/treeDevice/getRemarkImgList.do?SampleTime='+time,
-        	success: function(data){
-        		remarkData=data;
-        	}
-    	});
+    	// $.ajax({
+        // 	async: false,
+        // 	cache: false,
+        // 	type: 'POST',
+        // 	url: ctxPath + '/treeDevice/getRemarkImgList.do?SampleTime='+time,
+        // 	success: function(data){
+        // 		remarkData=data;
+        // 	}
+    	// });
     	$.ajax({
         	async: false,
         	cache: false,
@@ -112,58 +88,7 @@ jeecg.deviceHealthState = function(){
         		jeecg.alert('错误信息', '数据请求失败', 'error');
         	},
         	success: function(data){
-        		var chart=[];
-        		var Sel;
-	            Sel=data;//提取data为rows
-	            //循环用于Sel.refname去重复||nn[]ajax内共享
-	            var nn=[];
-	            var snt=null;
-	            for(var j=0;j<Sel.length;j++){
-	            	if(snt==null){
-	            		snt=Sel[j].nodetype;
-	            		nn.push(snt);
-	            	}else if(snt!=Sel[j].nodetype){
-	            		snt=Sel[j].nodetype;
-	            		nn.push(snt);
-	            	}
-	            }
-	          //循环用于向chart插入refname，为动态下拉框提供元素
-	            chart.push({"text":"全部","value":"0"});
-	            for(var j=0;j<nn.length;j++){
-	            	var ln=nn[j];
-		            var DeviceTypeName;
-	            	if(ln=="1"){
-	            		DeviceTypeName="油色谱及微水";
-	        		}else if(ln=="2"){
-	        			DeviceTypeName="SF6气体压力";
-	        		}else if(ln=="3"){
-	        			DeviceTypeName="避雷器及动作次数";
-	        		}else if(ln=="4"){
-	        			DeviceTypeName="铁芯泄露电流";
-	        		}else if(ln=="5"){
-	        			DeviceTypeName="换流变运行工况	";
-	        		}else if(ln=="6"){
-	        			DeviceTypeName="SF6气体泄漏";
-	        		}else if(ln=="7"){
-	        			DeviceTypeName="套管";
-	        		}else if(ln=="8"){
-	        			DeviceTypeName="气象信息";
-	        		}else if(ln=="19"){
-	        			DeviceTypeName="局放";
-	        		}else if(ln=="20"){
-	        			DeviceTypeName="主变局放";
-	        		}else if(ln=="hwcw"){
-	        			DeviceTypeName="红外测温";
-	        		}else if(ln=="amc"){
-	        			DeviceTypeName="辅助设备";
-	        		}else {
-	        			DeviceTypeName="未定义";
-	        		}
-	            	chart.push({"text":DeviceTypeName,"value":nn[j]});//将chart组合为columns
-	            }
-	            $("#DeviceType").combobox("loadData", chart);
-	            $("#DeviceType").combobox('select',chart[0].value);
-        		showdata("showdata", data ,otherData,remarkData);
+        		showdata("showdata", data ,otherData);
         	}
     	});
     }
@@ -176,13 +101,12 @@ function linkToData(devId,name,type) {
 	parent.jeecg.main.addTab(name,url);
 }
 
-function showdata(id, data ,otherData,remarkData){
+function showdata(id, data ,otherData){
     var ee = document.getElementById(id);
     var html1 = "";
     var img_path = "";
     var ln;
     var group;
-    var imgdata=data;
     var imgname;
     var trClass=0;
     var imgvalue;
@@ -417,7 +341,6 @@ function showdata(id, data ,otherData,remarkData){
 					"</img>" +
 				"</div>";
 		imgname="";
-//		findOther("showdata",imgdata);
     }
     ee.innerHTML = html1;
   //移动鼠标变色操作
@@ -504,19 +427,19 @@ function show(n){
 }
 
 function getSomeDevice(data){
-	var curr_time = new Date();
-	var month=curr_time.getMonth()+1;
-//	var month=curr_time.getMonth();
-	var date=curr_time.getDate();
-	var otherData;
-	var remarkData;
-	if(month<10){
-		month="0"+month;
-	}
-	if(date<10){
-		date="0"+date;
-	}
-	var time=curr_time.getFullYear()+"-"+month+'-'+date;
+// 	var curr_time = new Date();
+// 	var month=curr_time.getMonth()+1;
+// //	var month=curr_time.getMonth();
+// 	var date=curr_time.getDate();
+// 	var otherData;
+// 	var remarkData;
+// 	if(month<10){
+// 		month="0"+month;
+// 	}
+// 	if(date<10){
+// 		date="0"+date;
+// 	}
+// 	var time=curr_time.getFullYear()+"-"+month+'-'+date;
 	var DeviceArea=$("#DeviceArea").combo("getValue");
 	var DeviceType=$("#DeviceType").combo("getValue");
 	if(DeviceArea==''){
@@ -531,20 +454,20 @@ function getSomeDevice(data){
 	    	cache: false,
 	    	type: 'POST',
 	    	//通过选择获取其他信息(getOtherImgListBySelect)
-	    	url: ctxPath + "/treeDevice/getOtherImgListBySelect.do?SampleTime="+time+"&Space="+DeviceArea+"&DeviceType="+DeviceType,
+	    	url: ctxPath + "/treeDevice/getOtherImgListBySelect.do?Space="+DeviceArea+"&DeviceType="+DeviceType,
 	    	success: function(data){
 	    		otherData=data;
 	    	}
 		});
-    	$.ajax({
-        	async: false,
-        	cache: false,
-        	type: 'POST',
-        	url: ctxPath + '/treeDevice/getRemarkImgList.do?SampleTime='+time,
-        	success: function(data){
-        		remarkData=data;
-        	}
-    	});
+    	// $.ajax({
+        // 	async: false,
+        // 	cache: false,
+        // 	type: 'POST',
+        // 	url: ctxPath + '/treeDevice/getRemarkImgList.do?SampleTime='+time,
+        // 	success: function(data){
+        // 		remarkData=data;
+        // 	}
+    	// });
 		$.ajax({
 	    	async: false,
 	    	cache: false,
@@ -555,7 +478,7 @@ function getSomeDevice(data){
 	    		jeecg.alert('错误信息', '数据请求失败', 'error');
 	    	},
 	    	success: function(data){
-	    		showdata("showdata", data ,otherData,remarkData);
+	    		showdata("showdata", data ,otherData);
 	    	}
 	    });
 }

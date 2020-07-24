@@ -58,6 +58,10 @@ public class TreeDeviceService<T,T1,T2,T3,T4,T5,T6> extends BaseService<T>{
 	{
 		return getDao().getImgList(param);
 	}
+	public List<Integer> getPubDeviceTypeList(){
+		return getDao().getPubDeviceTypeList();
+	}
+
 	/*public List<T> getAmcImgList(java.util.Map<String, Object> param)
     {
 	    return getDao().getAmcImgList(param);

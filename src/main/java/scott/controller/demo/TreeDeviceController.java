@@ -16,6 +16,8 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.base.entity.PubDeviceTypeEnum;
+import com.base.util.DateUtil;
 import org.apache.log4j.Logger;
 import org.jdom.Document;
 import org.jdom.Element;
@@ -62,7 +64,7 @@ public class TreeDeviceController extends BaseAction {
     private TreeDeviceService<TreeDeviceEntity, DeviceStateEntity, Sf6_dataEntity, stom_dataEntity, SMOAM_dataEntity, SCOM_dataEntity, Spdm_dataEntity> treeDeviceService;
 
     /**
-     * 创建树节点（主设备与设备节点关系）
+     * 创建树节点（主设备与设备节点关系）4.
      *
      * @param response
      * @throws Exception
@@ -89,8 +91,15 @@ public class TreeDeviceController extends BaseAction {
 
     @RequestMapping("/getSpaceName")
     public void getSpaceName(HttpServletResponse response) throws Exception {
-        List<TreeDeviceEntity> SpaceName = treeDeviceService.getPubspaceName();
-        HtmlUtil.writerJson(response, SpaceName);
+        //设备区域
+        List<TreeDeviceEntity> space = treeDeviceService.getPubspaceName();
+        //设备类型
+        List<Integer> values = treeDeviceService.getPubDeviceTypeList();
+        List<PubDeviceTypeEnum> typeEnums = PubDeviceTypeEnum.getDeviceTypeEnumsByValues(values);
+        Map map = new HashMap(3);
+        map.put("space",space);
+        map.put("deviceType",typeEnums);
+        HtmlUtil.writerJson(response, map);
     }
 
     /**
@@ -341,7 +350,6 @@ public class TreeDeviceController extends BaseAction {
 
     @RequestMapping("/getImgList")
     public void getImgList(HttpServletResponse response) throws Exception {
-        TreeViewUtil<TreeDeviceEntity> util = new TreeViewUtil<TreeDeviceEntity>();
         Map<String, Object> param = new HashMap<String, Object>();
         List<TreeDeviceEntity> EntityList = treeDeviceService.getImgList(param);
         HtmlUtil.writerJson(response, EntityList);
@@ -363,8 +371,6 @@ public class TreeDeviceController extends BaseAction {
     }*/
     @RequestMapping("/getOtherImgList")
     public void getOtherImgList(String SampleTime, HttpServletResponse response) throws Exception {
-        TreeViewUtil<TreeDeviceEntity> util = new TreeViewUtil<TreeDeviceEntity>();
-        Map<String, Object> param = new HashMap<String, Object>();
         List<TreeDeviceEntity> EntityList = treeDeviceService.getOtherImgList(SampleTime);
         HtmlUtil.writerJson(response, EntityList);
     }
@@ -388,12 +394,9 @@ public class TreeDeviceController extends BaseAction {
     }
 
     @RequestMapping("/getOtherImgListBySelect")
-    public void getOtherImgListBySelect(String SampleTime, String Space, String DeviceType, HttpServletResponse response) throws Exception {
-        TreeViewUtil<TreeDeviceEntity> util = new TreeViewUtil<TreeDeviceEntity>();
-        Map<String, Object> param = new HashMap<String, Object>();
-        Space = new String(Space.getBytes("ISO-8859-1"), "UTF-8");
-        DeviceType = new String(DeviceType.getBytes("ISO-8859-1"), "UTF-8");
-        List<TreeDeviceEntity> EntityList = treeDeviceService.getOtherImgListBySelect(SampleTime, Space, DeviceType);
+    public void getOtherImgListBySelect(String Space, String DeviceType, HttpServletResponse response) throws Exception {
+        //todo 当前的数值
+        List<TreeDeviceEntity> EntityList = treeDeviceService.getOtherImgListBySelect(DateUtil.getDateLong(new Date()), Space, DeviceType);
         HtmlUtil.writerJson(response, EntityList);
     }
 

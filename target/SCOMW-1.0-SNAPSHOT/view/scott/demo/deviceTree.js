@@ -45,24 +45,24 @@ jeecg.DeviceTree = function(){
         		}
         	});
         },
-        station: function(){
-			$.ajax({
-                async: false,
-                cache: false,
-                type: 'POST',
-                url: ctxPath + '/treeDevice/getSpaceName.do',
-                error: function(){
-                },
-                success: function(data){
-                	if(data ==''){
-                		//alert("请添加区域");
-//                		var name = "系统配置";
-//                		var url=ctxPath +"/systemConfiguration/systemConfiguration.shtml";
-//                		parent.jeecg.main.addTab(name,url);
-                	}
-                }
-            });
-        },
+//         station: function(){
+// 			$.ajax({
+//                 async: false,
+//                 cache: false,
+//                 type: 'POST',
+//                 url: ctxPath + '/treeDevice/getSpaceName.do',
+//                 error: function(){
+//                 },
+//                 success: function(data){
+//                 	if(data ==''){
+//                 		//alert("请添加区域");
+// //                		var name = "系统配置";
+// //                		var url=ctxPath +"/systemConfiguration/systemConfiguration.shtml";
+// //                		parent.jeecg.main.addTab(name,url);
+//                 	}
+//                 }
+//             });
+//         },
         init: function(){
             $('#ZoneEmuList').tree({
                 url: ctxPath + '/treeDevice/getZoneEmuList.do',
@@ -72,12 +72,14 @@ jeecg.DeviceTree = function(){
                 lines: true,
                 state:closed ,
                 onLoadSuccess: function(node,data) {//加载成功后调用事件
+                    console.log(node,data)
                 	if(data!=''){
+                	    debugger
 	                	_id = data[0].id;
 	                	_text=data[0].text;
 	                	_type=data[0].attributes.Nodetype;
 	                	_this.ShowLineData();
-	                	jeecg.DeviceTree.station();
+	                	// jeecg.DeviceTree.station();
                 	}else{
                 		alert("请设置站点");
 //                		var name = "系统配置";
@@ -95,37 +97,37 @@ jeecg.DeviceTree = function(){
 	        	if(id.indexOf("M001")>-1){
 	        		//GIS
 	        		if(id.indexOf(nodeID)<0){
-		        		$('#DeviceVice').attr('href',ctxPath + '/deviceHealthState/list.do?map=1');
-		        		$('#DeviceVice').click();
+		        		$('#DeviceDetail').attr('href',ctxPath + '/deviceHealthState/list.do?map=1');
+		        		$('#DeviceDetail').click();
 		        		nodeID=id;
 	        		}
 
 	        	}else if(id.indexOf("M002")>-1){
 	        		//站用变
 	        		if(id.indexOf(nodeID)<0){
-		        		$('#DeviceVice').attr('href',ctxPath + '/deviceHealthState/list.do?map=2');
-		        		$('#DeviceVice').click();
+		        		$('#DeviceDetail').attr('href',ctxPath + '/deviceHealthState/list.do?map=2');
+		        		$('#DeviceDetail').click();
 		        		nodeID=id;
 	        		}
 	        	}else if(id.indexOf("M003")>-1){
 	        		//直流场
 	        		if(id.indexOf(nodeID)<0){
-		        		$('#DeviceVice').attr('href',ctxPath + '/deviceHealthState/list.do?map=3');
-		        		$('#DeviceVice').click();
+		        		$('#DeviceDetail').attr('href',ctxPath + '/deviceHealthState/list.do?map=3');
+		        		$('#DeviceDetail').click();
 		        		nodeID=id;
 	        		}
 	        	}else if(id.indexOf("M004")>-1||id.indexOf("M005")>-1){
 	        		//换流变
 	        		if(id.indexOf(nodeID)<0){
-		        		$('#DeviceVice').attr('href',ctxPath + '/deviceHealthState/list.do?map=4');
-		        		$('#DeviceVice').click();
+		        		$('#DeviceDetail').attr('href',ctxPath + '/deviceHealthState/list.do?map=4');
+		        		$('#DeviceDetail').click();
 		        		nodeID=id;
 	        		}
 	        	}else if(id.indexOf("M006")>-1){
 	        		//交流滤波场
 	        		if(id.indexOf(nodeID)<0){
-		        		$('#DeviceVice').attr('href',ctxPath + '/deviceHealthState/list.do?map=5');
-		        		$('#DeviceVice').click();
+		        		$('#DeviceDetail').attr('href',ctxPath + '/deviceHealthState/list.do?map=5');
+		        		$('#DeviceDetail').click();
 		        		nodeID=id;
 	        		}
 	        	}else if(id.indexOf("D")>-1){
@@ -139,8 +141,8 @@ jeecg.DeviceTree = function(){
 	        	}else if(id=="1"){
 	        		if(id.indexOf(nodeID)<0){
 		        		var url=ctxPath+"/deviceHealthState/list.do";
-		        		$('#DeviceVice').attr('href',url);
-		        		$('#DeviceVice').click();
+		        		$('#DeviceDetail').attr('href',url);
+		        		$('#DeviceDetail').click();
 		        		nodeID=id;
 	        		}
 	        	}

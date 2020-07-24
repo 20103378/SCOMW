@@ -6,6 +6,9 @@ import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import com.base.entity.vo.RequestUserVO;
+import com.base.util.json.JSONUtil;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,7 +41,7 @@ public class MainAction extends BaseAction {
 
 	private final static Logger log = Logger.getLogger(MainAction.class);
 	private String message = null;
-	// Servrice start
+
 	@Autowired(required = false)
 	private SysMenuService<SysMenu> sysMenuService;
 
@@ -48,37 +51,18 @@ public class MainAction extends BaseAction {
 	@Autowired(required = false)
 	private SysMenuBtnService<SysMenuBtn> sysMenuBtnService;
 
-//	/**
-//	 * 登录页面
-//	 *
-//	 * @param url
-//	 * @param classifyId
-//	 * @return
-//	 */
-//	@Auth(verifyLogin = false, verifyURL = false)
-//	@RequestMapping("/")
-//	public ModelAndView index(HttpServletRequest request,
-//							  HttpServletResponse response) throws Exception {
-//		Map<String, Object> context = getRootMap();
-//		return forword("login", context);
-//	}
 	/**
-	 * 登录页面
-	 * 
-	 * @param url
-	 * @param classifyId
+	 * 登录页面 1.
 	 * @return
 	 */
 	@Auth(verifyLogin = false, verifyURL = false)
 	@RequestMapping("/login")
-	public ModelAndView login(HttpServletRequest request,
-			HttpServletResponse response) throws Exception {
-		Map<String, Object> context = getRootMap();
-		return forword("login", context);
+	public String login(){
+		return "login";
 	}
 
 	/**
-	 * 检查用户名称
+	 * 检查用户名称2.-->main
 	 * 
 	 * @param user
 	 * @param req
@@ -87,8 +71,8 @@ public class MainAction extends BaseAction {
 	 */
 	@Auth(verifyLogin = false, verifyURL = false)
 	@RequestMapping("/checkuser")
-	public void checkuser(SysUserModel user, HttpServletRequest req,
-			HttpServletResponse response) throws Exception {
+	public void checkuser(RequestUserVO user, HttpServletRequest req,
+						  HttpServletResponse response) throws Exception {
 		SysUser u = sysUserService.queryLogin(user.getEmail(),
 				MethodUtil.MD5(user.getPwd()));
 		if (u != null) {
@@ -111,70 +95,6 @@ public class MainAction extends BaseAction {
 		} else {
 			sendFailureMessage(response, "用户名或密码错误!");
 		}
-	}
-
-	/**
-	 * 登录
-	 * 
-	 * @param email
-	 *            邮箱登录账号
-	 * @param pwd
-	 *            密码
-	 * @param verifyCode
-	 *            验证码
-	 * @param request
-	 * @param response
-	 * @throws Exception
-	 */
-	@Auth(verifyLogin = false, verifyURL = false)
-	@RequestMapping("/toLogin")
-	public void toLogin(String email, String pwd, String verifyCode,
-			HttpServletRequest request, HttpServletResponse response)
-			throws Exception {
-		String vcode = SessionUtils.getValidateCode(request);
-		SessionUtils.removeValidateCode(request);// 清除验证码，确保验证码只能用一次
-		if (StringUtils.isBlank(verifyCode)) {
-			sendFailureMessage(response, "验证码不能为空.");
-			return;
-		}
-		// 判断验证码是否正确
-		if (!verifyCode.toLowerCase().equals(vcode)) {
-			sendFailureMessage(response, "验证码输入错误.");
-			return;
-		}
-		if (StringUtils.isBlank(email)) {
-			sendFailureMessage(response, "账号不能为空.");
-			return;
-		}
-		if (StringUtils.isBlank(pwd)) {
-			sendFailureMessage(response, "密码不能为空.");
-			return;
-		}
-		String msg = "用户登录日志:";
-		SysUser user = sysUserService.queryLogin(email, MethodUtil.MD5(pwd));
-		if (user == null) {
-			// 记录错误登录日志
-			log.debug(msg + "[" + email + "]" + "账号或者密码输入错误.");
-			sendFailureMessage(response, "账号或者密码输入错误.");
-			return;
-		}
-		if (STATE.DISABLE.key == user.getState()) {
-			sendFailureMessage(response, "账号已被禁用.");
-			return;
-		}
-		// 登录次数加1 修改登录时间
-		int loginCount = 0;
-		if (user.getLoginCount() != null) {
-			loginCount = user.getLoginCount();
-		}
-		user.setLoginCount(loginCount + 1);
-		user.setLoginTime(DateUtil.getDateByString(""));
-		sysUserService.update(user);
-		// 设置User到Session
-		SessionUtils.setUser(request, user);
-		// 记录成功登录日志
-		log.debug(msg + "[" + email + "]" + "登录成功");
-		sendSuccessMessage(response, "登录成功.");
 	}
 
 	/**
@@ -266,7 +186,7 @@ public class MainAction extends BaseAction {
 	 * @return
 	 */
 	@Auth(verifyURL = false)
-	@RequestMapping("/main") //2.
+	@RequestMapping("/main") //3.
 	public ModelAndView main(HttpServletRequest request) {
 		Map<String, Object> context = getRootMap();
 		SysUser user = SessionUtils.getUser(request);
@@ -295,6 +215,7 @@ public class MainAction extends BaseAction {
 	private List<TreeNode> treeMenu(List<SysMenu> rootMenus,
 			List<SysMenu> childMenus) {
 		TreeUtil util = new TreeUtil(rootMenus, childMenus);
+		System.out.println("--------"+JSONUtil.toJSONString(util.getTreeNode()));
 		return util.getTreeNode();
 	}
 

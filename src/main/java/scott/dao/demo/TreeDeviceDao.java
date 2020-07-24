@@ -30,6 +30,7 @@ public interface TreeDeviceDao<T, T1, T2, T3, T4, T5, T6> extends
 	public List<T> getEquipmentName();
 	public List<T> getPubspaceNameByType(String Type);
 	public List<T> getImgList(java.util.Map<String, Object> param);
+	public List<Integer> getPubDeviceTypeList();
 	public List<T> getAmcImgList(java.util.Map<String, Object> param);
 	public List<T> getOtherAmcImgList(String SampleTime);
 	public List<T> getOtherImgList(String SampleTime);
@@ -58,4 +59,5 @@ public interface TreeDeviceDao<T, T1, T2, T3, T4, T5, T6> extends
 	public List<T4> getSmoamAllData();
 
 	public List<T5> getScomAllData();
+
 }

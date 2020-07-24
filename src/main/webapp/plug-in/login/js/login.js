@@ -1,35 +1,3 @@
-//$(document).ready(function() {
-//	getCookie();
-//	onfocus();
-//	$(".on_off_checkbox").iphoneStyle();
-//	$('.tip a ').tipsy({
-//		gravity : 'sw'
-//	});
-//	$('#login').show().animate({
-//		opacity : 1
-//	}, 2000);
-//	$('.logo').show().animate({
-//		opacity : 1,
-//		top : '32%'
-//	}, 800, function() {
-//		$('.logo').show().delay(1200).animate({
-//			opacity : 1,
-//			top : '1%'
-//		}, 300, function() {
-//			$('.formLogin').animate({
-//				opacity : 1,
-//				left : '0'
-//			}, 300);
-//			$('.userbox').animate({
-//				opacity : 0
-//			}, 200).hide();
-//		});
-//	});
-//
-//});
-
-
-
 $('.userload').click(function(e) {
 	$('.formLogin').animate({
 		opacity : 1,
@@ -82,11 +50,12 @@ function submit()
 //登录处理函数
 function Login() {
 	setCookie();
-	var actionurl=$('form').attr('action');//提交路径
+	// var actionurl=$('form').attr('action');//提交路径
 	var checkurl=$('form').attr('check');//验证路径
 	var formData = new Object();
 	var data=$(":input").each(function() {
 		 formData[this.name] =$("#"+this.name ).val();
+		console.log(formData[this.name]+"---")
 	});
 	$.ajax({
 		async : false,
@@ -99,7 +68,6 @@ function Login() {
 		},
 		success : function(data) {
 			if (data.success) {
-//				loginsuccess();
 				setTimeout("window.location.href='main.do'", 0);
 			} else {
 				showError(data.msg);
@@ -151,30 +119,6 @@ function showError(str) {
 	}, 500);
 
 }
-////验证通过加载动画
-//function loginsuccess()
-//{
-//	$("#login").animate({
-//		opacity : 1,
-//		top : '49%'
-//	}, 200, function() {
-//		$('.userbox').show().animate({
-//			opacity : 1
-//		}, 500);
-//		$("#login").animate({
-//			opacity : 0,
-//			top : '60%'
-//		}, 500, function() {
-//			$(this).fadeOut(200, function() {
-//				$(".text_success").slideDown();
-//				$("#successLogin").animate({
-//					opacity : 1,
-//					height : "200px"
-//				}, 1000);
-//			});
-//		});
-//	});
-//}
 function showSuccess(str) {
 	$('#alertMessage').removeClass('error').html(str).stop(true, true).show().animate({
 		opacity : 1,

@@ -25,6 +25,7 @@ scott/entity/demo/SmoamAlarmEntity.class
 com/jeecg/entity/SysMenuBtn.class
 scott/entity/demo/EquipmentSpaceEntity.class
 scott/entity/demo/CacExeStateEntity.class
+com/base/entity/vo/RequestUserVO.class
 com/jeecg/service/SysRoleService.class
 scott/entity/demo/Spdm_dataEntity.class
 scott/entity/demo/SpaceEntity.class
@@ -69,8 +70,6 @@ scott/entity/demo/ZJ103Entity.class
 scott/controller/demo/SystemStateController.class
 com/jeecg/dao/SysUserDao.class
 com/jeecg/dao/SysRoleRelDao.class
-scott/dao/demo/JeecgNoteDao.class
-com/jeecg/page/SysMenuBtnModel.class
 scott/service/demo/TreeDeviceService.class
 scott/page/demo/TreeDevicePage.class
 scott/service/demo/WeatherService.class
@@ -114,7 +113,6 @@ scott/entity/demo/SmoamYxEntity.class
 scott/entity/demo/TreeConnEntity.class
 scott/entity/demo/YXHistoryEntity.class
 scott/entity/demo/AlarmRecordEntity.class
-com/base/page/AjaxJson.class
 com/base/util/RandomUtils.class
 scott/controller/demo/EventRecordController.class
 scott/entity/demo/ScomAlarmEntity.class
@@ -128,7 +126,6 @@ scott/entity/demo/TreeDeviceEntity.class
 scott/dao/demo/WeatherDao.class
 com/jeecg/page/SysMenuModel.class
 scott/entity/demo/CacCagConnStateEntity.class
-scott/dao/demo/JeecgPersonDao.class
 com/base/entity/BaseEntity$DELETED.class
 scott/entity/demo/MessageEntity.class
 com/base/util/TreeUtil.class
@@ -136,6 +133,7 @@ scott/page/demo/JeecgPersonPage.class
 scott/entity/demo/OsicfgEntity.class
 scott/entity/demo/DeviceEntity.class
 scott/controller/demo/TreeDeviceController.class
+com/base/entity/PubDeviceTypeEnum.class
 com/base/util/URLUtils.class
 scott/entity/demo/Sf6_dataEntity.class
 scott/entity/demo/I2TableEntity.class

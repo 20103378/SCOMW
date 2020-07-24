@@ -268,10 +268,12 @@ select
 	DeviceType as nodetype,
 	'0' as ln_inst_name
 	from 	pubdevice
-	where   DeviceType != '5' 
-	GROUP BY DeviceID
-
+	where   DeviceType != '5'
 </select>
+	<!--获取设备数据列表  -->
+	<select id="getPubDeviceTypeList" resultType="java.lang.Integer">
+     select distinct DeviceType  from pubdevice where  DeviceType != '5'
+   </select>
 <!-- 获取设备类型 -->
 <select id="getDeviceType" resultMap="NodeResultMap" parameterType="Object">
 	select  DeviceType as nodetype
@@ -409,7 +411,7 @@ select  DeviceID
 	from 	pubdevice a,
 			sf6_data b
 	where 	a.DeviceID=b.DeviceID
-	and  b.SampleTime> #{SampleTime}
+-- 	and  b.SampleTime> #{SampleTime}
 	<if test='Space != "0" '>
 	and a.Space = #{Space}</if>
 	<if test='DeviceType != "0" '>
@@ -422,7 +424,7 @@ select  DeviceID
 	from 	pubdevice a,
 			scom_data b
 	where 	a.DeviceID=b.DeviceID
-	and  b.SampleTime> #{SampleTime}
+-- 	and  b.SampleTime> #{SampleTime}
 	<if test='Space != "0" '>
 	and a.Space = #{Space}</if>
 	<if test='DeviceType != "0" '>
@@ -435,7 +437,7 @@ select  DeviceID
 	from 	pubdevice a,
 			smoam_data b
 	where 	a.DeviceID=b.DeviceID
-	and  b.SampleTime> #{SampleTime}
+-- 	and  b.SampleTime> #{SampleTime}
 	<if test='Space != "0" '>
 	and a.Space = #{Space}</if>
 	<if test='DeviceType != "0" '>
@@ -449,7 +451,7 @@ select  DeviceID
 			spdm_data b
 	where 	a.DeviceID=b.DeviceID
 			and a.Space != '微气象'
-			and  b.SampleTime> #{SampleTime}
+-- 			and  b.SampleTime> #{SampleTime}
 	<if test='Space != "0" '>
 	and a.Space = #{Space}</if>
 	<if test='DeviceType != "0" '>
@@ -462,7 +464,7 @@ select  DeviceID
 	from 	pubdevice a,
 			stom_data b
 	where 	a.DeviceID=b.DeviceID
-	and  b.SampleTime> #{SampleTime}
+-- 	and  b.SampleTime> #{SampleTime}
 	<if test='Space != "0" '>
 	and a.Space = #{Space}</if>
 	<if test='DeviceType != "0" '>
@@ -475,7 +477,7 @@ select  DeviceID
 	from 	pubdevice a,
 			weather_data b
 	where 	a.DeviceID=b.DeviceID
-	and  b.SampleTime> #{SampleTime}
+-- 	and  b.SampleTime> #{SampleTime}
 	<if test='Space != "0" '>
 	and a.Space = #{Space}</if>
 	<if test='DeviceType != "0" '>

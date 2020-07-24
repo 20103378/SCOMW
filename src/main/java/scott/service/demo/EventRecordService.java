@@ -53,9 +53,6 @@ public class EventRecordService<T> extends BaseService<T> {
 		page.getPager().setRowCount(rowCount);
 		return getDao().getOperaterRecordList(page);
 	}
-	
-	
-	
 
 	
 }
