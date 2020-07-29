@@ -1441,11 +1441,13 @@ public class DeviceHealthStateController extends BaseAction {
                 }
                 dataList.add(dataLists.get(i));
             } else if ("0".equals(dataLists.get(i).getIed_type_id())) {
-                if (dataLists.get(i).getRefname().indexOf("$ST$GasUnPresAlm") > -1 ||
-                        dataLists.get(i).getRefname().indexOf("$ST$MoDevConf") > -1 ||
-                        dataLists.get(i).getRefname().indexOf("$ST$MoDevConF") > -1 ||
-                        dataLists.get(i).getRefname().indexOf("$ST$SupDevRun") > -1 ||
-                        dataLists.get(i).getRefname().indexOf("$ST$DschCnt") > -1) {
+                if (true
+//                        dataLists.get(i).getRefname().indexOf("$ST$GasUnPresAlm") > -1 ||
+//                        dataLists.get(i).getRefname().indexOf("$ST$MoDevConf") > -1 ||
+//                        dataLists.get(i).getRefname().indexOf("$ST$MoDevConF") > -1 ||
+//                        dataLists.get(i).getRefname().indexOf("$ST$SupDevRun") > -1 ||
+//                        dataLists.get(i).getRefname().indexOf("$ST$DschCnt") > -1
+                ) {
                     String refname = dataLists.get(i).getRefname();
                     String[] refnames = refname.split("\\$");
                     refname = refnames[(refnames.length - 1)];
@@ -1474,69 +1476,6 @@ public class DeviceHealthStateController extends BaseAction {
          }*/
         jsonMap.put("total", page.getPager().getRowCount());
         jsonMap.put("rows", dataList);
-        HtmlUtil.writerJson(response, jsonMap);
-    }
-
-    //油色谱实时数据
-    @RequestMapping("/getStomYXData")
-    public void getStomYXData(DataEntity data, HistoryPage page,
-                              HttpServletResponse response, HttpServletRequest request) throws Exception {
-        Map<String, Object> jsonMap = new HashMap<String, Object>();
-        //获取ln和ld
-        request.setCharacterEncoding("utf-8");
-        response.setCharacterEncoding("utf-8");
-        String id = request.getParameter("id");
-        List<DataEntity> dataList = new ArrayList<DataEntity>();
-        String IEC61850LD_LN = deviceHealthStateService.getyxLDLN(id);
-        String[] IEC61850LD_LNs = IEC61850LD_LN.split("\\/");
-        IEC61850LD_LN = IEC61850LD_LNs[0];
-        List<DataEntity> dataLists = deviceHealthStateService.getStomYXData(IEC61850LD_LN);
-        for (int i = 0; i < dataLists.size(); i++) {
-            if ("1".equals(dataLists.get(i).getIed_type_id())) {
-                String refname = dataLists.get(i).getRefname();
-                String[] refnames = refname.split("\\$");
-                refname = refnames[(refnames.length - 1)];
-                String ref = deviceHealthStateService.getyxDesc(refname);
-                if ("".equals(ref) || ref == null) {
-                    dataLists.get(i).setRefname(refname);
-                } else {
-                    dataLists.get(i).setRefname(ref);
-                }
-                dataList.add(dataLists.get(i));
-            } else if ("0".equals(dataLists.get(i).getIed_type_id())) {
-                if (/*dataLists.get(i).getRefname().indexOf("$ST$GasUnPresAlm")>-1 ||
-        			dataLists.get(i).getRefname().indexOf("$ST$MoDevConf")>-1 ||
-        			dataLists.get(i).getRefname().indexOf("$ST$MoDevConF")>-1 ||
-        			dataLists.get(i).getRefname().indexOf("$ST$SupDevRun")>-1 */true) {
-                    String refname = dataLists.get(i).getRefname();
-                    String[] refnames = refname.split("\\$");
-                    refname = refnames[(refnames.length - 1)];
-                    String ref = deviceHealthStateService.getyxDesc(refname);
-                    if ("".equals(ref) || ref == null) {
-                        dataLists.get(i).setRefname(refname);
-                    } else {
-                        dataLists.get(i).setRefname(ref);
-                    }
-                    String[] values = dataLists.get(i).getValue().split("\\.");
-                    dataLists.get(i).setValue(values[0]);
-                 	/*if("0.0".equals(dataLists.get(i).getValue())){
-                 		dataLists.get(i).setValue("正常");
-                 	}else{
-                 		dataLists.get(i).setValue("异常");
-                 	}*/
-                    dataList.add(dataLists.get(i));
-                }
-            }
-        }
-         /*List<DataEntity> dataLists = deviceHealthStateService.getStomYXData(id);
-         for(int i=0 ; i<dataLists.size() ; i++){
-        	 if(!("".equals(dataLists.get(i)))&&dataLists.get(i)!=null){
-            	dataList.add(dataLists.get(i));
-        	 }
-         }*/
-        jsonMap.put("total", page.getPager().getRowCount());
-        jsonMap.put("rows", dataList);
-        System.out.println(dataList.toString());
         HtmlUtil.writerJson(response, jsonMap);
     }
 
