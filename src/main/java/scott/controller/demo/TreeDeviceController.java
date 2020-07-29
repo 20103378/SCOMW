@@ -74,14 +74,14 @@ public class TreeDeviceController extends BaseAction {
         TreeViewUtil<TreeDeviceEntity> util = new TreeViewUtil<TreeDeviceEntity>();
         List<TreeDeviceEntity> entityList = new ArrayList<TreeDeviceEntity>();
         //获取单位信息
-        // List<TreeDeviceEntity> InfoName = treeDeviceService.getUnitinfo();
+         List<TreeDeviceEntity> InfoName = treeDeviceService.getUnitinfo();
         //获取空间名称
         List<TreeDeviceEntity> spaceName = treeDeviceService.getPubspaceName();
         //获取设备
         List<TreeDeviceEntity> equipment = treeDeviceService.getEquipmentName();
         //获去所有的设备名称
         List<TreeDeviceEntity> deviceName = treeDeviceService.getZoneEmuList();
-        //EntityList.addAll(InfoName);
+        entityList.addAll(InfoName);
         entityList.addAll(spaceName);
         entityList.addAll(equipment);
         entityList.addAll(deviceName);

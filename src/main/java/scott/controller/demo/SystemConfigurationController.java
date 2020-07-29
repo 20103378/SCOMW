@@ -759,8 +759,8 @@ public class SystemConfigurationController extends BaseAction {
         XMLOut.output(document, new FileOutputStream(rootPath2 + "/" + fileName));
     }
 
-    @RequestMapping("/getSapceZip")
-    public void getSapceZip(String select_name, HttpServletResponse response, HttpServletRequest request) throws Exception {
+    @RequestMapping("/getSpaceZip")
+    public void getSpaceZip(String select_name, HttpServletResponse response, HttpServletRequest request) throws Exception {
         String fileName_xml = "";
         String fileName_swf = "";
         // 根据index选择不同xml文件
@@ -887,10 +887,10 @@ public class SystemConfigurationController extends BaseAction {
     }
 
     /**
-     * 上传SapceMap
+     * 上传SpaceMap
      */
-    @RequestMapping("/getSapceMap")
-    public void getSapceMap(String select_name, HttpServletResponse response, HttpServletRequest request) throws Exception {
+    @RequestMapping("/getSpaceMap")
+    public void getSpaceMap(String select_name, HttpServletResponse response, HttpServletRequest request) throws Exception {
         Map<String, Object> jsonMap = new HashMap<String, Object>();
         String Graphsurl = request.getSession().getServletContext().getRealPath("");
         new UrlUtil();
@@ -987,7 +987,7 @@ public class SystemConfigurationController extends BaseAction {
     }
 
     /**
-     * 插入space数据
+     * 插入space数据  插入区域数据
      */
     @RequestMapping("/insertspace")
     public void insertspace(EquipmentSpaceEntity space, HttpServletResponse response, HttpServletRequest request) throws Exception {

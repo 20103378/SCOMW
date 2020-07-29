@@ -51,7 +51,7 @@ jeecg.SpaceConfiguration = function(){
 				                }
 				        	});
 				            // 提交 form
-				            $('#MapForm').attr("action", "getSapceMap.do?select_name="+select_name).submit();
+				            $('#MapForm').attr("action", "getSpaceMap.do?select_name="+select_name).submit();
 				         }else if(!File_xml){
 				         	alert("选择你要上传的xml文件");
 				         }else if(!File_swf){
@@ -242,7 +242,7 @@ jeecg.SpaceConfiguration = function(){
 					 async:false,
 					 cache:false,
 					 type:'post',
-					 url:"getSapceZip.do?select_name="+select_name,
+					 url:"getSpaceZip.do?select_name="+select_name,
 					 success:function(data){
 						 deviceWin.window('close');
 			        	 $('#tab_space').datagrid('reload');

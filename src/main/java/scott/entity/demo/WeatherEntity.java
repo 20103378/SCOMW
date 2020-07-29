@@ -23,12 +23,5 @@ public class WeatherEntity extends BaseEntity {
 	private Object WindSpeed;
 	private String Remark;
 
-    public WeatherEntity(int l) {
-        this.Temperature="--";
-        this.Humidity="--";
-        this.WindDirection="--";
-        this.WindSpeed="--";
-    }
-
 }
 

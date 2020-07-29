@@ -13,7 +13,7 @@
 	<result column="WindSpeed" property="WindSpeed"/>
 </resultMap>
 
-<select id="getWeather" resultMap="WeatherResultMap" parameterType="Object">
-	SELECT Temperature ,Humidity ,WindDirection ,WindSpeed  FROM  weather_data where SampleTime like #{time} Order by SampleTime DESC
+<select id="getWeather" resultMap="WeatherResultMap">
+    SELECT Temperature ,Humidity ,WindDirection ,WindSpeed FROM weather_data WHERE date(SampleTime) = curdate() Order by SampleTime DESC;
 </select>
 </mapper>

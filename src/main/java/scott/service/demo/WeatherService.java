@@ -34,8 +34,8 @@ public class WeatherService<T> extends BaseService<T>{
         return dao;
     }
 
-    public List<T> getWeather(String time){
-        return getDao().getWeather(time);
+    public List<T> getWeather(){
+        return getDao().getWeather();
     };
 
 }

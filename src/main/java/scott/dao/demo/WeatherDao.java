@@ -16,5 +16,5 @@ public interface WeatherDao<T> extends
 		BaseDao<T> {
 	// public interface BaseTbldevicechannelDao<T1,T2,T3> {
 
-	public List<T> getWeather(String time);
+	public List<T> getWeather();
 }

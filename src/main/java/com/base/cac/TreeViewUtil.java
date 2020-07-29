@@ -117,7 +117,7 @@ public class TreeViewUtil<T> {
             //获取parentid
             String parentId = treeNode.getParentId();
             if (parentId == null) {
-                parentId = "0";
+                parentId = "1";
             }
             //
             List<String> ids = idsMap.get(parentId);

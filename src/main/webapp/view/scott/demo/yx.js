@@ -29,6 +29,7 @@ jeecg.yx = function() {
 		},
 		SetYxData : function() {
 			var DeviceType = $("#txtType").val();
+			debugger
 			// alert(DeviceType);
 			if (DeviceType == "1") {
 				// 油色谱及微水

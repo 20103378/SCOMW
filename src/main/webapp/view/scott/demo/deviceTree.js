@@ -19,29 +19,18 @@ jeecg.DeviceTree = function(){
 
     	},
         weather: function(){
-        	var curr_time = new Date();
-        	var month=curr_time.getMonth()+1;
-        	var date=curr_time.getDate();
-        	var otherData;
-        	if(month<10){
-        		month="0"+month;
-        	}
-        	if(date<10){
-        		date="0"+date;
-        	}
-        	var time=curr_time.getFullYear()+"-"+month+'-'+date;
         	$.ajax({
         		async:false,
         		cache: false,
-        		url:ctxPath + '/Weather/getWeather.do?time='+time,
+        		url:ctxPath + '/Weather/getCurrentWeather.do',
         		type:"POST",
         		error:function(){
         		},
         		success:function(data){
-        			$('#Temperature').append(data[0].temperature);
-        			$('#Humidity').append(data[0].humidity);
-        			$('#WindDirection').append(data[0].windDirection);
-        			$('#WindSpeed').append(data[0].windSpeed);
+        			$('#Temperature').append(data.temperature);
+        			$('#Humidity').append(data.humidity);
+        			$('#WindDirection').append(data.windDirection);
+        			$('#WindSpeed').append(data.windSpeed);
         		}
         	});
         },
@@ -94,43 +83,44 @@ jeecg.DeviceTree = function(){
         	var node = $('#ZoneEmuList').tree('getSelected');
         	if(node){
 	        	var id=node.id;
-	        	if(id.indexOf("M001")>-1){
-	        		//GIS
-	        		if(id.indexOf(nodeID)<0){
-		        		$('#DeviceDetail').attr('href',ctxPath + '/deviceHealthState/list.do?map=1');
-		        		$('#DeviceDetail').click();
-		        		nodeID=id;
-	        		}
-
-	        	}else if(id.indexOf("M002")>-1){
-	        		//站用变
-	        		if(id.indexOf(nodeID)<0){
-		        		$('#DeviceDetail').attr('href',ctxPath + '/deviceHealthState/list.do?map=2');
-		        		$('#DeviceDetail').click();
-		        		nodeID=id;
-	        		}
-	        	}else if(id.indexOf("M003")>-1){
-	        		//直流场
-	        		if(id.indexOf(nodeID)<0){
-		        		$('#DeviceDetail').attr('href',ctxPath + '/deviceHealthState/list.do?map=3');
-		        		$('#DeviceDetail').click();
-		        		nodeID=id;
-	        		}
-	        	}else if(id.indexOf("M004")>-1||id.indexOf("M005")>-1){
-	        		//换流变
-	        		if(id.indexOf(nodeID)<0){
-		        		$('#DeviceDetail').attr('href',ctxPath + '/deviceHealthState/list.do?map=4');
-		        		$('#DeviceDetail').click();
-		        		nodeID=id;
-	        		}
-	        	}else if(id.indexOf("M006")>-1){
-	        		//交流滤波场
-	        		if(id.indexOf(nodeID)<0){
-		        		$('#DeviceDetail').attr('href',ctxPath + '/deviceHealthState/list.do?map=5');
-		        		$('#DeviceDetail').click();
-		        		nodeID=id;
-	        		}
-	        	}else if(id.indexOf("D")>-1){
+	        	// if(id.indexOf("M001")>-1){
+	        	// 	//GIS
+	        	// 	if(id.indexOf(nodeID)<0){
+		        // 		$('#DeviceDetail').attr('href',ctxPath + '/deviceHealthState/list.do?map=1');
+		        // 		$('#DeviceDetail').click();
+		        // 		nodeID=id;
+	        	// 	}
+                //
+	        	// }else if(id.indexOf("M002")>-1){
+	        	// 	//站用变
+	        	// 	if(id.indexOf(nodeID)<0){
+		        // 		$('#DeviceDetail').attr('href',ctxPath + '/deviceHealthState/list.do?map=2');
+		        // 		$('#DeviceDetail').click();
+		        // 		nodeID=id;
+	        	// 	}
+	        	// }else if(id.indexOf("M003")>-1){
+	        	// 	//直流场
+	        	// 	if(id.indexOf(nodeID)<0){
+		        // 		$('#DeviceDetail').attr('href',ctxPath + '/deviceHealthState/list.do?map=3');
+		        // 		$('#DeviceDetail').click();
+		        // 		nodeID=id;
+	        	// 	}
+	        	// }else if(id.indexOf("M004")>-1||id.indexOf("M005")>-1){
+	        	// 	//换流变
+	        	// 	if(id.indexOf(nodeID)<0){
+		        // 		$('#DeviceDetail').attr('href',ctxPath + '/deviceHealthState/list.do?map=4');
+		        // 		$('#DeviceDetail').click();
+		        // 		nodeID=id;
+	        	// 	}
+	        	// }else if(id.indexOf("M006")>-1){
+	        	// 	//交流滤波场
+	        	// 	if(id.indexOf(nodeID)<0){
+		        // 		$('#DeviceDetail').attr('href',ctxPath + '/deviceHealthState/list.do?map=5');
+		        // 		$('#DeviceDetail').click();
+		        // 		nodeID=id;
+	        	// 	}
+	        	// }else
+                if(id.indexOf("D")>-1){
 	        		if(id.indexOf(nodeID)<0){
 		        		var nodetxt=node.text;
 		        		nodetxt=nodetxt.replace("#","@");
@@ -138,15 +128,17 @@ jeecg.DeviceTree = function(){
 		        		jeecg.main.addTab(nodetxt,url);
 		        		nodeID=id;
 	        		}
-	        	}else if(id=="1"){
-	        		if(id.indexOf(nodeID)<0){
-		        		var url=ctxPath+"/deviceHealthState/list.do";
-		        		$('#DeviceDetail').attr('href',url);
-		        		$('#DeviceDetail').click();
-		        		nodeID=id;
-	        		}
 	        	}
+                // else if(id=="1"){
+	        	// 	if(id.indexOf(nodeID)<0){
+		        // 		var url=ctxPath+"/deviceHealthState/list.do";
+		        // 		$('#DeviceDetail').attr('href',url);
+		        // 		$('#DeviceDetail').click();
+		        // 		nodeID=id;
+	        	// 	}
+	        	// }
         	}else if(n==0){
+        	    debugger
         		var id=_id;
         		var nodetxt=_text;
         		nodetxt=nodetxt.replace("#","@");
