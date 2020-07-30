@@ -503,7 +503,7 @@
         <script type="text/javascript" src="<%=basePath%>/view/scott/demo/cllysConfig.js"></script>
         <script type="text/javascript" src="<%=basePath%>/view/scott/demo/jdNameConfig.js"></script>
         <script type="text/javascript" src="<%=basePath%>/view/scott/demo/refnameConfig.js"></script>
-        <script type="text/javascript" src="<%=basePath%>/view/scott/demo/swfobject.js"></script>
+<%--        <script type="text/javascript" src="<%=basePath%>/js/commons/swfobject.js"></script>--%>
     </body>
 </html>
 

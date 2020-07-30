@@ -62,7 +62,6 @@ jeecg.DeviceTree = function () {
                 onLoadSuccess: function (node, data) {//加载成功后调用事件
                     console.log(node, data)
                     if (data != '') {
-                        debugger
                         _id = data[0].id;
                         _text = data[0].text;
                         _type = data[0].attributes.Nodetype;
@@ -128,16 +127,15 @@ jeecg.DeviceTree = function () {
                         nodeID = id;
                     }
                 }
-                // else if(id=="1"){
-                // 	if(id.indexOf(nodeID)<0){
-                // 		var url=ctxPath+"/deviceHealthState/list.do";
-                // 		$('#DeviceDetail').attr('href',url);
-                // 		$('#DeviceDetail').click();
-                // 		nodeID=id;
-                // 	}
-                // }
+                else if(id=="1"){
+                	if(id.indexOf(nodeID)<0){
+                		var url=ctxPath+"/deviceHealthState/list.do";
+                		$('#DeviceDetail').attr('href',url);
+                		$('#DeviceDetail').click();
+                		nodeID=id;
+                	}
+                }
             } else if (n == 0) {
-                debugger
                 var id = _id;
                 var nodetxt = _text;
                 nodetxt = nodetxt.replace("#", "@");

@@ -4,8 +4,9 @@
 <html>
     <head>
         <%@include file="/view/resource.jsp" %>
-        <script type="text/javascript" src="<%=basePath%>/view/scott/demo/FusionCharts.js"></script>
-        <style type="text/css">
+        <script type="text/javascript" src="<%=basePath%>/js/FusionCharts.js"></script>
+<%--		<script type="text/javascript" src="<%=basePath%>/js/fusioncharts/fusioncharts.js"></script>--%>
+		<style type="text/css">
            #AlarmRecord_div{
            		height:95%;
 				margin-riht: 0px;

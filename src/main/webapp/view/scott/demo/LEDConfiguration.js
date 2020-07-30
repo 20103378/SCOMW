@@ -25,7 +25,6 @@ jeecg.LEDConfiguration = function() {
 						},
 						success : function(data) {
 							// alert(data);
-							debugger
 							alert(data);
 							uploadWin.window("close");
 							$('#tab_ldein').datagrid('reload');

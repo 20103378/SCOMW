@@ -86,16 +86,16 @@ public class DeviceHealthStateController extends BaseAction {
      * @throws Exception
      */
     @RequestMapping("/list")
-    public ModelAndView list(DeviceHealthStatePage page, HttpServletRequest request) throws Exception {
+    public ModelAndView list(HttpServletRequest request) throws Exception {
         Map<String, Object> context = getRootMap();
-        String id = request.getParameter("DeviceID");
-        String map = request.getParameter("map");
-        HttpSession session = request.getSession();
-        session.removeAttribute("DeviceID");
-        session.setAttribute("DeviceID", id);
-        session.removeAttribute("map");
-        session.setAttribute("map", map);
-        System.out.println(context);
+//        String id = request.getParameter("DeviceID");
+//        String map = request.getParameter("map");
+//        HttpSession session = request.getSession();
+//        session.removeAttribute("DeviceID");
+//        session.setAttribute("DeviceID", id);
+//        session.removeAttribute("map");
+//        session.setAttribute("map", map);
+//        System.out.println(context);
         return forword("scott/demo/deviceHealthState", context);
     }
 

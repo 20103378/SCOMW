@@ -15,6 +15,7 @@ jeecg.main = function(){
 			$items.bind('click',this.treeSelect);
 		},
 		addTab:function(_title,_url){
+			debugger
 			var boxId = '#tab-box';
 			if($(boxId).tabs('exists',_title) ){
 				var tab = $(boxId).tabs('getTab',_title);
@@ -26,12 +27,12 @@ jeecg.main = function(){
 			    }
 			}else{
 				var _content ="<iframe scrolling='auto' frameborder='0' src='"+_url+"' style='width:100%; height:100%'></iframe>";
-				if(tab_length.length>7){
-					if(tab_length[0]=="设备状态信息"){
-						tab_nameremove=tab_length.splice("1","1");
-					}else{
+				if(tab_length.length>5){
+					// if(tab_length[0]=="设备状态信息"){
+					// 	tab_nameremove=tab_length.splice("1","1");
+					// }else{
 						tab_nameremove=tab_length.splice("0","1");
-					}
+					// }
 					$(boxId).tabs('close',tab_nameremove);
 				};
 				$(boxId).tabs('add',{
@@ -42,6 +43,7 @@ jeecg.main = function(){
 			}
 		},
 		addTab_closable:function(_title,_url){
+			debugger
 			var boxId = '#tab-box';
 			if($(boxId).tabs('exists',_title) ){
 				var tab = $(boxId).tabs('getTab',_title);
@@ -53,19 +55,19 @@ jeecg.main = function(){
 			    }
 			}else{
 				var _content ="<iframe scrolling='auto' frameborder='0' src='"+_url+"' style='width:100%; height:100%'></iframe>";
-				if(tab_length.length>7){
-					if(tab_length[0]=="设备状态信息"){
-						tab_nameremove=tab_length.splice("1","1");
-					}else{
-						tab_nameremove=tab_length.splice("0","1");
-					}
-					$(boxId).tabs('close',tab_nameremove);
-				};
+				// if(tab_length.length>7){
+				// 	if(tab_length[0]=="设备状态信息"){
+				// 		tab_nameremove=tab_length.splice("1","1");
+				// 	}else{
+				// 		tab_nameremove=tab_length.splice("0","1");
+				// 	}
+				// 	$(boxId).tabs('close',tab_nameremove);
+				// };
 				$(boxId).tabs('add',{
 					    title:_title,
 					    content:_content,
 					    closable:false});
-				tab_length.push(_title);
+				// tab_length.push(_title);
 			}
 		},
 		menuHover:function(){

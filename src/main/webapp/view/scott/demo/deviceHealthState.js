@@ -48,7 +48,6 @@ jeecg.deviceHealthState = function () {
                 type: 'POST',
                 url: ctxPath + '/treeDevice/getSpaceName.do',
                 success: function (data) {
-                    debugger
                     data.space.push({"text": "全部", "value": "0"});
                     $("#DeviceArea").combobox("loadData", data.space);
                     $("#DeviceArea").combobox('select', data.space[0].value);

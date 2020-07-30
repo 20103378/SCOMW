@@ -29,7 +29,6 @@ jeecg.yx = function () {
         },
         SetYxData: function () {
             var DeviceType = $("#txtType").val();
-            debugger
             if (DeviceType == "19") {
                 // document.getElementById("table_amc").style.display='none';
                 document.getElementById("table_cac").style.display = 'none';

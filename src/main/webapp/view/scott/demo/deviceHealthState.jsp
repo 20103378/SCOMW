@@ -4,8 +4,10 @@
 <html>
     <head>
         <%@include file="/view/resource.jsp" %>
-        <script type="text/javascript" src="<%=basePath%>/view/scott/demo/FusionCharts.js"></script>
-        <script type="text/javascript" >
+        <script type="text/javascript" src="<%=basePath%>/js/FusionCharts.js"></script>
+<%--		<script type="text/javascript" src="<%=basePath%>/js/fusioncharts/fusioncharts.js"></script>--%>
+	<%--		<script type="text/javascript" src="<%=basePath%>/js/commons/swfobject.js"></script>--%>
+		<script type="text/javascript" >
 
 //	    	function Run(strPath)
 //	    	{
@@ -76,26 +78,25 @@
 		  <img src="<%=basePath%>/images/state/Red.png" >告警</img>
 		  <img src="<%=basePath%>/images/state/Gray.png" >停用</img>
 		</div>
-		<script type="text/javascript" src="<%=basePath%>/view/scott/demo/swfobject.js"></script>
         <script type="text/javascript" src="<%=basePath%>/view/scott/demo/deviceHealthState.js"></script>
-        <script type="text/javascript">
-        	function UpdateMap(devId,y, x) {
-	            var tab = $('#eTab').tabs('getSelected');
-	            var index = $('#eTab').tabs('getTabIndex', tab);
-	            var info = devId + "," + y + "," + x + "," + index;
-	            $.ajax({
-	            	 async: false,
-			         cache: false,
-			         type: 'POST',
-			         url: "UpdateMap.do?info="+info,
-			         success:function(data){
-			         },
-			         error:function(){
-			        	 alert("error");
-			         }
-	            });
-	            ajaxUpdateMap(info);
-            }
-        </script>
+<%--        <script type="text/javascript">--%>
+<%--        	function UpdateMap(devId,y, x) {--%>
+<%--	            var tab = $('#eTab').tabs('getSelected');--%>
+<%--	            var index = $('#eTab').tabs('getTabIndex', tab);--%>
+<%--	            var info = devId + "," + y + "," + x + "," + index;--%>
+<%--	            $.ajax({--%>
+<%--	            	 async: false,--%>
+<%--			         cache: false,--%>
+<%--			         type: 'POST',--%>
+<%--			         url: "UpdateMap.do?info="+info,--%>
+<%--			         success:function(data){--%>
+<%--			         },--%>
+<%--			         error:function(){--%>
+<%--			        	 alert("error");--%>
+<%--			         }--%>
+<%--	            });--%>
+<%--	            ajaxUpdateMap(info);--%>
+<%--            }--%>
+<%--        </script>--%>
     </body>
 </html>

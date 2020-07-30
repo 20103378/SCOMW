@@ -73,7 +73,7 @@ public class TreeDeviceController extends BaseAction {
     public void getZoneEmuList(HttpServletResponse response) throws Exception {
         TreeViewUtil<TreeDeviceEntity> util = new TreeViewUtil<TreeDeviceEntity>();
         List<TreeDeviceEntity> entityList = new ArrayList<TreeDeviceEntity>();
-        //获取单位信息
+//        //获取单位信息
          List<TreeDeviceEntity> InfoName = treeDeviceService.getUnitinfo();
         //获取空间名称
         List<TreeDeviceEntity> spaceName = treeDeviceService.getPubspaceName();
