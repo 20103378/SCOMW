@@ -60,6 +60,6 @@
      	</form>
   	 </div>
 	 <!-- Edit Win&Form -->
-  	 <script type="text/javascript" src="<%=basePath%>/view/scott/demo/deviceHealthState.js"></script>
+  	 <script type="text/javascript" src="<%=basePath%>/js/Innerjs/deviceHealthState.js"></script>
   </body>
 </html>

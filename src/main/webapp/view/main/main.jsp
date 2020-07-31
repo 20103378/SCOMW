@@ -109,7 +109,7 @@
             <a href="javascript:void(0)" class="easyui-linkbutton" id="btn-pwd-close">取消</a>
          </div>
 	</div>
-	<script type="text/javascript" src="<%=basePath%>/view/scott/demo/deviceTree.js"></script>
+	<script type="text/javascript" src="<%=basePath%>/js/Innerjs/deviceTree.js"></script>
 	<!-- modify password end  -->
   </body>
 </html>

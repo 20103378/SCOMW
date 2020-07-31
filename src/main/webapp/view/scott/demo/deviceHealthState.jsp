@@ -13,7 +13,7 @@
 //	    	{
 //	    	   try
 //	    	   {
-//	    	    var objShell = new ActiveXObject("wscript.shell");
+//	    	    varr objShell = new ActiveXObject("wscript.shell");
 //	    	    objShell.Run(strPath);
 //	    	    objShell = null;
 //	    	   }
@@ -78,7 +78,7 @@
 		  <img src="<%=basePath%>/images/state/Red.png" >告警</img>
 		  <img src="<%=basePath%>/images/state/Gray.png" >停用</img>
 		</div>
-        <script type="text/javascript" src="<%=basePath%>/view/scott/demo/deviceHealthState.js"></script>
+        <script type="text/javascript" src="<%=basePath%>/js/Innerjs/deviceHealthState.js"></script>
 <%--        <script type="text/javascript">--%>
 <%--        	function UpdateMap(devId,y, x) {--%>
 <%--	            var tab = $('#eTab').tabs('getSelected');--%>

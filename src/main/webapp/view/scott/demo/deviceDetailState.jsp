@@ -184,14 +184,14 @@
 			value=<%=(String)session.getAttribute("DeviceType")%> />
 		<input type="hidden" id="txtName" name="hiddenField"
 			value=<%=(String)session.getAttribute("DeviceName")%> />
-		<script type="text/javascript" src="<%=basePath%>/view/scott/demo/deviceDetailState.js"></script>
-		<script type="text/javascript" src="<%=basePath%>/view/scott/demo/yx.js"></script>
-		<script type="text/javascript" src="<%=basePath%>/view/scott/demo/history.js"></script>
+		<script type="text/javascript" src="<%=basePath%>/js/Innerjs/deviceDetailState.js"></script>
+		<script type="text/javascript" src="<%=basePath%>/js/Innerjs/yx.js"></script>
+		<script type="text/javascript" src="<%=basePath%>/js/Innerjs/history.js"></script>
 		<script type="text/javascript" src="<%=basePath%>/js/fusioncharts/FusionCharts.js"></script>
 <%--		<script type="text/javascript" src="<%=basePath%>/js/fusioncharts/fusioncharts.js"></script>--%>
-		<script type="text/javascript" src="<%=basePath%>/view/scott/demo/chart.js"></script>
+		<script type="text/javascript" src="<%=basePath%>/js/Innerjs/chart.js"></script>
 		<!-- script type="text/javascript" src="<%=basePath%>/view/scott/demo/inf.js"></script -->
 		<script type="text/javascript" src="<%=basePath%>/js/commons/tableExport.js"></script>
-		<script type="text/javascript" src="<%=basePath%>/view/scott/demo/yxHistory.js"></script>
+		<script type="text/javascript" src="<%=basePath%>/js/Innerjs/yxHistory.js"></script>
 	</body>
 </html>

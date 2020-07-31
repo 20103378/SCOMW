@@ -56,5 +56,5 @@
 			</div>
         </div>
     </body>
-    <script type="text/javascript" src="<%=basePath%>/view/scott/demo/eventRecord.js"></script>
+    <script type="text/javascript" src="<%=basePath%>/js/Innerjs/eventRecord.js"></script>
 </html>

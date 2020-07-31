@@ -495,14 +495,14 @@
             </div>
         </div>
         <script type="text/javascript" src="<%=basePath%>/js/commons/tableExport.js"></script>
-        <script type="text/javascript" src="<%=basePath%>/view/scott/demo/systemConfiguration.js"></script>
-        <script type="text/javascript" src="<%=basePath%>/view/scott/demo/i1toI2.js"></script>
-        <script type="text/javascript" src="<%=basePath%>/view/scott/demo/i1toI2_103.js"></script>
-        <script type="text/javascript" src="<%=basePath%>/view/scott/demo/LEDConfiguration.js"></script>
-        <script type="text/javascript" src="<%=basePath%>/view/scott/demo/SpaceConfiguration.js"></script>
-        <script type="text/javascript" src="<%=basePath%>/view/scott/demo/cllysConfig.js"></script>
-        <script type="text/javascript" src="<%=basePath%>/view/scott/demo/jdNameConfig.js"></script>
-        <script type="text/javascript" src="<%=basePath%>/view/scott/demo/refnameConfig.js"></script>
+        <script type="text/javascript" src="<%=basePath%>/js/Innerjs/systemConfiguration.js"></script>
+        <script type="text/javascript" src="<%=basePath%>/js/Innerjs/i1toI2.js"></script>
+        <script type="text/javascript" src="<%=basePath%>/js/Innerjs/i1toI2_103.js"></script>
+        <script type="text/javascript" src="<%=basePath%>/js/Innerjs/LEDConfiguration.js"></script>
+        <script type="text/javascript" src="<%=basePath%>/js/Innerjs/SpaceConfiguration.js"></script>
+        <script type="text/javascript" src="<%=basePath%>/js/Innerjs/cllysConfig.js"></script>
+        <script type="text/javascript" src="<%=basePath%>/js/Innerjs/jdNameConfig.js"></script>
+        <script type="text/javascript" src="<%=basePath%>/js/Innerjs/refnameConfig.js"></script>
 <%--        <script type="text/javascript" src="<%=basePath%>/js/commons/swfobject.js"></script>--%>
     </body>
 </html>

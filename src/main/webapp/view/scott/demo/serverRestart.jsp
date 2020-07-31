@@ -11,7 +11,7 @@
         <div region="center" border="false" style="width:600px;height:400px;">
             <button id="serverRestart" name="server" style="width:100px;margin-top:20px;margin-left:30px;">重启</button>
         </div>
-        <script type="text/javascript" src="<%=basePath%>/view/scott/demo/systemConfiguration.js"></script>
+        <script type="text/javascript" src="<%=basePath%>/js/Innerjs/systemConfiguration.js"></script>
         
     </body>
 </html>

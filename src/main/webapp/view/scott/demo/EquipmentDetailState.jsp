@@ -139,7 +139,7 @@
 		<input type="hidden" id="txtID" name="hiddenField"
 			value=<%=(String)session.getAttribute("DeviceID")%>
 		/>
-		<script type="text/javascript" src="<%=basePath%>/view/scott/demo/EquipmentDetailState.js"></script>
+		<script type="text/javascript" src="<%=basePath%>/js/Innerjs/EquipmentDetailState.js"></script>
 
 		<!-- script type="text/javascript" src="<%=basePath%>/view/scott/demo/yxHistory.js"></script -->
 	</body>

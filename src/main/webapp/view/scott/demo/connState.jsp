@@ -171,7 +171,7 @@
         </div>
         <script type="text/javascript" src="<%=basePath%>/js/commons/datagrid-transposedview.js"></script>
 		<script type="text/javascript" src="<%=basePath%>/js/commons/tableExport.js"></script>
-        <script type="text/javascript" src="<%=basePath%>/view/scott/demo/connState.js"></script>
+        <script type="text/javascript" src="<%=basePath%>/js/Innerjs/connState.js"></script>
     </body>
 </html>
 

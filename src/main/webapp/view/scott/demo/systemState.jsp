@@ -126,7 +126,7 @@
                 </div>
             </div> -->
         <!-- </div> -->
-        <script type="text/javascript" src="<%=basePath%>/view/scott/demo/currentState.js"></script>
+        <script type="text/javascript" src="<%=basePath%>/js/Innerjs/currentState.js"></script>
        <%--  <script type="text/javascript" src="<%=basePath%>/view/scott/demo/historyState.js"></script> --%>
     </body>
 </html>
