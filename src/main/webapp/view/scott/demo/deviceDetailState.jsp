@@ -187,7 +187,7 @@
 		<script type="text/javascript" src="<%=basePath%>/view/scott/demo/deviceDetailState.js"></script>
 		<script type="text/javascript" src="<%=basePath%>/view/scott/demo/yx.js"></script>
 		<script type="text/javascript" src="<%=basePath%>/view/scott/demo/history.js"></script>
-		<script type="text/javascript" src="<%=basePath%>/js/FusionCharts.js"></script>
+		<script type="text/javascript" src="<%=basePath%>/js/fusioncharts/FusionCharts.js"></script>
 <%--		<script type="text/javascript" src="<%=basePath%>/js/fusioncharts/fusioncharts.js"></script>--%>
 		<script type="text/javascript" src="<%=basePath%>/view/scott/demo/chart.js"></script>
 		<!-- script type="text/javascript" src="<%=basePath%>/view/scott/demo/inf.js"></script -->

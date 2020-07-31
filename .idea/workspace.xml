@@ -32,46 +32,330 @@
   <component name="ChangeListManager">
     <list default="true" id="cdda7cad-4668-4968-8a58-d61f67e31852" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scott/controller/demo/DeviceHealthStateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scott/controller/demo/DeviceHealthStateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scott/controller/demo/TreeDeviceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scott/controller/demo/TreeDeviceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scott/page/demo/DeviceHealthStatePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scott/page/demo/DeviceHealthStatePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jeecg/jeecg_config.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jeecg/jeecg_database.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jeecg/template/ControllerTemplate.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jeecg/template/DaoTemplate.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jeecg/template/EntityTemplate.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jeecg/template/MapperTemplate.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jeecg/template/PageTemplate.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jeecg/template/ServiceTemplate.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jeecg/template/jsTemplate.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jeecg/template/jspTemplate.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jeecg/template/junit/ServiceJunitTemplate.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/fusioncharts/fusioncharts.charts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/fusioncharts/fusioncharts.gantt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/fusioncharts/fusioncharts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/fusioncharts/fusioncharts.maps.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/fusioncharts/fusioncharts.powercharts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/fusioncharts/fusioncharts.widgets.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/fusioncharts/maps/fusioncharts.usa.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/fusioncharts/maps/fusioncharts.world.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/fusioncharts/maps/readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/fusioncharts/themes/fusioncharts.theme.carbon.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/fusioncharts/themes/fusioncharts.theme.fint.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/fusioncharts/themes/fusioncharts.theme.ocean.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/fusioncharts/themes/fusioncharts.theme.zune.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/ux/main/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/ux/main/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/scott/demo/FusionCharts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/FusionCharts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/scott/demo/LEDConfiguration.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/scott/demo/LEDConfiguration.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/FusionCharts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/fusioncharts/FusionCharts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/changelog.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/easyloader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/jquery-1.8.0.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/jquery.easyui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/jquery.mask.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/licence_gpl.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/license_commercial.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/locale/easyui-lang-af.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/locale/easyui-lang-ar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/locale/easyui-lang-bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/locale/easyui-lang-ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/locale/easyui-lang-cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/locale/easyui-lang-cz.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/locale/easyui-lang-da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/locale/easyui-lang-de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/locale/easyui-lang-el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/locale/easyui-lang-en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/locale/easyui-lang-es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/locale/easyui-lang-fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/locale/easyui-lang-it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/locale/easyui-lang-jp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/locale/easyui-lang-nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/locale/easyui-lang-pt_BR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/locale/easyui-lang-ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/locale/easyui-lang-tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/locale/easyui-lang-zh_CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/locale/easyui-lang-zh_TW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/plugins/jquery.accordion.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/plugins/jquery.calendar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/plugins/jquery.combo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/plugins/jquery.combobox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/plugins/jquery.combogrid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/plugins/jquery.combotree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/plugins/jquery.datagrid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/plugins/jquery.datebox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/plugins/jquery.datetimebox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/plugins/jquery.dialog.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/plugins/jquery.draggable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/plugins/jquery.droppable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/plugins/jquery.form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/plugins/jquery.layout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/plugins/jquery.linkbutton.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/plugins/jquery.menu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/plugins/jquery.menubutton.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/plugins/jquery.messager.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/plugins/jquery.numberbox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/plugins/jquery.numberspinner.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/plugins/jquery.pagination.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/plugins/jquery.panel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/plugins/jquery.parser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/plugins/jquery.progressbar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/plugins/jquery.propertygrid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/plugins/jquery.resizable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/plugins/jquery.searchbox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/plugins/jquery.slider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/plugins/jquery.spinner.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/plugins/jquery.splitbutton.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/plugins/jquery.tabs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/plugins/jquery.timespinner.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/plugins/jquery.tree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/plugins/jquery.treegrid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/plugins/jquery.validatebox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/plugins/jquery.window.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/black/accordion.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/black/calendar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/black/combo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/black/combobox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/black/datagrid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/black/datebox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/black/dialog.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/black/easyui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/black/images/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/black/images/accordion_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/black/images/blank.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/black/images/calendar_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/black/images/combo_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/black/images/datagrid_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/black/images/datebox_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/black/images/layout_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/black/images/linkbutton_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/black/images/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/black/images/menu_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/black/images/messager_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/black/images/pagination_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/black/images/panel_tools.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/black/images/searchbox_button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/black/images/slider_handle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/black/images/spinner_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/black/images/tabs_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/black/images/tree_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/black/images/validatebox_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/black/images/validatebox_warning.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/black/layout.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/black/linkbutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/black/menu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/black/menubutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/black/messager.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/black/pagination.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/black/panel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/black/progressbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/black/propertygrid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/black/searchbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/black/slider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/black/spinner.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/black/splitbutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/black/tabs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/black/tree.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/black/validatebox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/black/window.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/bootstrap/accordion.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/bootstrap/calendar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/bootstrap/combo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/bootstrap/combobox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/bootstrap/datagrid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/bootstrap/datebox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/bootstrap/dialog.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/bootstrap/easyui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/bootstrap/images/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/bootstrap/images/accordion_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/bootstrap/images/blank.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/bootstrap/images/calendar_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/bootstrap/images/combo_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/bootstrap/images/datagrid_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/bootstrap/images/datebox_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/bootstrap/images/layout_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/bootstrap/images/linkbutton_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/bootstrap/images/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/bootstrap/images/menu_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/bootstrap/images/messager_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/bootstrap/images/pagination_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/bootstrap/images/panel_tools.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/bootstrap/images/searchbox_button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/bootstrap/images/slider_handle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/bootstrap/images/spinner_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/bootstrap/images/tabs_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/bootstrap/images/tree_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/bootstrap/images/validatebox_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/bootstrap/images/validatebox_warning.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/bootstrap/layout.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/bootstrap/linkbutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/bootstrap/menu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/bootstrap/menubutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/bootstrap/messager.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/bootstrap/pagination.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/bootstrap/panel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/bootstrap/progressbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/bootstrap/propertygrid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/bootstrap/searchbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/bootstrap/slider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/bootstrap/spinner.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/bootstrap/splitbutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/bootstrap/tabs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/bootstrap/tree.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/bootstrap/validatebox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/bootstrap/window.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/default/accordion.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/default/calendar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/default/combo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/default/combobox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/default/datagrid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/default/datebox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/default/dialog.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/default/easyui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/default/images/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/default/images/accordion_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/default/images/blank.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/default/images/calendar_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/default/images/combo_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/default/images/datagrid_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/default/images/datebox_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/default/images/layout_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/default/images/linkbutton_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/default/images/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/default/images/menu_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/default/images/messager_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/default/images/pagination_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/default/images/panel_tools.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/default/images/searchbox_button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/default/images/slider_handle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/default/images/spinner_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/default/images/tabs_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/default/images/tree_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/default/images/validatebox_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/default/images/validatebox_warning.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/default/layout.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/default/linkbutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/default/menu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/default/menubutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/default/messager.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/default/pagination.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/default/panel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/default/progressbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/default/propertygrid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/default/searchbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/default/slider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/default/spinner.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/default/splitbutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/default/tabs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/default/tree.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/default/validatebox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/default/window.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/gray/accordion.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/gray/calendar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/gray/combo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/gray/combobox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/gray/datagrid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/gray/datebox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/gray/dialog.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/gray/easyui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/gray/images/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/gray/images/accordion_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/gray/images/blank.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/gray/images/calendar_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/gray/images/combo_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/gray/images/datagrid_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/gray/images/datebox_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/gray/images/layout_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/gray/images/linkbutton_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/gray/images/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/gray/images/menu_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/gray/images/messager_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/gray/images/pagination_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/gray/images/panel_tools.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/gray/images/searchbox_button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/gray/images/slider_handle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/gray/images/spinner_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/gray/images/tabs_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/gray/images/tree_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/gray/images/validatebox_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/gray/images/validatebox_warning.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/gray/layout.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/gray/linkbutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/gray/menu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/gray/menubutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/gray/messager.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/gray/pagination.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/gray/panel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/gray/progressbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/gray/propertygrid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/gray/searchbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/gray/slider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/gray/spinner.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/gray/splitbutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/gray/tabs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/gray/tree.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/gray/validatebox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/gray/window.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/icon.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/icons/back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/icons/blank.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/icons/cancel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/icons/cut.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/icons/edit_add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/icons/edit_remove.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/icons/filesave.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/icons/help.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/icons/mini_add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/icons/mini_edit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/icons/mini_refresh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/icons/no.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/icons/ok.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/icons/pencil.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/icons/print.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/icons/redo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/icons/reload.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/icons/search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/icons/sum.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/icons/sum2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/icons/tip.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/icons/undo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/metro/accordion.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/metro/calendar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/metro/combo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/metro/combobox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/metro/datagrid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/metro/datebox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/metro/dialog.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/metro/easyui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/metro/images/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/metro/images/accordion_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/metro/images/blank.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/metro/images/calendar_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/metro/images/combo_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/metro/images/datagrid_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/metro/images/datebox_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/metro/images/layout_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/metro/images/linkbutton_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/metro/images/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/metro/images/menu_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/metro/images/messager_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/metro/images/pagination_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/metro/images/panel_tools.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/metro/images/searchbox_button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/metro/images/slider_handle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/metro/images/spinner_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/metro/images/tabs_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/metro/images/tree_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/metro/images/validatebox_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/metro/images/validatebox_warning.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/metro/layout.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/metro/linkbutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/metro/menu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/metro/menubutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/metro/messager.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/metro/pagination.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/metro/panel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/metro/progressbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/metro/propertygrid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/metro/searchbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/metro/slider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/metro/spinner.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/metro/splitbutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/metro/tabs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/metro/tree.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/metro/validatebox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-easyui12/themes/metro/window.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/scott/demo/.deviceHealthState.js.swp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/view/scott/demo/connState.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/scott/demo/connState.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/view/scott/demo/deviceDetailState.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/scott/demo/deviceDetailState.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/scott/demo/deviceHealthState.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/scott/demo/deviceHealthState.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/view/scott/demo/deviceHealthState.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/scott/demo/deviceHealthState.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/scott/demo/deviceTree.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/scott/demo/deviceTree.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/view/scott/demo/eventRecord.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/scott/demo/eventRecord.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/scott/demo/swfobject.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/scott/demo/systemConfiguration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/scott/demo/systemConfiguration.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/view/scott/demo/systemState.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/scott/demo/systemState.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/scott/demo/yx.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/scott/demo/yx.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,8 +423,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp/js" />
       <recent name="$PROJECT_DIR$/src/main/webapp/js/fusioncharts" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/js" />
       <recent name="$PROJECT_DIR$/src/main/webapp/plug-in/login/js" />
       <recent name="$PROJECT_DIR$/src/main/webapp/js/ux" />
       <recent name="$PROJECT_DIR$/src/main/webapp" />
@@ -391,7 +675,7 @@
       <workItem from="1595496709232" duration="17224000" />
       <workItem from="1595833158836" duration="20904000" />
       <workItem from="1596019575902" duration="6026000" />
-      <workItem from="1596089278115" duration="12037000" />
+      <workItem from="1596089278115" duration="13707000" />
     </task>
     <task id="LOCAL-00001" summary="ss">
       <created>1595386806809</created>
@@ -428,7 +712,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596033435075</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="代码修改">
+      <created>1596109850917</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1596109850917</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -487,9 +778,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1595380585096" />
-    <state x="760" y="243" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596022047267">
-      <screen x="0" y="23" width="1440" height="822" />
+    <state x="760" y="241" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596156578663">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="760" y="241" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1596156578663" />
     <state x="760" y="243" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.822@0.23.1440.822" timestamp="1596022047267" />
     <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1595497992885">
       <screen x="0" y="0" width="1440" height="900" />
@@ -519,10 +811,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="483" y="160" key="#xdebugger.evaluate/0.0.1440.900@0.0.1440.900" timestamp="1595485202025" />
-    <state x="0" y="25" key="CommitChangelistDialog2" timestamp="1596033434852">
+    <state x="0" y="25" key="CommitChangelistDialog2" timestamp="1596109850335">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="0" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1596033434852" />
+    <state x="0" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1596109850335" />
     <state width="490" height="466" key="DebuggerActiveHint" timestamp="1595216636491">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -532,61 +824,61 @@
     </state>
     <state x="100" y="83" width="1240" height="758" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1595496697001" />
     <state x="100" y="100" width="1240" height="700" key="DiffContextDialog/0.23.1440.832@0.23.1440.832" timestamp="1595404988070" />
-    <state width="1114" height="260" key="GridCell.Tab.0.bottom" timestamp="1596109666124">
+    <state width="1114" height="260" key="GridCell.Tab.0.bottom" timestamp="1596156307660">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1114" height="260" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1596109666124" />
+    <state width="1114" height="260" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1596156307660" />
     <state width="1114" height="286" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1595833735446" />
-    <state width="1114" height="260" key="GridCell.Tab.0.bottom/0.23.1440.822@0.23.1440.822" timestamp="1596109280889" />
+    <state width="1114" height="260" key="GridCell.Tab.0.bottom/0.23.1440.822@0.23.1440.822" timestamp="1596110074482" />
     <state width="1398" height="277" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1595595269575" />
     <state width="1114" height="345" key="GridCell.Tab.0.bottom/0.23.1440.827@0.23.1440.827" timestamp="1594949896593" />
     <state width="1114" height="247" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1596010654411" />
     <state width="1114" height="424" key="GridCell.Tab.0.bottom/0.23.1440.829@0.23.1440.829" timestamp="1595294500417" />
     <state width="1114" height="304" key="GridCell.Tab.0.bottom/0.23.1440.832@0.23.1440.832" timestamp="1595385213344" />
     <state width="1114" height="280" key="GridCell.Tab.0.bottom/0.23.1440.833@0.23.1440.833" timestamp="1595380552854" />
-    <state width="1114" height="260" key="GridCell.Tab.0.center" timestamp="1596109666123">
+    <state width="1114" height="260" key="GridCell.Tab.0.center" timestamp="1596156307659">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1114" height="260" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1596109666123" />
+    <state width="1114" height="260" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1596156307659" />
     <state width="1114" height="286" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1595833735443" />
-    <state width="1114" height="260" key="GridCell.Tab.0.center/0.23.1440.822@0.23.1440.822" timestamp="1596109280886" />
+    <state width="1114" height="260" key="GridCell.Tab.0.center/0.23.1440.822@0.23.1440.822" timestamp="1596110074479" />
     <state width="1398" height="277" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1595595269556" />
     <state width="1114" height="345" key="GridCell.Tab.0.center/0.23.1440.827@0.23.1440.827" timestamp="1594949896579" />
     <state width="1114" height="247" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1596010654408" />
     <state width="1114" height="424" key="GridCell.Tab.0.center/0.23.1440.829@0.23.1440.829" timestamp="1595294500416" />
     <state width="1114" height="304" key="GridCell.Tab.0.center/0.23.1440.832@0.23.1440.832" timestamp="1595385213341" />
     <state width="1114" height="280" key="GridCell.Tab.0.center/0.23.1440.833@0.23.1440.833" timestamp="1595380552853" />
-    <state width="1114" height="260" key="GridCell.Tab.0.left" timestamp="1596109666122">
+    <state width="1114" height="260" key="GridCell.Tab.0.left" timestamp="1596156307658">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1114" height="260" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1596109666122" />
+    <state width="1114" height="260" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1596156307658" />
     <state width="1114" height="286" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1595833735441" />
-    <state width="1114" height="260" key="GridCell.Tab.0.left/0.23.1440.822@0.23.1440.822" timestamp="1596109280881" />
+    <state width="1114" height="260" key="GridCell.Tab.0.left/0.23.1440.822@0.23.1440.822" timestamp="1596110074473" />
     <state width="1398" height="277" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1595595269510" />
     <state width="1114" height="345" key="GridCell.Tab.0.left/0.23.1440.827@0.23.1440.827" timestamp="1594949896576" />
     <state width="1114" height="247" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1596010654407" />
     <state width="1114" height="424" key="GridCell.Tab.0.left/0.23.1440.829@0.23.1440.829" timestamp="1595294500415" />
     <state width="1114" height="304" key="GridCell.Tab.0.left/0.23.1440.832@0.23.1440.832" timestamp="1595385213339" />
     <state width="1114" height="280" key="GridCell.Tab.0.left/0.23.1440.833@0.23.1440.833" timestamp="1595380552852" />
-    <state width="1114" height="260" key="GridCell.Tab.0.right" timestamp="1596109666123">
+    <state width="1114" height="260" key="GridCell.Tab.0.right" timestamp="1596156307659">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1114" height="260" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1596109666123" />
+    <state width="1114" height="260" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1596156307659" />
     <state width="1114" height="286" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1595833735445" />
-    <state width="1114" height="260" key="GridCell.Tab.0.right/0.23.1440.822@0.23.1440.822" timestamp="1596109280887" />
+    <state width="1114" height="260" key="GridCell.Tab.0.right/0.23.1440.822@0.23.1440.822" timestamp="1596110074480" />
     <state width="1398" height="277" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1595595269558" />
     <state width="1114" height="345" key="GridCell.Tab.0.right/0.23.1440.827@0.23.1440.827" timestamp="1594949896588" />
     <state width="1114" height="247" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1596010654409" />
     <state width="1114" height="424" key="GridCell.Tab.0.right/0.23.1440.829@0.23.1440.829" timestamp="1595294500416" />
     <state width="1114" height="304" key="GridCell.Tab.0.right/0.23.1440.832@0.23.1440.832" timestamp="1595385213342" />
     <state width="1114" height="280" key="GridCell.Tab.0.right/0.23.1440.833@0.23.1440.833" timestamp="1595380552853" />
-    <state width="1114" height="260" key="GridCell.Tab.1.bottom" timestamp="1596109666127">
+    <state width="1114" height="260" key="GridCell.Tab.1.bottom" timestamp="1596156307664">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1114" height="260" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1596109666127" />
+    <state width="1114" height="260" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1596156307664" />
     <state width="1114" height="247" key="GridCell.Tab.1.bottom/0.23.1440.816@0.23.1440.816" timestamp="1596019938088" />
     <state width="1114" height="286" key="GridCell.Tab.1.bottom/0.23.1440.821@0.23.1440.821" timestamp="1595599798840" />
-    <state width="1114" height="260" key="GridCell.Tab.1.bottom/0.23.1440.822@0.23.1440.822" timestamp="1596109280893" />
+    <state width="1114" height="260" key="GridCell.Tab.1.bottom/0.23.1440.822@0.23.1440.822" timestamp="1596110074486" />
     <state width="1114" height="425" key="GridCell.Tab.1.bottom/0.23.1440.825@0.23.1440.825" timestamp="1595491630009" />
     <state width="1114" height="486" key="GridCell.Tab.1.bottom/0.23.1440.826@0.23.1440.826" timestamp="1595836663063" />
     <state width="1114" height="345" key="GridCell.Tab.1.bottom/0.23.1440.827@0.23.1440.827" timestamp="1594949892435" />
@@ -595,13 +887,13 @@
     <state width="1114" height="296" key="GridCell.Tab.1.bottom/0.23.1440.830@0.23.1440.830" timestamp="1595313626718" />
     <state width="1114" height="304" key="GridCell.Tab.1.bottom/0.23.1440.832@0.23.1440.832" timestamp="1595385213351" />
     <state width="1114" height="280" key="GridCell.Tab.1.bottom/0.23.1440.833@0.23.1440.833" timestamp="1595380552856" />
-    <state width="1114" height="260" key="GridCell.Tab.1.center" timestamp="1596109666125">
+    <state width="1114" height="260" key="GridCell.Tab.1.center" timestamp="1596156307662">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1114" height="260" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1596109666125" />
+    <state width="1114" height="260" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1596156307662" />
     <state width="1114" height="247" key="GridCell.Tab.1.center/0.23.1440.816@0.23.1440.816" timestamp="1596019938086" />
     <state width="1114" height="286" key="GridCell.Tab.1.center/0.23.1440.821@0.23.1440.821" timestamp="1595599798839" />
-    <state width="1114" height="260" key="GridCell.Tab.1.center/0.23.1440.822@0.23.1440.822" timestamp="1596109280891" />
+    <state width="1114" height="260" key="GridCell.Tab.1.center/0.23.1440.822@0.23.1440.822" timestamp="1596110074484" />
     <state width="1114" height="425" key="GridCell.Tab.1.center/0.23.1440.825@0.23.1440.825" timestamp="1595491630008" />
     <state width="1114" height="486" key="GridCell.Tab.1.center/0.23.1440.826@0.23.1440.826" timestamp="1595836663061" />
     <state width="1114" height="345" key="GridCell.Tab.1.center/0.23.1440.827@0.23.1440.827" timestamp="1594949892429" />
@@ -610,13 +902,13 @@
     <state width="1114" height="296" key="GridCell.Tab.1.center/0.23.1440.830@0.23.1440.830" timestamp="1595313626715" />
     <state width="1114" height="304" key="GridCell.Tab.1.center/0.23.1440.832@0.23.1440.832" timestamp="1595385213347" />
     <state width="1114" height="280" key="GridCell.Tab.1.center/0.23.1440.833@0.23.1440.833" timestamp="1595380552855" />
-    <state width="1114" height="260" key="GridCell.Tab.1.left" timestamp="1596109666124">
+    <state width="1114" height="260" key="GridCell.Tab.1.left" timestamp="1596156307661">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1114" height="260" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1596109666124" />
+    <state width="1114" height="260" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1596156307661" />
     <state width="1114" height="247" key="GridCell.Tab.1.left/0.23.1440.816@0.23.1440.816" timestamp="1596019938084" />
     <state width="1114" height="286" key="GridCell.Tab.1.left/0.23.1440.821@0.23.1440.821" timestamp="1595599798838" />
-    <state width="1114" height="260" key="GridCell.Tab.1.left/0.23.1440.822@0.23.1440.822" timestamp="1596109280890" />
+    <state width="1114" height="260" key="GridCell.Tab.1.left/0.23.1440.822@0.23.1440.822" timestamp="1596110074483" />
     <state width="1114" height="425" key="GridCell.Tab.1.left/0.23.1440.825@0.23.1440.825" timestamp="1595491630006" />
     <state width="1114" height="486" key="GridCell.Tab.1.left/0.23.1440.826@0.23.1440.826" timestamp="1595836663060" />
     <state width="1114" height="345" key="GridCell.Tab.1.left/0.23.1440.827@0.23.1440.827" timestamp="1594949892427" />
@@ -625,13 +917,13 @@
     <state width="1114" height="296" key="GridCell.Tab.1.left/0.23.1440.830@0.23.1440.830" timestamp="1595313626714" />
     <state width="1114" height="304" key="GridCell.Tab.1.left/0.23.1440.832@0.23.1440.832" timestamp="1595385213345" />
     <state width="1114" height="280" key="GridCell.Tab.1.left/0.23.1440.833@0.23.1440.833" timestamp="1595380552855" />
-    <state width="1114" height="260" key="GridCell.Tab.1.right" timestamp="1596109666126">
+    <state width="1114" height="260" key="GridCell.Tab.1.right" timestamp="1596156307663">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1114" height="260" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1596109666126" />
+    <state width="1114" height="260" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1596156307663" />
     <state width="1114" height="247" key="GridCell.Tab.1.right/0.23.1440.816@0.23.1440.816" timestamp="1596019938087" />
     <state width="1114" height="286" key="GridCell.Tab.1.right/0.23.1440.821@0.23.1440.821" timestamp="1595599798840" />
-    <state width="1114" height="260" key="GridCell.Tab.1.right/0.23.1440.822@0.23.1440.822" timestamp="1596109280892" />
+    <state width="1114" height="260" key="GridCell.Tab.1.right/0.23.1440.822@0.23.1440.822" timestamp="1596110074485" />
     <state width="1114" height="425" key="GridCell.Tab.1.right/0.23.1440.825@0.23.1440.825" timestamp="1595491630009" />
     <state width="1114" height="486" key="GridCell.Tab.1.right/0.23.1440.826@0.23.1440.826" timestamp="1595836663062" />
     <state width="1114" height="345" key="GridCell.Tab.1.right/0.23.1440.827@0.23.1440.827" timestamp="1594949892432" />
@@ -640,96 +932,96 @@
     <state width="1114" height="296" key="GridCell.Tab.1.right/0.23.1440.830@0.23.1440.830" timestamp="1595313626717" />
     <state width="1114" height="304" key="GridCell.Tab.1.right/0.23.1440.832@0.23.1440.832" timestamp="1595385213348" />
     <state width="1114" height="280" key="GridCell.Tab.1.right/0.23.1440.833@0.23.1440.833" timestamp="1595380552856" />
-    <state width="1114" height="260" key="GridCell.Tab.2.bottom" timestamp="1596109666129">
+    <state width="1114" height="260" key="GridCell.Tab.2.bottom" timestamp="1596156307667">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1114" height="260" key="GridCell.Tab.2.bottom/0.0.1440.900@0.0.1440.900" timestamp="1596109666129" />
+    <state width="1114" height="260" key="GridCell.Tab.2.bottom/0.0.1440.900@0.0.1440.900" timestamp="1596156307667" />
     <state width="1114" height="286" key="GridCell.Tab.2.bottom/0.23.1440.821@0.23.1440.821" timestamp="1595599798844" />
-    <state width="1114" height="260" key="GridCell.Tab.2.bottom/0.23.1440.822@0.23.1440.822" timestamp="1596109280896" />
+    <state width="1114" height="260" key="GridCell.Tab.2.bottom/0.23.1440.822@0.23.1440.822" timestamp="1596110074001" />
     <state width="1114" height="243" key="GridCell.Tab.2.bottom/0.23.1440.826@0.23.1440.826" timestamp="1594366285110" />
     <state width="1114" height="345" key="GridCell.Tab.2.bottom/0.23.1440.827@0.23.1440.827" timestamp="1594949892443" />
     <state width="1114" height="247" key="GridCell.Tab.2.bottom/0.23.1440.828@0.23.1440.828" timestamp="1596010654425" />
     <state width="1114" height="424" key="GridCell.Tab.2.bottom/0.23.1440.829@0.23.1440.829" timestamp="1595294500425" />
     <state width="1114" height="304" key="GridCell.Tab.2.bottom/0.23.1440.832@0.23.1440.832" timestamp="1595385213357" />
     <state width="1114" height="280" key="GridCell.Tab.2.bottom/0.23.1440.833@0.23.1440.833" timestamp="1595380552858" />
-    <state width="1114" height="260" key="GridCell.Tab.2.center" timestamp="1596109666128">
+    <state width="1114" height="260" key="GridCell.Tab.2.center" timestamp="1596156307665">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1114" height="260" key="GridCell.Tab.2.center/0.0.1440.900@0.0.1440.900" timestamp="1596109666128" />
+    <state width="1114" height="260" key="GridCell.Tab.2.center/0.0.1440.900@0.0.1440.900" timestamp="1596156307665" />
     <state width="1114" height="286" key="GridCell.Tab.2.center/0.23.1440.821@0.23.1440.821" timestamp="1595599798842" />
-    <state width="1114" height="260" key="GridCell.Tab.2.center/0.23.1440.822@0.23.1440.822" timestamp="1596109280895" />
+    <state width="1114" height="260" key="GridCell.Tab.2.center/0.23.1440.822@0.23.1440.822" timestamp="1596110073999" />
     <state width="1114" height="243" key="GridCell.Tab.2.center/0.23.1440.826@0.23.1440.826" timestamp="1594366285108" />
     <state width="1114" height="345" key="GridCell.Tab.2.center/0.23.1440.827@0.23.1440.827" timestamp="1594949892439" />
     <state width="1114" height="247" key="GridCell.Tab.2.center/0.23.1440.828@0.23.1440.828" timestamp="1596010654422" />
     <state width="1114" height="424" key="GridCell.Tab.2.center/0.23.1440.829@0.23.1440.829" timestamp="1595294500423" />
     <state width="1114" height="304" key="GridCell.Tab.2.center/0.23.1440.832@0.23.1440.832" timestamp="1595385213354" />
     <state width="1114" height="280" key="GridCell.Tab.2.center/0.23.1440.833@0.23.1440.833" timestamp="1595380552857" />
-    <state width="1114" height="260" key="GridCell.Tab.2.left" timestamp="1596109666127">
+    <state width="1114" height="260" key="GridCell.Tab.2.left" timestamp="1596156307664">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1114" height="260" key="GridCell.Tab.2.left/0.0.1440.900@0.0.1440.900" timestamp="1596109666127" />
+    <state width="1114" height="260" key="GridCell.Tab.2.left/0.0.1440.900@0.0.1440.900" timestamp="1596156307664" />
     <state width="1114" height="286" key="GridCell.Tab.2.left/0.23.1440.821@0.23.1440.821" timestamp="1595599798841" />
-    <state width="1114" height="260" key="GridCell.Tab.2.left/0.23.1440.822@0.23.1440.822" timestamp="1596109280894" />
+    <state width="1114" height="260" key="GridCell.Tab.2.left/0.23.1440.822@0.23.1440.822" timestamp="1596110073998" />
     <state width="1114" height="243" key="GridCell.Tab.2.left/0.23.1440.826@0.23.1440.826" timestamp="1594366285107" />
     <state width="1114" height="345" key="GridCell.Tab.2.left/0.23.1440.827@0.23.1440.827" timestamp="1594949892437" />
     <state width="1114" height="247" key="GridCell.Tab.2.left/0.23.1440.828@0.23.1440.828" timestamp="1596010654420" />
     <state width="1114" height="424" key="GridCell.Tab.2.left/0.23.1440.829@0.23.1440.829" timestamp="1595294500422" />
     <state width="1114" height="304" key="GridCell.Tab.2.left/0.23.1440.832@0.23.1440.832" timestamp="1595385213352" />
     <state width="1114" height="280" key="GridCell.Tab.2.left/0.23.1440.833@0.23.1440.833" timestamp="1595380552857" />
-    <state width="1114" height="260" key="GridCell.Tab.2.right" timestamp="1596109666128">
+    <state width="1114" height="260" key="GridCell.Tab.2.right" timestamp="1596156307666">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1114" height="260" key="GridCell.Tab.2.right/0.0.1440.900@0.0.1440.900" timestamp="1596109666128" />
+    <state width="1114" height="260" key="GridCell.Tab.2.right/0.0.1440.900@0.0.1440.900" timestamp="1596156307666" />
     <state width="1114" height="286" key="GridCell.Tab.2.right/0.23.1440.821@0.23.1440.821" timestamp="1595599798843" />
-    <state width="1114" height="260" key="GridCell.Tab.2.right/0.23.1440.822@0.23.1440.822" timestamp="1596109280895" />
+    <state width="1114" height="260" key="GridCell.Tab.2.right/0.23.1440.822@0.23.1440.822" timestamp="1596110074000" />
     <state width="1114" height="243" key="GridCell.Tab.2.right/0.23.1440.826@0.23.1440.826" timestamp="1594366285109" />
     <state width="1114" height="345" key="GridCell.Tab.2.right/0.23.1440.827@0.23.1440.827" timestamp="1594949892441" />
     <state width="1114" height="247" key="GridCell.Tab.2.right/0.23.1440.828@0.23.1440.828" timestamp="1596010654423" />
     <state width="1114" height="424" key="GridCell.Tab.2.right/0.23.1440.829@0.23.1440.829" timestamp="1595294500424" />
     <state width="1114" height="304" key="GridCell.Tab.2.right/0.23.1440.832@0.23.1440.832" timestamp="1595385213356" />
     <state width="1114" height="280" key="GridCell.Tab.2.right/0.23.1440.833@0.23.1440.833" timestamp="1595380552857" />
-    <state width="1114" height="260" key="GridCell.Tab.3.bottom" timestamp="1596109666131">
+    <state width="1114" height="260" key="GridCell.Tab.3.bottom" timestamp="1596156307669">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1114" height="260" key="GridCell.Tab.3.bottom/0.0.1440.900@0.0.1440.900" timestamp="1596109666131" />
+    <state width="1114" height="260" key="GridCell.Tab.3.bottom/0.0.1440.900@0.0.1440.900" timestamp="1596156307669" />
     <state width="1114" height="286" key="GridCell.Tab.3.bottom/0.23.1440.821@0.23.1440.821" timestamp="1595599798848" />
-    <state width="1114" height="260" key="GridCell.Tab.3.bottom/0.23.1440.822@0.23.1440.822" timestamp="1596109280899" />
+    <state width="1114" height="260" key="GridCell.Tab.3.bottom/0.23.1440.822@0.23.1440.822" timestamp="1596110074005" />
     <state width="1114" height="243" key="GridCell.Tab.3.bottom/0.23.1440.826@0.23.1440.826" timestamp="1594366285114" />
     <state width="1114" height="345" key="GridCell.Tab.3.bottom/0.23.1440.827@0.23.1440.827" timestamp="1594949892451" />
     <state width="1114" height="247" key="GridCell.Tab.3.bottom/0.23.1440.828@0.23.1440.828" timestamp="1596010654432" />
     <state width="1114" height="424" key="GridCell.Tab.3.bottom/0.23.1440.829@0.23.1440.829" timestamp="1595294500428" />
     <state width="1114" height="304" key="GridCell.Tab.3.bottom/0.23.1440.832@0.23.1440.832" timestamp="1595385213361" />
     <state width="1114" height="280" key="GridCell.Tab.3.bottom/0.23.1440.833@0.23.1440.833" timestamp="1595380552860" />
-    <state width="1114" height="260" key="GridCell.Tab.3.center" timestamp="1596109666130">
+    <state width="1114" height="260" key="GridCell.Tab.3.center" timestamp="1596156307668">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1114" height="260" key="GridCell.Tab.3.center/0.0.1440.900@0.0.1440.900" timestamp="1596109666130" />
+    <state width="1114" height="260" key="GridCell.Tab.3.center/0.0.1440.900@0.0.1440.900" timestamp="1596156307668" />
     <state width="1114" height="286" key="GridCell.Tab.3.center/0.23.1440.821@0.23.1440.821" timestamp="1595599798846" />
-    <state width="1114" height="260" key="GridCell.Tab.3.center/0.23.1440.822@0.23.1440.822" timestamp="1596109280898" />
+    <state width="1114" height="260" key="GridCell.Tab.3.center/0.23.1440.822@0.23.1440.822" timestamp="1596110074003" />
     <state width="1114" height="243" key="GridCell.Tab.3.center/0.23.1440.826@0.23.1440.826" timestamp="1594366285112" />
     <state width="1114" height="345" key="GridCell.Tab.3.center/0.23.1440.827@0.23.1440.827" timestamp="1594949892446" />
     <state width="1114" height="247" key="GridCell.Tab.3.center/0.23.1440.828@0.23.1440.828" timestamp="1596010654429" />
     <state width="1114" height="424" key="GridCell.Tab.3.center/0.23.1440.829@0.23.1440.829" timestamp="1595294500426" />
     <state width="1114" height="304" key="GridCell.Tab.3.center/0.23.1440.832@0.23.1440.832" timestamp="1595385213359" />
     <state width="1114" height="280" key="GridCell.Tab.3.center/0.23.1440.833@0.23.1440.833" timestamp="1595380552860" />
-    <state width="1114" height="260" key="GridCell.Tab.3.left" timestamp="1596109666129">
+    <state width="1114" height="260" key="GridCell.Tab.3.left" timestamp="1596156307667">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1114" height="260" key="GridCell.Tab.3.left/0.0.1440.900@0.0.1440.900" timestamp="1596109666129" />
+    <state width="1114" height="260" key="GridCell.Tab.3.left/0.0.1440.900@0.0.1440.900" timestamp="1596156307667" />
     <state width="1114" height="286" key="GridCell.Tab.3.left/0.23.1440.821@0.23.1440.821" timestamp="1595599798846" />
-    <state width="1114" height="260" key="GridCell.Tab.3.left/0.23.1440.822@0.23.1440.822" timestamp="1596109280897" />
+    <state width="1114" height="260" key="GridCell.Tab.3.left/0.23.1440.822@0.23.1440.822" timestamp="1596110074002" />
     <state width="1114" height="243" key="GridCell.Tab.3.left/0.23.1440.826@0.23.1440.826" timestamp="1594366285111" />
     <state width="1114" height="345" key="GridCell.Tab.3.left/0.23.1440.827@0.23.1440.827" timestamp="1594949892444" />
     <state width="1114" height="247" key="GridCell.Tab.3.left/0.23.1440.828@0.23.1440.828" timestamp="1596010654426" />
     <state width="1114" height="424" key="GridCell.Tab.3.left/0.23.1440.829@0.23.1440.829" timestamp="1595294500425" />
     <state width="1114" height="304" key="GridCell.Tab.3.left/0.23.1440.832@0.23.1440.832" timestamp="1595385213358" />
     <state width="1114" height="280" key="GridCell.Tab.3.left/0.23.1440.833@0.23.1440.833" timestamp="1595380552859" />
-    <state width="1114" height="260" key="GridCell.Tab.3.right" timestamp="1596109666130">
+    <state width="1114" height="260" key="GridCell.Tab.3.right" timestamp="1596156307669">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1114" height="260" key="GridCell.Tab.3.right/0.0.1440.900@0.0.1440.900" timestamp="1596109666130" />
+    <state width="1114" height="260" key="GridCell.Tab.3.right/0.0.1440.900@0.0.1440.900" timestamp="1596156307669" />
     <state width="1114" height="286" key="GridCell.Tab.3.right/0.23.1440.821@0.23.1440.821" timestamp="1595599798847" />
-    <state width="1114" height="260" key="GridCell.Tab.3.right/0.23.1440.822@0.23.1440.822" timestamp="1596109280899" />
+    <state width="1114" height="260" key="GridCell.Tab.3.right/0.23.1440.822@0.23.1440.822" timestamp="1596110074004" />
     <state width="1114" height="243" key="GridCell.Tab.3.right/0.23.1440.826@0.23.1440.826" timestamp="1594366285113" />
     <state width="1114" height="345" key="GridCell.Tab.3.right/0.23.1440.827@0.23.1440.827" timestamp="1594949892448" />
     <state width="1114" height="247" key="GridCell.Tab.3.right/0.23.1440.828@0.23.1440.828" timestamp="1596010654431" />
@@ -756,10 +1048,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="208" y="31" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1595322822550" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1596033440562">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1596109856495">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1596033440562" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1596109856495" />
     <state width="720" height="450" key="XDebugger.FullValuePopup" timestamp="1595323828321">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -776,10 +1068,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="225" y="193" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1440.900@0.0.1440.900" timestamp="1595323015917" />
-    <state x="507" y="347" width="598" height="548" key="find.popup" timestamp="1596108636938">
+    <state x="507" y="347" width="598" height="548" key="find.popup" timestamp="1596156188191">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="507" y="347" width="598" height="548" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1596108636938" />
+    <state x="507" y="347" width="598" height="548" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1596156188191" />
     <state x="421" y="205" width="598" height="490" key="find.popup/0.23.1440.823@0.23.1440.823" timestamp="1594822416058" />
     <state x="87" y="100" key="new project wizard" timestamp="1594881480256">
       <screen x="0" y="0" width="1440" height="900" />

@@ -3,7 +3,7 @@
 <html>
     <head>
         <%@include file="/view/resource.jsp" %>
-        <script type="text/javascript" src="<%=basePath%>/js/FusionCharts.js"></script>
+        <script type="text/javascript" src="<%=basePath%>/js/fusioncharts/FusionCharts.js"></script>
 <%--		<script type="text/javascript" src="<%=basePath%>/js/fusioncharts/fusioncharts.js"></script>--%>
 		<style type="text/css">
          	#cpuchartdiv{
