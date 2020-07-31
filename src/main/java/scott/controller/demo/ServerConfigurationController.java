@@ -11,7 +11,6 @@ import org.springframework.web.servlet.ModelAndView;
 
 import scott.entity.demo.JeecgPersonEntity;
 import scott.entity.demo.TreeDeviceEntity;
-import scott.page.demo.JeecgPersonPage;
 import scott.service.demo.LEDConfigurationService;
 import scott.service.demo.SystemConfigurationService;
 

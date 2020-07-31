@@ -17,7 +17,6 @@ import scott.entity.demo.AlarmRecordEntity;
 import scott.entity.demo.JeecgPersonEntity;
 import scott.entity.demo.OperaterRecordEntity;
 import scott.page.demo.AlarmRecordPage;
-import scott.page.demo.JeecgPersonPage;
 import scott.service.demo.EventRecordService;
 
 

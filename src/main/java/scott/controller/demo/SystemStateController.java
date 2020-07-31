@@ -16,7 +16,6 @@ import org.springframework.web.servlet.ModelAndView;
 import scott.entity.demo.JeecgPersonEntity;
 import scott.entity.demo.ProcstateEntity;
 import scott.page.demo.HistoryPage;
-import scott.page.demo.JeecgPersonPage;
 import scott.service.demo.SystemStateService;
 
 import com.base.util.HtmlUtil;

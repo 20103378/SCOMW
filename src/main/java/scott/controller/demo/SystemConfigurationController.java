@@ -74,7 +74,6 @@ import scott.entity.demo.YcDataInstEntity;
 import scott.entity.demo.YclysEntity;
 import scott.entity.demo.ZJ103Entity;
 import scott.page.demo.DevicePage;
-import scott.page.demo.JeecgPersonPage;
 import scott.service.demo.LEDConfigurationService;
 import scott.service.demo.SystemConfigurationService;
 

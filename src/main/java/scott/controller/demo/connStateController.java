@@ -18,7 +18,6 @@ import scott.entity.demo.CacExeStateEntity;
 import scott.entity.demo.CacIedConnStateEntity;
 import scott.entity.demo.TreeConnEntity;
 import scott.entity.demo.JeecgPersonEntity;
-import scott.page.demo.JeecgPersonPage;
 import scott.service.demo.ConnStateService;
 import com.base.util.HtmlUtil;
 import com.base.web.BaseAction;
