@@ -31,21 +31,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdda7cad-4668-4968-8a58-d61f67e31852" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scott/controller/demo/EventRecordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scott/controller/demo/EventRecordController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scott/controller/demo/LEDConfigurationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scott/controller/demo/LEDConfigurationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scott/controller/demo/MapController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scott/controller/demo/MapController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scott/controller/demo/ServerConfigurationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scott/controller/demo/ServerConfigurationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scott/controller/demo/SystemConfigurationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scott/controller/demo/SystemConfigurationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scott/controller/demo/SystemStateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scott/controller/demo/SystemStateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scott/controller/demo/connStateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scott/controller/demo/connStateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scott/page/demo/AlarmRecordPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scott/page/demo/AlarmRecordPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/scott/page/demo/DevicePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scott/page/demo/DevicePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scott/page/demo/HistoryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scott/page/demo/HistoryPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scott/page/demo/JeecgNotePage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scott/page/demo/JeecgPersonPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scott/page/demo/TreeDevicePage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/jeecg/service/JeecgPersonServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/jeecg/service/JeecgPersonServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -367,7 +353,7 @@
       <workItem from="1596019575902" duration="6026000" />
       <workItem from="1596089278115" duration="13957000" />
       <workItem from="1596156900543" duration="2943000" />
-      <workItem from="1596160196118" duration="5436000" />
+      <workItem from="1596160196118" duration="5520000" />
     </task>
     <task id="LOCAL-00001" summary="ss">
       <created>1595386806809</created>
@@ -439,7 +425,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596185347462</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="样式修改">
+      <created>1596185813246</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1596185813246</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -532,11 +525,12 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="483" y="160" key="#xdebugger.evaluate/0.0.1440.900@0.0.1440.900" timestamp="1595485202025" />
-    <state x="0" y="25" width="907" height="845" key="CommitChangelistDialog2" timestamp="1596185347298">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="0" y="23" width="846" height="822" key="CommitChangelistDialog2" timestamp="1596185812999">
+      <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="0" y="0" width="907" height="845" key="CommitChangelistDialog2/0.0.1440.845@0.0.1440.845" timestamp="1596158813059" />
     <state x="0" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1596185347298" />
+    <state x="0" y="23" width="846" height="822" key="CommitChangelistDialog2/0.23.1440.822@0.23.1440.822" timestamp="1596185812999" />
     <state width="490" height="466" key="DebuggerActiveHint" timestamp="1595216636491">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -770,10 +764,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="208" y="31" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1595322822550" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1596185354265">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1596185829626">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1596185354265" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1596185829626" />
     <state width="720" height="450" key="XDebugger.FullValuePopup" timestamp="1595323828321">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

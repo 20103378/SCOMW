@@ -13,9 +13,5 @@ import lombok.Data;
  */
 @Data
 public class DevicePage extends BasePage {
-	
-
-	
 	private String EquipmentID;//
-	
 }
