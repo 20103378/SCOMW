@@ -33,7 +33,7 @@ public class MapController extends BaseAction {
      * 换流变地图页
      */
     @RequestMapping("/ft_map")
-    public ModelAndView ft_map(JeecgPersonPage page, HttpServletRequest request) throws Exception {
+    public ModelAndView ft_map() throws Exception {
         Map<String, Object> context = getRootMap();
         return forword("scott/demo/ftmap", context);
     }
@@ -42,7 +42,7 @@ public class MapController extends BaseAction {
      * GIS地图页
      */
     @RequestMapping("/gis_map")
-    public ModelAndView gis_map(JeecgPersonPage page, HttpServletRequest request) throws Exception {
+    public ModelAndView gis_map(HttpServletRequest request) throws Exception {
         Map<String, Object> context = getRootMap();
         return forword("scott/demo/gismap", context);
     }
@@ -51,7 +51,7 @@ public class MapController extends BaseAction {
      * 直流场地图页
      */
     @RequestMapping("/zlc_map")
-    public ModelAndView zlc_map(JeecgPersonPage page, HttpServletRequest request) throws Exception {
+    public ModelAndView zlc_map(HttpServletRequest request) throws Exception {
         Map<String, Object> context = getRootMap();
         return forword("scott/demo/zlcmap", context);
     }
@@ -60,7 +60,7 @@ public class MapController extends BaseAction {
      * 交流场
      */
     @RequestMapping("/jlc_map")
-    public ModelAndView jlc_map(JeecgPersonPage page, HttpServletRequest request) throws Exception {
+    public ModelAndView jlc_map( HttpServletRequest request) throws Exception {
         Map<String, Object> context = getRootMap();
         return forword("scott/demo/jlcmap", context);
     }

@@ -49,7 +49,7 @@ public class EventRecordController extends BaseAction {
      * @throws Exception
      */
     @RequestMapping("/list")
-    public ModelAndView list(JeecgPersonPage page, HttpServletRequest request) throws Exception {
+    public ModelAndView list() throws Exception {
         Map<String, Object> context = getRootMap();
         return forword("scott/demo/eventRecord", context);
     }

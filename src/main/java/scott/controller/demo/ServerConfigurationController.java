@@ -38,7 +38,7 @@ public class ServerConfigurationController extends BaseAction {
     private LEDConfigurationService<TreeDeviceEntity> LEDService;
 
     @RequestMapping("/list")
-    public ModelAndView list(JeecgPersonPage page, HttpServletRequest request) throws Exception {
+    public ModelAndView list() throws Exception {
         Map<String, Object> context = getRootMap();
         return forword("scott/demo/serverRestart", context);
     }
