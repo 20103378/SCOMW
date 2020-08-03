@@ -13,16 +13,12 @@ import lombok.Data;
 @Data
 public class AlarmRecordEntity extends BaseEntity {
 	
-	private java.lang.String DeviceType;//设备类型
-	private java.lang.String EquipmentName;//主设备名
-	private java.lang.String Phase;//设备相别
-	private java.lang.String Space;//设备区域
-	private java.lang.String DeviceName;//设备区域
-	private java.lang.String Trigger_Date;//日期
-	private java.lang.Double RecordType;//告警类型
-	
-	
-	
-	
+	private String DeviceType;//设备类型
+	private String EquipmentName;//主设备名
+	private String Phase;//设备相别
+	private String Space;//设备区域
+	private String DeviceName;//设备区域
+	private String Trigger_Date;//日期
+	private Double RecordType;//告警类型
 }
 
