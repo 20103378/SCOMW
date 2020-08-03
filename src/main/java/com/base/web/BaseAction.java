@@ -21,10 +21,7 @@ public class BaseAction{
 	public final static String SUCCESS ="success";  
 	
 	public final static String MSG ="msg";  
-	
-	
-	public final static String DATA ="data";  
-	
+
 	public final static String LOGOUT_FLAG = "logoutFlag";  
 	
 	

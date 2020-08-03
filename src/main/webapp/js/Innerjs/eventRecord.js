@@ -46,15 +46,6 @@ jeecg.eventRecord = function(){
 		                    return row.phase;
 		                }
 		            },{
-		                field: 'deviceName',
-		                title: '设备名称',
-		                width:180,
-		                align: 'center',
-		                sortable: true,
-		                formatter: function(value, row, index){
-		                    return row.deviceName;
-		                }
-		            },{
 		                field: 'trigger_Date',
 		                title: '事件时间',
 		                width:180,

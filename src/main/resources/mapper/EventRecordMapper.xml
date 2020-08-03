@@ -54,11 +54,14 @@ WHERE a.operatorid=b.OperatorID
 
 <!-- 查告警记录数据 -->
 <select id="AlarmRecordCount" resultType="java.lang.Integer"  parameterType="Object">
-	select count(*) from `pubalarmrecords` a,pubdevice b  <include refid="Example_state"/> 
+	SELECT count(*)
+	FROM `pubalarmrecords` a LEFT JOIN pubdevice b  ON a.DeviceID=b.DeviceID AND  a.DeviceType=#{DeviceType}
+	<include refid="Example_state"/>
 </select>
 <select id="getAlarmRecordList" resultMap="AlarmResultMap"  parameterType="Object">
-	SELECT a.DeviceType,b.Phase,b.Space,b.DeviceName,a.Trigger_Date,a.RecordType FROM `pubalarmrecords` a,pubdevice b
-	<include refid="Example_state"/> 
+	SELECT a.DeviceType,a.Trigger_Date,a.RecordType,b.Phase,b.Space,b.DeviceName
+	FROM `pubalarmrecords` a LEFT JOIN pubdevice b  ON a.DeviceID=b.DeviceID AND  a.DeviceType=#{DeviceType}
+	<include refid="Example_state"/>
 	<if test="pager.orderCondition != null and pager.orderCondition != ''" >
       ${pager.orderCondition}
     </if>

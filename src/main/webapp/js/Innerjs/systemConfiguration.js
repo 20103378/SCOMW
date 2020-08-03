@@ -4,11 +4,11 @@ $(function() {
 	// 初始化站点信息
 	jeecg.systemConfiguration.initStation();
 	jeecg.systemConfiguration.upload();
-	$("#serverRestart").unbind('click').click(function() {
-		if (window.confirm('确定重启服务器？')) {
-			jeecg.systemConfiguration.restart();
-		}
-	});
+	// $("#serverRestart").unbind('click').click(function() {
+	// 	if (window.confirm('确定重启服务器？')) {
+	// 		jeecg.systemConfiguration.restart();
+	// 	}
+	// });
 	// $('#btn_Station').click(updateStation);
 	$("#btn_Station").unbind('click').click(function() {
 		updateStation();
@@ -388,20 +388,20 @@ jeecg.systemConfiguration = function() {
 			}
 		},
 
-		restart : function() {
-			$.ajax({
-				async : false,
-				cache : false,
-				type : 'POST',
-				url : ctxPath + "/systemConfiguration/restart.do",
-				error : function() {// 请求失败处理函数
-					alert("false");
-				},
-				success : function(data) {
-					alert("命令已下发");
-				}
-			});
-		},
+		// restart : function() {
+		// 	$.ajax({
+		// 		async : false,
+		// 		cache : false,
+		// 		type : 'POST',
+		// 		url : ctxPath + "/systemConfiguration/restart.do",
+		// 		error : function() {// 请求失败处理函数
+		// 			alert("false");
+		// 		},
+		// 		success : function(data) {
+		// 			alert("命令已下发");
+		// 		}
+		// 	});
+		// },
 		// 主设备列表添加按钮事件
 		equipment_add : function() {
 			var deviceType_data, json;

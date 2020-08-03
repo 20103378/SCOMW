@@ -55,7 +55,7 @@ public class EventRecordController extends BaseAction {
     }
 
     /**
-     * 获取告警事件记录
+     * 获取告警事件记录  yes
      *
      * @param url
      * @param classifyId

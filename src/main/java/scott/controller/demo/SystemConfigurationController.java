@@ -130,20 +130,20 @@ public class SystemConfigurationController extends BaseAction {
         systemConfigurationService.updateStation(entity);
     }
 
-    /**
-     * 重启
-     *
-     * @throws IOException
-     * @throws InterruptedException
-     */
-    @RequestMapping("/restart")
-    public void restart(HttpServletResponse response, HttpServletRequest request) throws InterruptedException, IOException {
-        // String Sttoppath="/CAC/I1DataMgr_stop.sh"; //停止程序路径
-        String shpath = "reboot"; // SHD启动程序路径
-        // Runtime.getRuntime().exec(Sttoppath);
-        Runtime.getRuntime().exec(shpath);
-        System.out.println("已停止I1DataMgr_stop.sh程序");
-    }
+//    /**
+//     * 重启
+//     *
+//     * @throws IOException
+//     * @throws InterruptedException
+//     */
+//    @RequestMapping("/restart")
+//    public void restart(HttpServletResponse response, HttpServletRequest request) throws InterruptedException, IOException {
+//        // String Sttoppath="/CAC/I1DataMgr_stop.sh"; //停止程序路径
+//        String shpath = "reboot"; // SHD启动程序路径
+//        // Runtime.getRuntime().exec(Sttoppath);
+//        Runtime.getRuntime().exec(shpath);
+//        System.out.println("已停止I1DataMgr_stop.sh程序");
+//    }
 
     /**
      * 获取主设备数据
@@ -2900,7 +2900,7 @@ public class SystemConfigurationController extends BaseAction {
                 }
             } else {
 //             System.out.println("数量太大");
-               throw new Exception("数量太大");
+                throw new Exception("数量太大");
             }
             // 根据icd文件创建解析出来的iedname和IP写入数据库和Osifg.xml
 
