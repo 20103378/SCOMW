@@ -14,7 +14,7 @@ jeecg.eventRecord = function(){
 				var txtStartTime=$('#tbStart').datebox('getValue');
 				var txtEndTime=$('#tbEnd').datebox('getValue');
 				if(txtRecords==0){
-					$("#OperaterRecord_div").hide();
+					// $("#OperaterRecord_div").hide();
 					$("#AlarmRecord_div").show();
 					_box = null;
 					_this.alarmRecord_config.dataGrid.url="getAlarmRecordList.do?DeviceType="+txtDevType+"&Start="+txtStartTime+"&End="+txtEndTime+"&RecordType="+txtAlarmType;

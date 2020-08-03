@@ -1,22 +1,20 @@
-<!-- 健康设备状态页 -->
+<!-- 事件记录页面 -->
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8" %>
  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
     <head>
         <%@include file="/view/resource.jsp" %>
-        <script type="text/javascript" src="<%=basePath%>/js/fusioncharts/FusionCharts.js"></script>
-<%--		<script type="text/javascript" src="<%=basePath%>/js/fusioncharts/fusioncharts.js"></script>--%>
 		<style type="text/css">
            #AlarmRecord_div{
            		height:95%;
 				margin-riht: 0px;
                 margin-bottom: 0px;
            }
-           #OperaterRecord_div{
-           		height:95%;
-				margin-riht: 0px;
-                margin-bottom: 0px;
-           }
+           /*#OperaterRecord_div{*/
+           /*		height:95%;*/
+			/*	margin-riht: 0px;*/
+           /*     margin-bottom: 0px;*/
+           /*}*/
         </style>
     </head>
     <!--事件记录页面  -->
@@ -50,9 +48,9 @@
 				<div id="AlarmRecord_div">
 					<table id="AlarmRecordR_list" title="告警事件"></table>
 				</div>
-				<div id="OperaterRecord_div">
-					<table id="OperaterRecord_list" title="操作事件"></table>
-				</div>
+<%--				<div id="OperaterRecord_div">--%>
+<%--					<table id="OperaterRecord_list" title="操作事件"></table>--%>
+<%--				</div>--%>
 			</div>
         </div>
     </body>

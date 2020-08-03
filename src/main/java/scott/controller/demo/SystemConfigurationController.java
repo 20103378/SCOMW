@@ -26,6 +26,7 @@ import java.util.zip.ZipOutputStream;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.base.entity.BaseEntity;
 import jxl.Cell;
 import jxl.Sheet;
 import jxl.Workbook;
@@ -61,7 +62,6 @@ import scott.entity.demo.EquipmentSpaceEntity;
 import scott.entity.demo.I2TableEntity;
 import scott.entity.demo.InfraredTableEntity;
 import scott.entity.demo.InstNodeEntity;
-import scott.entity.demo.JeecgPersonEntity;
 import scott.entity.demo.Refname_descEntity;
 import scott.entity.demo.ScomAlarmEntity;
 import scott.entity.demo.SconditionAlarmEntity;
@@ -97,7 +97,7 @@ public class SystemConfigurationController extends BaseAction {
     // Servrice start
     @Autowired(required = false)
     // 自动注入，不需要生成set方法了，required=false表示没有实现类，也不会报错。
-    private SystemConfigurationService<JeecgPersonEntity> systemConfigurationService;
+    private SystemConfigurationService<BaseEntity> systemConfigurationService;
     @Autowired(required = false)
     private LEDConfigurationService<TreeDeviceEntity> LEDService;
 
