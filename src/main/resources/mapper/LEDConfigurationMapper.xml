@@ -2,8 +2,8 @@
 <!DOCTYPE mapper
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="scott.dao.demo.LEDConfigurationDao">
-	<resultMap id="iec61850_ied_inst_EntityMap" type="scott.entity.demo.OsicfgEntity" >
+<mapper namespace="com.scott.dao.LEDConfigurationDao">
+	<resultMap id="iec61850_ied_inst_EntityMap" type="com.scott.entity.OsicfgEntity" >
 		<result column="iedid" property="iedid"/>
 		<result column="ied_name" property="AR_Name"/>
 		<result column="ied_desc" property="NetAddr"/>

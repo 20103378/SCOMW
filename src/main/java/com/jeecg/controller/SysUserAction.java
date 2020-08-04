@@ -22,7 +22,6 @@ import com.base.web.BaseAction;
 import com.jeecg.entity.SysRole;
 import com.jeecg.entity.SysRoleRel;
 import com.jeecg.entity.SysUser;
-import com.jeecg.exception.ServiceException;
 import com.jeecg.page.SysUserModel;
 import com.jeecg.service.SysRoleService;
 import com.jeecg.service.SysUserService;
@@ -110,13 +109,13 @@ public class SysUserAction extends BaseAction{
 		int count = sysUserService.getUserCountByEmail(bean.getEmail());
 		if(bean.getId() == null){
 			if(count > 0){
-				throw new ServiceException("用户已存在.");
+				throw new Exception("用户已存在.");
 			}
 			bean.setDeleted(DELETED.NO.key);
 			sysUserService.add(bean);
 		}else{
 			if(count > 1){
-				throw new ServiceException("用户已存在.");
+				throw new Exception("用户已存在.");
 			}
 			sysUserService.updateBySelective(bean);
 		}

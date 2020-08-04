@@ -1,4 +1,4 @@
-<!-- 健康设备状态页 -->
+<!-- 跳转设备页 -->
 <%@ page language="java" contentType="text/html; charset=UTF-8" import="java.util.*" pageEncoding="UTF-8" %>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -190,7 +190,7 @@
 		<script type="text/javascript" src="<%=basePath%>/js/fusioncharts/FusionCharts.js"></script>
 <%--		<script type="text/javascript" src="<%=basePath%>/js/fusioncharts/fusioncharts.js"></script>--%>
 		<script type="text/javascript" src="<%=basePath%>/js/Innerjs/chart.js"></script>
-		<!-- script type="text/javascript" src="<%=basePath%>/view/scott/demo/inf.js"></script -->
+		<!-- script type="text/javascript" src="<%=basePath%>/view/com.com.scott/demo/inf.js"></script -->
 		<script type="text/javascript" src="<%=basePath%>/js/commons/tableExport.js"></script>
 		<script type="text/javascript" src="<%=basePath%>/js/Innerjs/yxHistory.js"></script>
 	</body>

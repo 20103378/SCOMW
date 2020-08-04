@@ -15,7 +15,7 @@
 
 	<!-- 扫描Service -->
 	<context:component-scan base-package="com.jeecg.service" />
-	<context:component-scan base-package="scott.service.*" />
+	<context:component-scan base-package="com.scott.service" />
 
 
 	<!-- ***************配置数据源************** -->
@@ -35,7 +35,7 @@
 
 	<aop:config>
         <aop:advisor pointcut="execution(* com.jeecg.service.*.*(..))"  advice-ref="txAdvice" />
-        <aop:advisor pointcut="execution(* scott.service.*.*(..))"  advice-ref="txAdvice" />
+        <aop:advisor pointcut="execution(* com.scott.service.*.*(..))" advice-ref="txAdvice" />
     </aop:config>
 
     <tx:advice id="txAdvice" transaction-manager="transactionManager">
@@ -56,14 +56,14 @@
 		<property name="mapperLocations">
 			 <list>
 			  	<value>classpath:mapper/*Mapper.xml</value>
-<!--			  	<value>classpath:scott/mapper/*/*Mapper.xml</value>-->
+<!--			  	<value>classpath:com.scott/mapper/*/*Mapper.xml</value>-->
 			 </list>
 		</property>
 	</bean>
 
 	<!-- 扫描mapper.java  -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-	    <property name="basePackage" value="com.jeecg.dao,scott.dao.*" />
+	    <property name="basePackage" value="com.jeecg.dao,com.scott.dao" />
 		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
     </bean>
 

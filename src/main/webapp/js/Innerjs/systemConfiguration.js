@@ -14,7 +14,7 @@ $(function() {
 		updateStation();
 	});
 	$("#DownLoadXls").unbind('click').click(function() {
-		var xlsUrl = "..\\view\\scott\\Infrared.xls";
+		var xlsUrl = "..\\view\\com.scott\\Infrared.xls";
 		window.open(xlsUrl);
 	});
 	// 下载cac台账表

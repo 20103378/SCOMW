@@ -2,29 +2,29 @@
 <!DOCTYPE mapper
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="scott.dao.demo.SystemConfigurationDao">
+<mapper namespace="com.scott.dao.SystemConfigurationDao">
 	<!-- Result Map -->
-	<resultMap id="StationResultMap" type="scott.entity.demo.Station_InfoEntity">
+	<resultMap id="StationResultMap" type="com.scott.entity.Station_InfoEntity">
 		<result column="station" property="station" />
 		<result column="name" property="name" />
 		<result column="content" property="address" />
 	</resultMap>
-	<resultMap id="ycDataResult" type="scott.entity.demo.DataEntity">
+	<resultMap id="ycDataResult" type="com.scott.entity.DataEntity">
 		<result property="value" column="yc_value" />
 		<result property="refname" column="yc_refname" />
 		<result property="time" column="yc_time" />
 	</resultMap>
-	<resultMap id="RefnameDescResultMap" type="scott.entity.demo.Refname_descEntity">
+	<resultMap id="RefnameDescResultMap" type="com.scott.entity.Refname_descEntity">
 		<result column="refname" property="refname" />
 		<result column="refdesc" property="refdesc" />
 	</resultMap>
-	<resultMap id="SpaceResultMap" type="scott.entity.demo.EquipmentSpaceEntity">
+	<resultMap id="SpaceResultMap" type="com.scott.entity.EquipmentSpaceEntity">
 		<result column="SpaceId" property="SpaceId" />
 		<result column="SpaceName" property="SpaceName" />
 		<result column="ObjectVoltage" property="ObjectVoltage" />
 		<result column="SpaceTag" property="SpaceTag" />
 	</resultMap>
-	<resultMap id="EquipmentResultMap" type="scott.entity.demo.EquipmentEntity">
+	<resultMap id="EquipmentResultMap" type="com.scott.entity.EquipmentEntity">
 		<result column="EquipmentID" property="EquipmentID" />
 		<result column="EquipmentName" property="EquipmentName" />
 		<result column="Phase" property="Phase" />
@@ -35,7 +35,7 @@
 		<result column="SpaceId" property="SpaceId" />
 		<result column="Remark" property="Remark" />
 	</resultMap>
-	<resultMap id="ZJ103Map" type="scott.entity.demo.ZJ103Entity">
+	<resultMap id="ZJ103Map" type="com.scott.entity.ZJ103Entity">
 		<result column="DeviceID" property="DeviceID" />
 		<result column="DeviceName" property="DeviceName" />
 		<result column="CommAddress" property="CommAddress" />
@@ -43,7 +43,7 @@
 		<result column="IEC61850LD_LN" property="IEC61850LD_LN" />
 		<result column="DevPhase" property="DevPhase" />
 	</resultMap>
-	<resultMap id="DeviceResultMap" type="scott.entity.demo.DeviceEntity">
+	<resultMap id="DeviceResultMap" type="com.scott.entity.DeviceEntity">
 		<result column="DeviceID" property="DeviceID" />
 		<result column="DeviceName" property="DeviceName" />
 		<result column="DeviceType" property="DeviceType" />
@@ -64,12 +64,12 @@
 		<result column="Smperiod" property="Smperiod" />
 	</resultMap>
 	<!-- SF6告警 -->
-	<resultMap id="Sf6AlarmMap" type="scott.entity.demo.Sf6AlarmEntity">
+	<resultMap id="Sf6AlarmMap" type="com.scott.entity.Sf6AlarmEntity">
 		<result column="DeviceID" property="DeviceID" />
 		<result column="PressureThreshold" property="PressureThreshold" />
 	</resultMap>
 	<!-- 油色谱告警 -->
-	<resultMap id="StomAlarmMap" type="scott.entity.demo.StomAlarmEntity">
+	<resultMap id="StomAlarmMap" type="com.scott.entity.StomAlarmEntity">
 		<result column="DeviceID" property="DeviceID" />
 		<result column="H2ThresHold" property="H2ThresHold" />
 		<result column="C2H2ThresHold" property="C2H2ThresHold" />
@@ -80,22 +80,22 @@
 		<result column="MstThresHold" property="MstThresHold" />
 	</resultMap>
 	<!-- 避雷器告警 -->
-	<resultMap id="SmoamAlarmMap" type="scott.entity.demo.SmoamAlarmEntity">
+	<resultMap id="SmoamAlarmMap" type="com.scott.entity.SmoamAlarmEntity">
 		<result column="DeviceID" property="DeviceID" />
 		<result column="TotalCurrentThresHold" property="TotalCurrentThresHold" />
 	</resultMap>
 	<!-- 铁芯告警 -->
-	<resultMap id="ScomAlarmMap" type="scott.entity.demo.ScomAlarmEntity">
+	<resultMap id="ScomAlarmMap" type="com.scott.entity.ScomAlarmEntity">
 		<result column="DeviceID" property="DeviceID" />
 		<result column="TotalCurrentThresHold" property="TotalCurrentThresHold" />
 	</resultMap>
 	<!-- 工况告警 -->
-	<resultMap id="SconditionAlarmMap" type="scott.entity.demo.SconditionAlarmEntity">
+	<resultMap id="SconditionAlarmMap" type="com.scott.entity.SconditionAlarmEntity">
 		<result column="DeviceID" property="DeviceID" />
 		<result column="OilTempThresHold" property="OilTempThresHold" />
 	</resultMap>
 	<!-- i2数据 -->
-	<resultMap id="I2ResultMap" type="scott.entity.demo.I2TableEntity">
+	<resultMap id="I2ResultMap" type="com.scott.entity.I2TableEntity">
 		<result column="i2id" property="i2id" />
 		<result column="i1type" property="i1type" />
 		<result column="i1id" property="i1id" />
@@ -103,7 +103,7 @@
 		<result column="i2_desc" property="i2_desc" />
 	</resultMap>
 	<!-- yc_data_inst表 -->
-	<resultMap id="YcDataResultMap" type="scott.entity.demo.YcDataInstEntity">
+	<resultMap id="YcDataResultMap" type="com.scott.entity.YcDataInstEntity">
 		<result column="yc_id" property="yc_id" />
 		<result column="ied_type_id" property="ied_type_id" />
 		<result column="ld_inst_name" property="ld_inst_name" />
@@ -111,7 +111,7 @@
 		<result column="yc_refname" property="yc_refname" />
 		<result column="yc_desc" property="yc_desc" />
 	</resultMap>
-	<resultMap id="YxDataResultMap" type="scott.entity.demo.YcDataInstEntity">
+	<resultMap id="YxDataResultMap" type="com.scott.entity.YcDataInstEntity">
 		<result column="yx_id" property="yc_id" />
 		<result column="ied_type_id" property="ied_type_id" />
 		<result column="ld_inst_name" property="ld_inst_name" />
@@ -119,7 +119,7 @@
 		<result column="yx_refname" property="yc_refname" />
 		<result column="yx_desc" property="yc_desc" />
 	</resultMap>
-	<resultMap id="YkDataResultMap" type="scott.entity.demo.YcDataInstEntity">
+	<resultMap id="YkDataResultMap" type="com.scott.entity.YcDataInstEntity">
 		<result column="yk_id" property="yc_id" />
 		<result column="ied_type_id" property="ied_type_id" />
 		<result column="ld_inst_name" property="ld_inst_name" />

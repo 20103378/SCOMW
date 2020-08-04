@@ -254,9 +254,9 @@ jeecg.refnameConfig = function(){
 						 alert("插入失败!");
 					 }
 				 });
-// var MapUrl= ctxPath+"/view/scott/Graphs/data_gis.xml";用不上
+// var MapUrl= ctxPath+"/view/com.scott/Graphs/data_gis.xml";用不上
 // alert("下载");
-				var MapUrl="..\\view\\scott\\out.xls";
+				var MapUrl="..\\view\\com.scott\\out.xls";
 				window.open(MapUrl);
 		},
 		UpdateRefName:function(){

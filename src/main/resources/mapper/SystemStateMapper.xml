@@ -2,9 +2,9 @@
 <!DOCTYPE mapper
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="scott.dao.demo.SystemStateDao" >
+<mapper namespace="com.scott.dao.SystemStateDao" >
 <!-- Result Map-->
-<resultMap id="ProcstateResultMap" type="scott.entity.demo.ProcstateEntity" >
+<resultMap id="ProcstateResultMap" type="com.scott.entity.ProcstateEntity" >
 	<result column="pid" property="pid"/>
 	<result column="pname" property="pname"/>
 	<result column="systime" property="systime"/>
@@ -49,24 +49,6 @@ union
 <select id="getCpData" resultMap="ProcstateResultMap"  parameterType="Object">
 select item_id as pid , item_name as pname ,data_time as systime,  CONCAT(data_val,data_unit) as cpu  from df_mem_cpu;
 </select>
-<!--  
-<select id="historyListCount" resultType="java.lang.Integer"  parameterType="Object">
-	select count(1) from pubprocstate_history_data
-</select>
--->
-<!-- 获取历史系统状态 -->
-<!--  
-<select id="gethistoryList" resultMap="ProcstateResultMap"  parameterType="Object">
-	select * from pubprocstate_history_data <include refid="Example_state"/>
-	<if test="pager.orderCondition != null and pager.orderCondition != ''" >
-      ${pager.orderCondition}
-    </if>
-    <if test="pager.mysqlQueryCondition != null and pager.mysqlQueryCondition != ''" >
-       ${pager.mysqlQueryCondition}
-    </if>
-</select>
--->
-
 
 </mapper>
 

@@ -7,7 +7,6 @@ import java.util.UUID;
 import com.base.dao.BaseDao;
 import com.base.page.BasePage;
 import com.base.util.ClassReflectUtil;
-import scott.entity.demo.OsicfgEntity;
 
 public abstract class BaseService<T>{
 	

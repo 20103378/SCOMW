@@ -2,14 +2,14 @@
 <!DOCTYPE mapper
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="scott.dao.demo.ConnStateDao" >
+<mapper namespace="com.scott.dao.ConnStateDao" >
 <!-- Result Map-->
-<resultMap id="TreeResultMap" type="scott.entity.demo.TreeConnEntity" >
+<resultMap id="TreeResultMap" type="com.scott.entity.TreeConnEntity" >
 	<result column="id" property="id"/>
 	<result column="text" property="text"/>
 </resultMap>
 
-<resultMap id="connStateMap" type="scott.entity.demo.TreeConnEntity" >
+<resultMap id="connStateMap" type="com.scott.entity.TreeConnEntity" >
 	<result column="id" property="id"/>
 	<result column="text" property="text"/>
 	<result column="iedstate" property="iedstate"/>
@@ -18,7 +18,7 @@
 	<result column="deviceip" property="deviceip"/>
 </resultMap>
 
-<resultMap id="programStateMap" type="scott.entity.demo.CacExeStateEntity" >
+<resultMap id="programStateMap" type="com.scott.entity.CacExeStateEntity" >
 	<result column="exe_name" property="exeName"/>
 	<result column="exe_state" property="exeState"/>
 	<result column="exe_state_timestamp" property="exeStateTimestamp"/>
@@ -26,13 +26,13 @@
 	<result column="run_num" property="runNum"/>
 </resultMap>
 
-<resultMap id="CacCagConnStateMap" type="scott.entity.demo.CacCagConnStateEntity" >
+<resultMap id="CacCagConnStateMap" type="com.scott.entity.CacCagConnStateEntity" >
 	<result column="state_time" property="state_time"/>
 	<result column="conn_state" property="conn_state"/>
 	<result column="client_name" property="client_name"/>
 	<result column="client_ip" property="client_ip"/>
 </resultMap>
-<resultMap id="CacIedConnStateMap" type="scott.entity.demo.CacIedConnStateEntity" >
+<resultMap id="CacIedConnStateMap" type="com.scott.entity.CacIedConnStateEntity" >
 	<result column="state_time" property="state_time"/>
 	<result column="conn_state" property="conn_state"/>
 	<result column="ied_name" property="ied_name"/>

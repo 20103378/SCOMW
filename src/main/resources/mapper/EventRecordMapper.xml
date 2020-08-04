@@ -2,9 +2,9 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="scott.dao.demo.EventRecordDao">
+<mapper namespace="com.scott.dao.EventRecordDao">
     <!-- Result Map-->
-    <resultMap id="AlarmResultMap" type="scott.entity.demo.AlarmRecordEntity">
+    <resultMap id="AlarmResultMap" type="com.scott.entity.AlarmRecordEntity">
         <result column="EquipmentName" property="EquipmentName"/>
         <result column="Phase" property="Phase"/>
         <result column="Space" property="Space"/>

@@ -187,7 +187,7 @@ function showChat() {
 	        		 }
 //	        		 alert("datas="+JSON.stringify(datas));
 
-		        	 var chart = new FusionCharts(ctxPath+"/view/scott/Charts/FCF_MSLine.swf", "ChartId", fixWidth(0.78), fixHeight(0.85));
+		        	 var chart = new FusionCharts(ctxPath+"/view/com.scott/Charts/FCF_MSLine.swf", "ChartId", fixWidth(0.78), fixHeight(0.85));
 		        	 chart.setDataXML(xml);
 	  		   		 chart.render("chartdiv");
 	  		   		 showDataSpan(datas[0]);

@@ -154,6 +154,6 @@
 		<script type="text/javascript" src="<%=basePath%>/js/commons/tableExport.js"></script>
 		<script type="text/javascript" src="<%=basePath%>/js/commons/tableExport_test.js"></script>
 
-		<!-- script type="text/javascript" src="<%=basePath%>/view/scott/demo/yxHistory.js"></script -->
+		<!-- script type="text/javascript" src="<%=basePath%>/view/com.scott/demo/yxHistory.js"></script -->
 	</body>
 </html>

@@ -4,7 +4,6 @@
     <head>
         <%@include file="/view/resource.jsp" %>
         <script type="text/javascript" src="<%=basePath%>/js/fusioncharts/FusionCharts.js"></script>
-<%--		<script type="text/javascript" src="<%=basePath%>/js/fusioncharts/fusioncharts.js"></script>--%>
 		<style type="text/css">
          	#cpuchartdiv{
          		float:left;
@@ -12,18 +11,11 @@
          	#memchartdiv{
          		float:left;
          	}
-         	#history{
-         		height:85%;
-				margin-right: 0px;
-                margin-bottom: 0px;
-         	}
          </style>
     </head>
     <body class="easyui-layout">
 
         <div region="center" border="false">
-            <!-- <div class="easyui-tabs" region="center" border="false" data-options="tools:'#tab-tools'" > -->
-                <!-- <div title="实时状态11"  data-options="closable:false" style="padding:10px;"> -->
 	                <div id="chartdiv">
 	                <table width="1000px" border="1" cellspacing="1" cellpadding="2"
 	                style='font-family:Microsoft YaHei;font-size:20;font-weight:bold;margin-left:20px'>
@@ -102,32 +94,9 @@
 						    	<div id="memchartdiv" align="left"></div>
 						     </td>
 						  </tr>
-						  <!--tr>
-						    <td valign="top" class="text" align="left">
-						    	<div id="cpuchartdiv_OsList" align="left"></div>
-						     </td>
-						     <td valign="top" class="text" align="left">
-						    	<div id="memchartdiv_OsList" align="left"></div>
-						     </td>
-						  </tr -->
 					</table>
                 </div>
-                <!-- <div title="历史状态" data-options="closable:false" style="padding:10px;">
-                	<div>
-						开始时间: <input id="startTime" value="" class="easyui-datebox" style="width:100px">
-						结束时间: <input id="endTime" value="" class="easyui-datebox" style="width:100px">
-						&nbsp;程序名:<select id="proccb" class="easyui-combobox" style="width:100px;">
-									   </select>
-						<a id="searchHistoryState"  href="#" class="easyui-linkbutton" iconCls="icon-search">查询</a>
-					</div>
-					<div id="history">
-                    	 <table id="historyList" ></table>
-                    </div>
-                </div>
-            </div> -->
-        <!-- </div> -->
         <script type="text/javascript" src="<%=basePath%>/js/Innerjs/currentState.js"></script>
-       <%--  <script type="text/javascript" src="<%=basePath%>/view/scott/demo/historyState.js"></script> --%>
     </body>
 </html>
 

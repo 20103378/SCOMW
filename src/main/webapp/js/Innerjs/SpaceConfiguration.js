@@ -153,7 +153,7 @@ jeecg.SpaceConfiguration = function(){
 		MakeXml:function(){//生成XML文件。选择设备，通过区域名查询PUBDEVICE表的SPACE获取设备返回ID、deviceName、DeviceType
 			if($("#tab_space").datagrid("getSelected")){
 				var select_name = encodeURIComponent($("#tab_space").datagrid("getSelected").spaceName);
-				var path=ctxPath+"/view/scott/Graphs/";
+				var path=ctxPath+"/view/com.scott/Graphs/";
 				 $.ajax({
 					 async:false,
 					 cache:false,
@@ -174,7 +174,7 @@ jeecg.SpaceConfiguration = function(){
 		ModXml:function(){//修改。选择设备，通过区域名查询PUBDEVICE表的SPACE获取设备返回ID、deviceName、DeviceType
 			if($("#tab_space").datagrid("getSelected")){
 				var select_name = encodeURIComponent($("#tab_space").datagrid("getSelected").spaceName);
-				var path=ctxPath+"/view/scott/Graphs/";
+				var path=ctxPath+"/view/com.scott/Graphs/";
 				 $.ajax({
 					 async:false,
 					 cache:false,
@@ -252,8 +252,8 @@ jeecg.SpaceConfiguration = function(){
 						 alert("插入失败!");
 					 }
 				 });
-//				var MapUrl= ctxPath+"/view/scott/Graphs/data_gis.xml";用不上
-				var MapUrl="..\\view\\scott\\Graphs\\MapZIP.zip";
+//				var MapUrl= ctxPath+"/view/com.scott/Graphs/data_gis.xml";用不上
+				var MapUrl="..\\view\\com.scott\\Graphs\\MapZIP.zip";
 				window.open(MapUrl);
 			}else{
 				alert("请选择需要下载地图的区域！");
