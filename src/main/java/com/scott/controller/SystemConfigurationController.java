@@ -277,7 +277,7 @@ public class SystemConfigurationController extends BaseAction {
      * 导入红外测温设备
      */
     @RequestMapping("/upload_Infrared_Excel")
-    public void upload_Infrared_Excel(DevicePage page, HttpServletResponse response, HttpServletRequest request) throws Exception {
+    public void upload_Infrared_Excel(HttpServletResponse response, HttpServletRequest request) throws Exception {
         // Map<String, Object> jsonMap = new HashMap<String, Object>();
         // List<DeviceEntity> dataList
         // =systemConfigurationService.getDeviceList(page);
