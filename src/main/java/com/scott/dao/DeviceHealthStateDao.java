@@ -24,8 +24,8 @@ import com.scott.page.HistoryPage;
 
 import com.base.dao.BaseDao;
 import com.base.page.BasePage;
+
 /**
- *
  * <br>
  * <b>功能：</b>JeecgPersonDao<br>
  * <b>作者：</b>www.jeecg.org<br>
@@ -33,178 +33,254 @@ import com.base.page.BasePage;
  * <b>版权所有：<b>版权所有(C) 2013，www.jeecg.org<br>
  */
 public interface DeviceHealthStateDao<T> extends BaseDao<T> {
-//    public List<DataEntity> getYXHistoryRefname(HistoryPage page);
-    public List<DataEntity> getYXHistoryByrefname(HistoryPage page);
-    public int YXHistoryCountByrefname(HistoryPage page);
-    public List<DataEntity> exportYXHistory(BasePage page);
+    //     List<DataEntity> getYXHistoryRefname(HistoryPage page);
+//    List<DataEntity> getYXHistoryByrefname(HistoryPage page);
+
+//    int YXHistoryCountByrefname(HistoryPage page);
+
+//    List<DataEntity> exportYXHistory(BasePage page);
 
     //获取SpaceDetail实时数据
-    public List<DeviceEntity> getDetailListDevice(String Type);
+    List<DeviceEntity> getDetailListDevice(String Type);
 
-//    public List<StomAlarmEntity> getStomAlarm();
-//    public List<Sf6AlarmEntity> getSf6Alarm();
-//    public List<SmoamAlarmEntity> getSmoamAlarm();
-//    public List<ScomAlarmEntity> getScomAlarm();
-//    public List<SpdmAlarmEntity> getSpdmAlarm();
+//     List<StomAlarmEntity> getStomAlarm();
+//     List<Sf6AlarmEntity> getSf6Alarm();
+//     List<SmoamAlarmEntity> getSmoamAlarm();
+//     List<ScomAlarmEntity> getScomAlarm();
+//     List<SpdmAlarmEntity> getSpdmAlarm();
 
-    public List<StomYxEntity> getStomDetail();
-    public List<Sf6YxEntity> getSf6Detail();
-    public List<SmoamYxEntity> getSmoamDetail();
-    public List<ScomYxEntity> getScomDetail();
-    public List<SpdmYxEntity> getSpdmDetail();
-    public List<WeatherEntity> getWeatherDetail();
-    public List<DeviceEntity> getEquipment(String equipmentId);
+    List<StomYxEntity> getStomDetail();
 
-    public List<StomYxEntity> getStomDetail(String equipmentId);
-    public List<Sf6YxEntity> getSf6Detail(String equipmentId);
-    public List<SmoamYxEntity> getSmoamDetail(String equipmentId);
-    public List<ScomYxEntity> getScomDetail(String equipmentId);
-    public List<SpdmYxEntity> getSpdmDetail(String equipmentId);
-    public List<WeatherEntity> getWeatherDetail(String equipmentId);
+    List<Sf6YxEntity> getSf6Detail();
 
-    public List<StomYxEntity> getStomDetailDate();
-    public List<Sf6YxEntity> getSf6DetailDate();
-    public List<SmoamYxEntity> getSmoamDetailDate();
-    public List<ScomYxEntity> getScomDetailDate();
-    public List<SpdmYxEntity> getSpdmDetailDate();
-    public List<WeatherEntity> getWeatherDetailDate();
+    List<SmoamYxEntity> getSmoamDetail();
 
-    public List<StomYxEntity> getStomDetailByDate(String _time);
-    public List<Sf6YxEntity> getSf6DetailByDate(String _time);
-    public List<SmoamYxEntity> getSmoamDetailByDate(String _time);
-    public List<ScomYxEntity> getScomDetailByDate(String _time);
-    public List<SpdmYxEntity> getSpdmDetailByDate(String _time);
-    public List<WeatherEntity> getWeatherDetailByDate(String _time);
+    List<ScomYxEntity> getScomDetail();
 
-    public List<StomYxEntity> getStomDetailDateByDate(String _time);
-    public List<Sf6YxEntity> getSf6DetailDateByDate(String _time);
-    public List<SmoamYxEntity> getSmoamDetailDateByDate(String _time);
-    public List<ScomYxEntity> getScomDetailDateByDate(String _time);
-    public List<SpdmYxEntity> getSpdmDetailDateByDate(String _time);
-    public List<WeatherEntity> getWeatherDetailDateByDate(String _time);
+    List<SpdmYxEntity> getSpdmDetail();
 
-    public List<StomYxEntity> getStomDetailBySpace(String Space);
-    public List<Sf6YxEntity> getSf6DetailBySpace(String Space);
-    public List<SmoamYxEntity> getSmoamDetailBySpace(String Space);
-    public List<ScomYxEntity> getScomDetailBySpace(String Space);
-    public List<SpdmYxEntity> getSpdmDetailBySpace(String Space);
-    public List<WeatherEntity> getWeatherDetailBySpace(String Space);
+//    List<WeatherEntity> getWeatherDetail();
 
-    public List<StomYxEntity> getStomDetailDateBySpace(String Space);
-    public List<Sf6YxEntity> getSf6DetailDateBySpace(String Space);
-    public List<SmoamYxEntity> getSmoamDetailDateBySpace(String Space);
-    public List<ScomYxEntity> getScomDetailDateBySpace(String Space);
-    public List<SpdmYxEntity> getSpdmDetailDateBySpace(String Space);
-    public List<WeatherEntity> getWeatherDetailDateBySpace(String Space);
+//    List<DeviceEntity> getEquipment(String equipmentId);
+//
+//    List<StomYxEntity> getStomDetail(String equipmentId);
+//
+//    List<Sf6YxEntity> getSf6Detail(String equipmentId);
+//
+//    List<SmoamYxEntity> getSmoamDetail(String equipmentId);
+//
+//    List<ScomYxEntity> getScomDetail(String equipmentId);
+//
+//    List<SpdmYxEntity> getSpdmDetail(String equipmentId);
+//
+//    List<WeatherEntity> getWeatherDetail(String equipmentId);
 
-    public int YSPHistoryCount(BasePage page);
-	public List<stom_dataEntity> getYSPHistory(BasePage page);
-	public List<stom_dataEntity> exportYSPHistory(BasePage page);
-	public String getDeviceName(String id);
+    List<StomYxEntity> getStomDetailDate();
 
-	public void deleteStom();
+    List<Sf6YxEntity> getSf6DetailDate();
 
-	public int InfraredHistoryCount(BasePage page);
-	public List<Sf6_dataEntity> getInfraredHistory(BasePage page);
-	public List<Sf6_dataEntity> exportInfraredHistory(BasePage page);
-	public List<Sf6_dataEntity> getInfraredChart_history(Map<String, Object> param);
+    List<SmoamYxEntity> getSmoamDetailDate();
+
+    List<ScomYxEntity> getScomDetailDate();
+
+    List<SpdmYxEntity> getSpdmDetailDate();
 
 
-	public int SF6HistoryCount(BasePage page);
-	public List<Sf6_dataEntity> getSF6History(BasePage page);
-	public List<Sf6_dataEntity> exportSF6History(BasePage page);
+    List<StomYxEntity> getStomDetailByDate(String _time);
 
-	public int SMOAMHistoryCount(BasePage page);
-	public List<SMOAM_dataEntity> getSMOAMHistory(BasePage page);
-	public List<SMOAM_dataEntity> exportSMOAMHistory(BasePage page);
+    List<Sf6YxEntity> getSf6DetailByDate(String _time);
 
-	public int SCOMHistoryCount(BasePage page);
-	public List<SCOM_dataEntity> getSCOMHistory(BasePage page);
-	public List<SCOM_dataEntity> exportSCOMHistory(BasePage page);
+    List<SmoamYxEntity> getSmoamDetailByDate(String _time);
 
-	public int SpdmHistoryCount(BasePage page);
-	public List<Spdm_dataEntity> getSpdmHistoryData(BasePage page);
-	public List<Spdm_dataEntity> exportSpdmHistoryData(BasePage page);
+    List<ScomYxEntity> getScomDetailByDate(String _time);
 
-	public int WeatherHistoryCount(BasePage page);
-	public List<WeatherEntity> getWeatherHistory(BasePage page);
-	public List<WeatherEntity> exportWeatherHistory(BasePage page);
-
-	public List<DeviceEntity> getInfraredByType();
-
-	public List<DeviceEntity> getDeviceByType(String DeviceType);
-
-	public List<Sf6_dataEntity> getSF6Chart_history(Map<String, Object> param);
-	public List<Sf6_dataEntity> getSF6Chart_dealt(Map<String, Object> param);
-
-	public List<stom_dataEntity> getStomChart_history(Map<String, Object> param);
-	public List<stom_dataEntity> getStomChart_dealt(Map<String, Object> param);
-
-	public List<SMOAM_dataEntity> getSmoamChart_history(Map<String, Object> param);
-	public List<SMOAM_dataEntity> getSmoamChart_dealt(Map<String, Object> param);
-
-	public List<SCOM_dataEntity> getScomChart_history(Map<String, Object> param);
-	public List<SCOM_dataEntity> getScomChart_dealt(Map<String, Object> param);
-
-	public List<WeatherEntity> getWeatherChart_history(Map<String, Object> param);
-	public List<WeatherEntity> getWeatherChart_dealt(Map<String, Object> param);
-
-	public List<Spdm_dataEntity> getSpdmChart_history(Map<String, Object> param);
+    List<SpdmYxEntity> getSpdmDetailByDate(String _time);
 
 
-	public List<MessageEntity> getMessage();
+    List<StomYxEntity> getStomDetailDateByDate(String _time);
 
-	public String  getDeviceLN(String id);
-	//遥信数据
-//	public String getyxlnldByid(String id);
-	public String getyxLDLN(String IEC61850LD_LN);
-	public String getyxDesc(String refname);
-	public List<DataEntity> getYXData (String IEC61850LD_LN);
-	public List<DataEntity> getYCData(HistoryPage page);
-//	public int getYCDataCount(HistoryPage page);
-    public List<DataEntity> getYCData_yc(HistoryPage page);
-    public int getYCDataCount_yc(HistoryPage page);
-    public List<DataEntity> getYCData_yx(HistoryPage page);
-    public int getYCDataCount_yx(HistoryPage page);
+    List<Sf6YxEntity> getSf6DetailDateByDate(String _time);
 
-	public List<StomYxEntity> getStomYx(Map<String, Object> param );
-	public List<StomYxEntity> getStomYxDate(Map<String, Object> param );
+    List<SmoamYxEntity> getSmoamDetailDateByDate(String _time);
 
-	public List<Sf6YxEntity> getInfraredYx(Map<String, Object> param );
-	public List<Sf6YxEntity> getInfraredYxDate(Map<String, Object> param );
+    List<ScomYxEntity> getScomDetailDateByDate(String _time);
 
-	public List<Sf6YxEntity> getSf6Yx(Map<String, Object> param );
-	public List<Sf6YxEntity> getSf6YxDate(Map<String, Object> param );
+    List<SpdmYxEntity> getSpdmDetailDateByDate(String _time);
 
-	public List<SmoamYxEntity> getSmoamYx(Map<String, Object> param );
-	public List<SmoamYxEntity> getSmoamYxDate(Map<String, Object> param );
 
-	public List<ScomYxEntity> getScomYx(Map<String, Object> param );
-	public List<ScomYxEntity> getScomYxDate(Map<String, Object> param );
+    List<StomYxEntity> getStomDetailBySpace(String Space);
 
-	public List<SpdmYxEntity> getSpdmYx(Map<String, Object> param );
-	public List<SpdmYxEntity> getSpdmYxDate(Map<String, Object> param );
+    List<Sf6YxEntity> getSf6DetailBySpace(String Space);
 
-	//遥信历史数据
-	public int StomYXHistoryCount(BasePage page);
-	public List<YXhistroyData> getstomYXHistoryData(BasePage page);
+    List<SmoamYxEntity> getSmoamDetailBySpace(String Space);
 
-	public int Sf6YXHistoryCount(BasePage page);
-	public List<YXhistroyData> getSf6YXHistoryData(BasePage page);
+    List<ScomYxEntity> getScomDetailBySpace(String Space);
 
-	public int SmoamYXHistoryCount(BasePage page);
-	public List<YXhistroyData> getSmoamYXHistoryData(BasePage page);
+    List<SpdmYxEntity> getSpdmDetailBySpace(String Space);
 
-	public int ScomYXHistoryCount(BasePage page);
-	public List<YXhistroyData> getScomYXHistoryData(BasePage page);
+    List<StomYxEntity> getStomDetailDateBySpace(String Space);
 
-	public int SpdmYXHistoryCount(BasePage page);
-	public List<YXhistroyData> getSpdmYXHistoryData(BasePage page);
-	public List<SbushDataEntity> getSbushHistoryData(HistoryPage page);
-	public int getSbushHistoryDataCount(HistoryPage page);
-	public List<SbushDataEntity> getSpdcHistoryData(HistoryPage page);
-	public int getSpdcHistoryDataCount(HistoryPage page);
-	//油色谱实时数据
-	public List<DataEntity> getStomYXData(String id);
+    List<Sf6YxEntity> getSf6DetailDateBySpace(String Space);
+
+    List<SmoamYxEntity> getSmoamDetailDateBySpace(String Space);
+
+    List<ScomYxEntity> getScomDetailDateBySpace(String Space);
+
+    List<SpdmYxEntity> getSpdmDetailDateBySpace(String Space);
+
+//    List<WeatherEntity> getWeatherDetailDateBySpace(String Space);
+
+    int YSPHistoryCount(BasePage page);
+
+    List<stom_dataEntity> getYSPHistory(BasePage page);
+
+    List<stom_dataEntity> exportYSPHistory(BasePage page);
+
+    String getDeviceName(String id);
+
+
+    int InfraredHistoryCount(BasePage page);
+
+    List<Sf6_dataEntity> getInfraredHistory(BasePage page);
+
+    List<Sf6_dataEntity> exportInfraredHistory(BasePage page);
+
+    List<Sf6_dataEntity> getInfraredChart_history(Map<String, Object> param);
+
+
+    int SF6HistoryCount(BasePage page);
+
+    List<Sf6_dataEntity> getSF6History(BasePage page);
+
+    List<Sf6_dataEntity> exportSF6History(BasePage page);
+
+    int SMOAMHistoryCount(BasePage page);
+
+    List<SMOAM_dataEntity> getSMOAMHistory(BasePage page);
+
+    List<SMOAM_dataEntity> exportSMOAMHistory(BasePage page);
+
+    int SCOMHistoryCount(BasePage page);
+
+    List<SCOM_dataEntity> getSCOMHistory(BasePage page);
+
+    List<SCOM_dataEntity> exportSCOMHistory(BasePage page);
+
+    int SpdmHistoryCount(BasePage page);
+
+    List<Spdm_dataEntity> getSpdmHistoryData(BasePage page);
+
+    List<Spdm_dataEntity> exportSpdmHistoryData(BasePage page);
+
+//    int WeatherHistoryCount(BasePage page);
+
+//    List<WeatherEntity> getWeatherHistory(BasePage page);
+
+//    List<WeatherEntity> exportWeatherHistory(BasePage page);
+
+    List<DeviceEntity> getInfraredByType();
+
+    List<DeviceEntity> getDeviceByType(String DeviceType);
+
+    List<Sf6_dataEntity> getSF6Chart_history(Map<String, Object> param);
+
+    List<Sf6_dataEntity> getSF6Chart_dealt(Map<String, Object> param);
+
+    List<stom_dataEntity> getStomChart_history(Map<String, Object> param);
+
+    List<stom_dataEntity> getStomChart_dealt(Map<String, Object> param);
+
+    List<SMOAM_dataEntity> getSmoamChart_history(Map<String, Object> param);
+
+    List<SMOAM_dataEntity> getSmoamChart_dealt(Map<String, Object> param);
+
+    List<SCOM_dataEntity> getScomChart_history(Map<String, Object> param);
+
+    List<SCOM_dataEntity> getScomChart_dealt(Map<String, Object> param);
+
+//    List<WeatherEntity> getWeatherChart_history(Map<String, Object> param);
+
+//    List<WeatherEntity> getWeatherChart_dealt(Map<String, Object> param);
+
+    List<Spdm_dataEntity> getSpdmChart_history(Map<String, Object> param);
+
+
+//    List<MessageEntity> getMessage();
+
+    String getDeviceLN(String id);
+
+    //遥信数据
+//	 String getyxlnldByid(String id);
+    String getyxLDLN(String IEC61850LD_LN);
+
+    String getyxDesc(String refname);
+
+    List<DataEntity> getYXData(String IEC61850LD_LN);
+
+//    List<DataEntity> getYCData(HistoryPage page);
+
+    //	 int getYCDataCount(HistoryPage page);
+//    List<DataEntity> getYCData_yc(HistoryPage page);
+//
+//    int getYCDataCount_yc(HistoryPage page);
+//
+//    List<DataEntity> getYCData_yx(HistoryPage page);
+//
+//    int getYCDataCount_yx(HistoryPage page);
+
+    List<StomYxEntity> getStomYx(Map<String, Object> param);
+
+    List<StomYxEntity> getStomYxDate(Map<String, Object> param);
+
+    List<Sf6YxEntity> getInfraredYx(Map<String, Object> param);
+
+    List<Sf6YxEntity> getInfraredYxDate(Map<String, Object> param);
+
+    List<Sf6YxEntity> getSf6Yx(Map<String, Object> param);
+
+    List<Sf6YxEntity> getSf6YxDate(Map<String, Object> param);
+
+    List<SmoamYxEntity> getSmoamYx(Map<String, Object> param);
+
+    List<SmoamYxEntity> getSmoamYxDate(Map<String, Object> param);
+
+    List<ScomYxEntity> getScomYx(Map<String, Object> param);
+
+    List<ScomYxEntity> getScomYxDate(Map<String, Object> param);
+
+    List<SpdmYxEntity> getSpdmYx(Map<String, Object> param);
+
+    List<SpdmYxEntity> getSpdmYxDate(Map<String, Object> param);
+
+    //遥信历史数据
+    int StomYXHistoryCount(BasePage page);
+
+    List<YXhistroyData> getstomYXHistoryData(BasePage page);
+
+    int Sf6YXHistoryCount(BasePage page);
+
+    List<YXhistroyData> getSf6YXHistoryData(BasePage page);
+
+    int SmoamYXHistoryCount(BasePage page);
+
+    List<YXhistroyData> getSmoamYXHistoryData(BasePage page);
+
+    int ScomYXHistoryCount(BasePage page);
+
+    List<YXhistroyData> getScomYXHistoryData(BasePage page);
+
+    int SpdmYXHistoryCount(BasePage page);
+
+    List<YXhistroyData> getSpdmYXHistoryData(BasePage page);
+
+    List<SbushDataEntity> getSbushHistoryData(HistoryPage page);
+
+    int getSbushHistoryDataCount(HistoryPage page);
+
+    List<SbushDataEntity> getSpdcHistoryData(HistoryPage page);
+
+    int getSpdcHistoryDataCount(HistoryPage page);
+//	//油色谱实时数据
+//	 List<DataEntity> getStomYXData(String id);
 
 }

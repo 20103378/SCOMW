@@ -60,22 +60,22 @@ public class DeviceHealthStateService<T> extends BaseService<T> {
      /*public List<DataEntity> getYXHistoryRefname(HistoryPage page) throws Exception{
          return getDao().getYXHistoryRefname(page);
      }*/
-    /**
-     *YX历史数据查询通过refname
-     *@return
-     */
-     public int YXHistoryCountByrefname(HistoryPage page)throws Exception{
-         return getDao().YXHistoryCountByrefname(page);
-     }
-    /**
-     *YX历史数据查询Byrefname
-     *@return
-     */
-     public List<DataEntity> getYXHistoryByrefname(HistoryPage page) throws Exception{
-         Integer rowCount = YXHistoryCountByrefname(page);
-         page.getPager().setRowCount(rowCount);
-         return getDao().getYXHistoryByrefname(page);//返回给Contriller查询到的结果
-     }
+//    /**
+//     *YX历史数据查询通过refname
+//     *@return
+//     */
+//     public int YXHistoryCountByrefname(HistoryPage page)throws Exception{
+//         return getDao().YXHistoryCountByrefname(page);
+//     }
+//    /**
+//     *YX历史数据查询Byrefname
+//     *@return
+//     */
+//     public List<DataEntity> getYXHistoryByrefname(HistoryPage page) throws Exception{
+//         Integer rowCount = YXHistoryCountByrefname(page);
+//         page.getPager().setRowCount(rowCount);
+//         return getDao().getYXHistoryByrefname(page);//返回给Contriller查询到的结果
+//     }
      /**
       * DetailList
       * @param Type
@@ -84,33 +84,33 @@ public class DeviceHealthStateService<T> extends BaseService<T> {
      public List<DeviceEntity> getDetailListDevice(String Type){
     	 return getDao().getDetailListDevice(Type);
      }
-     /**
-      * Detaillist
-      * @return
-      * @throws Exception
-      */
-     public List<StomYxEntity> getStomDetail(String equipmentId) throws Exception{
-    	 return getDao().getStomDetail(equipmentId);
-     }
-     public List<Sf6YxEntity> getSf6Detail(String equipmentId) throws Exception{
-    	 return getDao().getSf6Detail(equipmentId);
-     }
-     public List<SmoamYxEntity> getSmoamDetail(String equipmentId) throws Exception{
-    	 return getDao().getSmoamDetail(equipmentId);
-     }
-     public List<ScomYxEntity> getScomDetail(String equipmentId) throws Exception{
-    	 return getDao().getScomDetail(equipmentId);
-     }
-     public List<SpdmYxEntity> getSpdmDetail(String equipmentId) throws Exception{
-    	 return getDao().getSpdmDetail(equipmentId);
-     }
-     public List<WeatherEntity> getWeatherDetail(String equipmentId) throws Exception{
-    	 return getDao().getWeatherDetail(equipmentId);
-     }
-
-     public List<DeviceEntity> getEquipment(String equipmentId) throws Exception{
-    	 return getDao().getEquipment(equipmentId);
-     }
+//     /**
+//      * Detaillist
+//      * @return
+//      * @throws Exception
+//      */
+//     public List<StomYxEntity> getStomDetail(String equipmentId) throws Exception{
+//    	 return getDao().getStomDetail(equipmentId);
+//     }
+//     public List<Sf6YxEntity> getSf6Detail(String equipmentId) throws Exception{
+//    	 return getDao().getSf6Detail(equipmentId);
+//     }
+//     public List<SmoamYxEntity> getSmoamDetail(String equipmentId) throws Exception{
+//    	 return getDao().getSmoamDetail(equipmentId);
+//     }
+//     public List<ScomYxEntity> getScomDetail(String equipmentId) throws Exception{
+//    	 return getDao().getScomDetail(equipmentId);
+//     }
+//     public List<SpdmYxEntity> getSpdmDetail(String equipmentId) throws Exception{
+//    	 return getDao().getSpdmDetail(equipmentId);
+//     }
+//     public List<WeatherEntity> getWeatherDetail(String equipmentId) throws Exception{
+//    	 return getDao().getWeatherDetail(equipmentId);
+//     }
+//
+//     public List<DeviceEntity> getEquipment(String equipmentId) throws Exception{
+//    	 return getDao().getEquipment(equipmentId);
+//     }
      public List<StomYxEntity> getStomDetail() throws Exception{
     	 return getDao().getStomDetail();
      }
@@ -141,13 +141,13 @@ public class DeviceHealthStateService<T> extends BaseService<T> {
      public List<SpdmYxEntity> getSpdmDetailDate() throws Exception{
     	 return getDao().getSpdmDetailDate();
      }
-     public List<WeatherEntity> getWeatherDetail() throws Exception{
-    	 return getDao().getWeatherDetail();
-     }
+//     public List<WeatherEntity> getWeatherDetail() throws Exception{
+//    	 return getDao().getWeatherDetail();
+//     }
 
-     public List<WeatherEntity> getWeatherDetailDate() throws Exception{
-    	 return getDao().getWeatherDetailDate();
-     }
+//     public List<WeatherEntity> getWeatherDetailDate() throws Exception{
+//    	 return getDao().getWeatherDetailDate();
+//     }
      public List<StomYxEntity> getStomDetailByDate(String _time) throws Exception{
     	 return getDao().getStomDetailByDate(_time);
      }
@@ -178,12 +178,12 @@ public class DeviceHealthStateService<T> extends BaseService<T> {
      public List<SpdmYxEntity> getSpdmDetailDateByDate(String _time) throws Exception{
     	 return getDao().getSpdmDetailDateByDate(_time);
      }
-     public List<WeatherEntity> getWeatherDetailByDate(String _time) throws Exception{
-    	 return getDao().getWeatherDetailByDate(_time);
-     }
-     public List<WeatherEntity> getWeatherDetailDateByDate(String _time) throws Exception{
-    	 return getDao().getWeatherDetailDateByDate(_time);
-     }
+//     public List<WeatherEntity> getWeatherDetailByDate(String _time) throws Exception{
+//    	 return getDao().getWeatherDetailByDate(_time);
+//     }
+//     public List<WeatherEntity> getWeatherDetailDateByDate(String _time) throws Exception{
+//    	 return getDao().getWeatherDetailDateByDate(_time);
+//     }
      /**
       * DetailBySpace
       * @param Spaceng
@@ -206,9 +206,9 @@ public class DeviceHealthStateService<T> extends BaseService<T> {
      public List<SpdmYxEntity> getSpdmDetailBySpace(String Spaceng) throws Exception{
     	 return getDao().getSpdmDetailBySpace(Spaceng);
      }
-     public List<WeatherEntity> getWeatherDetailBySpace(String Spaceng) throws Exception{
-    	 return getDao().getWeatherDetailBySpace(Spaceng);
-     }
+//     public List<WeatherEntity> getWeatherDetailBySpace(String Spaceng) throws Exception{
+//    	 return getDao().getWeatherDetailBySpace(Spaceng);
+//     }
      /**
       * DetailDateB
       * @param Spaceng
@@ -230,9 +230,9 @@ public class DeviceHealthStateService<T> extends BaseService<T> {
      public List<SpdmYxEntity> getSpdmDetailDateBySpace(String Spaceng) throws Exception{
     	 return getDao().getSpdmDetailDateBySpace(Spaceng);
      }
-     public List<WeatherEntity> getWeatherDetailDateBySpace(String Spaceng) throws Exception{
-    	 return getDao().getWeatherDetailDateBySpace(Spaceng);
-     }
+//     public List<WeatherEntity> getWeatherDetailDateBySpace(String Spaceng) throws Exception{
+//    	 return getDao().getWeatherDetailDateBySpace(Spaceng);
+//     }
 
 
 	/**
@@ -326,23 +326,23 @@ public class DeviceHealthStateService<T> extends BaseService<T> {
 		page.getPager().setRowCount(rowCount);
 		return getDao().exportSCOMHistory(page);
 	}
-	/**
-	    *气象历史数据查询
-		*@return
-	 */
-	public int WeatherHistoryCount(BasePage page)throws Exception{
-		return getDao().WeatherHistoryCount(page);
-	}
-	public List<WeatherEntity> getWeatherHistory(BasePage page) throws Exception{
-		Integer rowCount = WeatherHistoryCount(page);
-		page.getPager().setRowCount(rowCount);
-		return getDao().getWeatherHistory(page);
-	}
-	public List<WeatherEntity> exportWeatherHistory(BasePage page) throws Exception{
-		Integer rowCount = WeatherHistoryCount(page);
-		page.getPager().setRowCount(rowCount);
-		return getDao().exportWeatherHistory(page);
-	}
+//	/**
+//	    *气象历史数据查询
+//		*@return
+//	 */
+//	public int WeatherHistoryCount(BasePage page)throws Exception{
+//		return getDao().WeatherHistoryCount(page);
+//	}
+//	public List<WeatherEntity> getWeatherHistory(BasePage page) throws Exception{
+//		Integer rowCount = WeatherHistoryCount(page);
+//		page.getPager().setRowCount(rowCount);
+//		return getDao().getWeatherHistory(page);
+//	}
+//	public List<WeatherEntity> exportWeatherHistory(BasePage page) throws Exception{
+//		Integer rowCount = WeatherHistoryCount(page);
+//		page.getPager().setRowCount(rowCount);
+//		return getDao().exportWeatherHistory(page);
+//	}
 
 	/**
 	    *工况历史数据查询
@@ -361,9 +361,9 @@ public class DeviceHealthStateService<T> extends BaseService<T> {
 		page.getPager().setRowCount(rowCount);
 		return getDao().exportSpdmHistoryData(page);
 	}
-    public List<DataEntity> exportYXHistory(BasePage page) throws Exception{
-        return getDao().exportYXHistory(page);
-    }
+//    public List<DataEntity> exportYXHistory(BasePage page) throws Exception{
+//        return getDao().exportYXHistory(page);
+//    }
 
     public List<DeviceEntity> getDeviceByType(String DeviceType) throws Exception{
 		return getDao().getDeviceByType(DeviceType);
@@ -421,16 +421,16 @@ public class DeviceHealthStateService<T> extends BaseService<T> {
 	public List<SCOM_dataEntity> getScomChart_dealt(Map<String, Object> param) throws Exception{
 	return getDao().getScomChart_dealt(param);
 	}
-	/**
-	 * *用于获取曲线图中所需的气象数据
-	*@return
-	*/
-	public List<WeatherEntity> getWeatherChart_history(Map<String, Object> param) throws Exception{
-	return getDao().getWeatherChart_history(param);
-	}
-	public List<WeatherEntity> getWeatherChart_dealt(Map<String, Object> param) throws Exception{
-		return getDao().getWeatherChart_dealt(param);
-	}
+//	/**
+//	 * *用于获取曲线图中所需的气象数据
+//	*@return
+//	*/
+//	public List<WeatherEntity> getWeatherChart_history(Map<String, Object> param) throws Exception{
+//	return getDao().getWeatherChart_history(param);
+//	}
+//	public List<WeatherEntity> getWeatherChart_dealt(Map<String, Object> param) throws Exception{
+//		return getDao().getWeatherChart_dealt(param);
+//	}
 	/**
 	 * *用于获取曲线图中所需的局放数据
 	*@return
@@ -467,44 +467,44 @@ public class DeviceHealthStateService<T> extends BaseService<T> {
        return getDao().getYCData(page);
     }*/
     //遥信数据
-    /**
-      *实时数据查询
-      *@return
-      */
-      public int getYCDataCount_yx(HistoryPage page)throws Exception{
-          return getDao().getYCDataCount_yx(page);
-      }
-    /**
-    *
-    * @param page
-    * @return
-    * @throws Exception
-    */
-    public List<DataEntity> getYCData_yx(HistoryPage page) throws Exception{
-       Integer rowCount = getYCDataCount_yx(page);
-       page.getPager().setRowCount(rowCount);
-       List<DataEntity> dataList =getDao().getYCData_yx(page);
-       return dataList;
-    }
+//    /**
+//      *实时数据查询
+//      *@return
+//      */
+//      public int getYCDataCount_yx(HistoryPage page)throws Exception{
+//          return getDao().getYCDataCount_yx(page);
+//      }
+//    /**
+//    *
+//    * @param page
+//    * @return
+//    * @throws Exception
+//    */
+//    public List<DataEntity> getYCData_yx(HistoryPage page) throws Exception{
+//       Integer rowCount = getYCDataCount_yx(page);
+//       page.getPager().setRowCount(rowCount);
+//       List<DataEntity> dataList =getDao().getYCData_yx(page);
+//       return dataList;
+//    }
     //遥信数据
-    /**
-      *实时数据查询
-      *@return
-      */
-      public int getYCDataCount_yc(HistoryPage page)throws Exception{
-          return getDao().getYCDataCount_yc(page);
-      }
-    /**
-    *
-    * @param page
-    * @return
-    * @throws Exception
-    */
-    public List<DataEntity> getYCData_yc(HistoryPage page) throws Exception{
-       Integer rowCount = getYCDataCount_yc(page);
-       page.getPager().setRowCount(rowCount);
-       return getDao().getYCData_yc(page);
-    }
+//    /**
+//      *实时数据查询
+//      *@return
+//      */
+//      public int getYCDataCount_yc(HistoryPage page)throws Exception{
+//          return getDao().getYCDataCount_yc(page);
+//      }
+//    /**
+//    *
+//    * @param page
+//    * @return
+//    * @throws Exception
+//    */
+//    public List<DataEntity> getYCData_yc(HistoryPage page) throws Exception{
+//       Integer rowCount = getYCDataCount_yc(page);
+//       page.getPager().setRowCount(rowCount);
+//       return getDao().getYCData_yc(page);
+//    }
     /*public String getyxlnldByid(String id) throws Exception{
         return getDao().getyxlnldByid(id);
     }*/
@@ -621,10 +621,10 @@ public class DeviceHealthStateService<T> extends BaseService<T> {
 	private Integer getSpdcHistoryDataCount(HistoryPage page) {
 		return getDao().getSpdcHistoryDataCount(page);
 	}
-	//油色谱实时数据
-	public List<DataEntity> getStomYXData(String id) {
-		return getDao().getStomYXData(id);
-	}
+//	//油色谱实时数据
+//	public List<DataEntity> getStomYXData(String id) {
+//		return getDao().getStomYXData(id);
+//	}
 
 	
 

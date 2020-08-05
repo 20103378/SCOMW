@@ -12,9 +12,6 @@ import com.base.dao.BaseDao;
  * <b>日期：</b> Feb 2, 2013 <br>
  * <b>版权所有：<b>版权所有(C) 2013，www.jeecg.org<br>
  */
-public interface WeatherDao<T> extends
-		BaseDao<T> {
-	// public interface BaseTbldevicechannelDao<T1,T2,T3> {
-
-	public List<T> getWeather();
+public interface WeatherDao<T> extends BaseDao<T> {
+	 List<T> getWeather();
 }

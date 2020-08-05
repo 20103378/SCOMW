@@ -1021,10 +1021,10 @@ select * from (
 <select id="getyxDesc" resultType="String" parameterType="Object" >
 	SELECT refdesc FROM refname_desc WHERE refname=#{refname}
 </select>
-<select id="getStomYXData" resultMap="ycDataResult" parameterType="Object" >
-	SELECT dopath as yc_refname,time as yc_time, val as yc_value ,quality, val_type as ied_type_id FROM iec61850c_realdata
-			WHERE dopath like '${_parameter}%'
-</select>
+<!--<select id="getStomYXData" resultMap="ycDataResult" parameterType="Object" >-->
+<!--	SELECT dopath as yc_refname,time as yc_time, val as yc_value ,quality, val_type as ied_type_id FROM iec61850c_realdata-->
+<!--			WHERE dopath like '${_parameter}%'-->
+<!--</select>-->
 <!-- 局放实时数据 -->
 <select id="getYXData" resultMap="ycDataResult" parameterType="Object" >
 	SELECT dopath as yc_refname,time as yc_time, val as yc_value ,quality, val_type as ied_type_id FROM iec61850c_realdata

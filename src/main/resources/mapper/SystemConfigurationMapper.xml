@@ -395,11 +395,11 @@
 		parameterType="Object">
 		select * from pubspace
 	</select>
-	<!-- 查询区域MAXID -->
-	<select id="getMAXSapceID" resultType="java.lang.String"
-		parameterType="Object">
-		select MAX(SpaceId) from pubspace
-	</select>
+<!--	&lt;!&ndash; 查询区域MAXID &ndash;&gt;-->
+<!--	<select id="getMAXSapceID" resultType="java.lang.String"-->
+<!--		parameterType="Object">-->
+<!--		select MAX(SpaceId) from pubspace-->
+<!--	</select>-->
 	<!-- 查询区域Flag -->
 	<select id="getinsertFlag_space" resultType="java.lang.Integer"
 		parameterType="Object">
@@ -732,24 +732,24 @@
 		(yc_id,ld_inst_name,ln_inst_name,yc_refname,yc_desc) VALUES
 		(#{yx_id},#{ld_inst_name},#{ln_inst_name},#{yx_refname},#{desc})
 	</insert>
-	<insert id="insertycList" parameterType="Object">
-		INSERT INTO iec61850_yc_data_inst
-		(yc_id,ld_inst_name,ln_inst_name,yc_refname,yc_desc)
-		VALUES
-		<foreach collection="list" item="ycInst" separator=",">
-			(#{ycInst.yx_id},#{ycInst.ld_inst_name},#{ycInst.ln_inst_name},#{ycInst.yx_refname},#{ycInst.desc})
-		</foreach>
+<!--	<insert id="insertycList" parameterType="Object">-->
+<!--		INSERT INTO iec61850_yc_data_inst-->
+<!--		(yc_id,ld_inst_name,ln_inst_name,yc_refname,yc_desc)-->
+<!--		VALUES-->
+<!--		<foreach collection="list" item="ycInst" separator=",">-->
+<!--			(#{ycInst.yx_id},#{ycInst.ld_inst_name},#{ycInst.ln_inst_name},#{ycInst.yx_refname},#{ycInst.desc})-->
+<!--		</foreach>-->
 
-	</insert>
-	<insert id="insertyxList" parameterType="Object">
-		INSERT INTO iec61850_yx_data_inst
-		(yx_id,ld_inst_name,ln_inst_name,yx_refname,yx_desc)
-		VALUES
-		<foreach collection="list" item="yxInst" separator=",">
-			(#{yxInst.yx_id},#{yxInst.ld_inst_name},#{yxInst.ln_inst_name},#{yxInst.yx_refname},#{yxInst.desc})
-		</foreach>
+<!--	</insert>-->
+<!--	<insert id="insertyxList" parameterType="Object">-->
+<!--		INSERT INTO iec61850_yx_data_inst-->
+<!--		(yx_id,ld_inst_name,ln_inst_name,yx_refname,yx_desc)-->
+<!--		VALUES-->
+<!--		<foreach collection="list" item="yxInst" separator=",">-->
+<!--			(#{yxInst.yx_id},#{yxInst.ld_inst_name},#{yxInst.ln_inst_name},#{yxInst.yx_refname},#{yxInst.desc})-->
+<!--		</foreach>-->
 
-	</insert>
+<!--	</insert>-->
 
 	<select id="getykCount" resultType="Integer" parameterType="Object">
 		SELECT COUNT(*) FROM `iec61850_yk_data_inst` WHERE

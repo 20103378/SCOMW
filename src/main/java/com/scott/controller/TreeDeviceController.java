@@ -70,9 +70,9 @@ public class TreeDeviceController extends BaseAction {
      * @throws Exception
      */
     @RequestMapping("/getZoneEmuList")
-    public void getZoneEmuList(HttpServletResponse response) throws Exception {
-        TreeViewUtil<TreeDeviceEntity> util = new TreeViewUtil<TreeDeviceEntity>();
-        List<TreeDeviceEntity> entityList = new ArrayList<TreeDeviceEntity>();
+    public void getZoneEmuList(HttpServletResponse response)  {
+        TreeViewUtil<TreeDeviceEntity> util = new TreeViewUtil<>();
+        List<TreeDeviceEntity> entityList = new ArrayList<>();
 //        //获取单位信息
          List<TreeDeviceEntity> InfoName = treeDeviceService.getUnitinfo();
         //获取空间名称
@@ -90,7 +90,7 @@ public class TreeDeviceController extends BaseAction {
     }
 
     @RequestMapping("/getSpaceName")
-    public void getSpaceName(HttpServletResponse response) throws Exception {
+    public void getSpaceName(HttpServletResponse response)  {
         //设备区域
         List<TreeDeviceEntity> space = treeDeviceService.getPubspaceName();
         //设备类型
@@ -200,7 +200,7 @@ public class TreeDeviceController extends BaseAction {
     }
 
     public Map<String, Object> getNodetype(List<TreeDeviceEntity> EntityList) {
-        Map<String, Object> param = new HashMap<String, Object>();
+        Map<String, Object> param = new HashMap<String, Object>(16);
         boolean stom = false;
         boolean sf6 = false;
         boolean smoam = false;
@@ -208,7 +208,6 @@ public class TreeDeviceController extends BaseAction {
 
         for (int n = 0; n < EntityList.size(); n++) {//根据Type选择Data表
             String type = EntityList.get(n).getNodetype();
-            String id = EntityList.get(n).getId();
             if ("1".equals(type) && stom == false) {
                 List<stom_dataEntity> XMLdate_stom = treeDeviceService.getStomAllData();
                 param.put("stom_dataList", XMLdate_stom);
@@ -330,7 +329,7 @@ public class TreeDeviceController extends BaseAction {
      */
     @RequestMapping("/getEmuListData")
     public void getEmuListData(String equipmentID, HttpServletResponse response)
-            throws Exception {
+             {
         // String equipmentID = "M001";// id=request.getParameter("id");
         Map<String, Object> param = new HashMap<String, Object>();
         List<DeviceStateEntity> EntityList;
@@ -343,13 +342,13 @@ public class TreeDeviceController extends BaseAction {
     }
 
     @RequestMapping("/getSpaceNameByType")
-    public void getSpaceNameByType(String Type, HttpServletResponse response) throws Exception {
+    public void getSpaceNameByType(String Type, HttpServletResponse response)  {
         List<TreeDeviceEntity> SpaceName = treeDeviceService.getPubspaceNameByType(Type);
         HtmlUtil.writerJson(response, SpaceName);
     }
 
     @RequestMapping("/getImgList")
-    public void getImgList(HttpServletResponse response) throws Exception {
+    public void getImgList(HttpServletResponse response)  {
         Map<String, Object> param = new HashMap<String, Object>();
         List<TreeDeviceEntity> EntityList = treeDeviceService.getImgList(param);
         HtmlUtil.writerJson(response, EntityList);
@@ -370,23 +369,19 @@ public class TreeDeviceController extends BaseAction {
         HtmlUtil.writerJson(response, EntityList);
     }*/
     @RequestMapping("/getOtherImgList")
-    public void getOtherImgList(String SampleTime, HttpServletResponse response) throws Exception {
+    public void getOtherImgList(String SampleTime, HttpServletResponse response)  {
         List<TreeDeviceEntity> EntityList = treeDeviceService.getOtherImgList(SampleTime);
         HtmlUtil.writerJson(response, EntityList);
     }
 
     @RequestMapping("/getRemarkImgList")
-    public void getRemarkImgList(HttpServletResponse response) throws Exception {
-        TreeViewUtil<TreeDeviceEntity> util = new TreeViewUtil<TreeDeviceEntity>();
-        Map<String, Object> param = new HashMap<String, Object>();
+    public void getRemarkImgList(HttpServletResponse response)  {
         List<String> EntityName = treeDeviceService.getRemarkImgList();
         HtmlUtil.writerJson(response, EntityName);
     }
 
     @RequestMapping("/getImgListBySelect")
     public void getImgListBySelect(String Space, String DeviceType, HttpServletResponse response) throws Exception {
-        TreeViewUtil<TreeDeviceEntity> util = new TreeViewUtil<TreeDeviceEntity>();
-        Map<String, Object> param = new HashMap<String, Object>();
         Space = new String(Space.getBytes("ISO-8859-1"), "UTF-8");
         DeviceType = new String(DeviceType.getBytes("ISO-8859-1"), "UTF-8");
         List<TreeDeviceEntity> EntityList = treeDeviceService.getImgListBySelect(Space, DeviceType);
@@ -394,7 +389,7 @@ public class TreeDeviceController extends BaseAction {
     }
 
     @RequestMapping("/getOtherImgListBySelect")
-    public void getOtherImgListBySelect(String Space, String DeviceType, HttpServletResponse response) throws Exception {
+    public void getOtherImgListBySelect(String Space, String DeviceType, HttpServletResponse response){
         //todo 当前的数值
         List<TreeDeviceEntity> EntityList = treeDeviceService.getOtherImgListBySelect(DateUtil.getDateLong(new Date()), Space, DeviceType);
         HtmlUtil.writerJson(response, EntityList);
@@ -408,13 +403,11 @@ public class TreeDeviceController extends BaseAction {
      * @throws Exception
      */
     @RequestMapping("/getStomData")
-    public void getstomData(String DeviceID, HttpServletResponse response)
-            throws Exception {
-        Map<String, Object> param = new HashMap<String, Object>();
-        List<stom_dataEntity> EntityList;
+    public void getstomData(String DeviceID, HttpServletResponse response) {
+        Map<String, Object> param = new HashMap<String, Object>(2);
         param.put("DeviceID", DeviceID);
-        EntityList = treeDeviceService.getStomListData(param);
-        HtmlUtil.writerJson(response, EntityList);
+        List<stom_dataEntity> entityList = treeDeviceService.getStomListData(param);
+        HtmlUtil.writerJson(response, entityList);
     }
 
     /**
@@ -425,9 +418,8 @@ public class TreeDeviceController extends BaseAction {
      * @throws Exception
      */
     @RequestMapping("/getSf6Data")
-    public void getSf6Data(String DeviceID, HttpServletResponse response)
-            throws Exception {
-        Map<String, Object> param = new HashMap<String, Object>();
+    public void getSf6Data(String DeviceID, HttpServletResponse response) {
+        Map<String, Object> param = new HashMap<String, Object>(2);
         List<Sf6_dataEntity> EntityList;
         param.put("DeviceID", DeviceID);
         EntityList = treeDeviceService.getSf6ListData(param);
@@ -442,9 +434,8 @@ public class TreeDeviceController extends BaseAction {
      * @throws Exception
      */
     @RequestMapping("/getSmoamData")
-    public void getSmoamData(String DeviceID, HttpServletResponse response)
-            throws Exception {
-        Map<String, Object> param = new HashMap<String, Object>();
+    public void getSmoamData(String DeviceID, HttpServletResponse response) {
+        Map<String, Object> param = new HashMap<String, Object>(2);
         List<SMOAM_dataEntity> EntityList;
         param.put("DeviceID", DeviceID);
         EntityList = treeDeviceService.getSmoamListData(param);
@@ -460,7 +451,7 @@ public class TreeDeviceController extends BaseAction {
      */
     @RequestMapping("/getScomData")
     public void getScomData(String DeviceID, HttpServletResponse response)
-            throws Exception {
+             {
         Map<String, Object> param = new HashMap<String, Object>();
         List<SCOM_dataEntity> EntityList;
         param.put("DeviceID", DeviceID);
@@ -476,8 +467,7 @@ public class TreeDeviceController extends BaseAction {
      * @throws Exception
      */
     @RequestMapping("/getSpdmData")
-    public void getSpdmData(String DeviceID, HttpServletResponse response)
-            throws Exception {
+    public void getSpdmData(String DeviceID, HttpServletResponse response) {
         Map<String, Object> param = new HashMap<String, Object>();
         List<Spdm_dataEntity> EntityList;
         param.put("DeviceID", DeviceID);

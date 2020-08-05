@@ -35,8 +35,8 @@ jeecg.yx = function () {
                 _this.SetSpdmYxData();
             }
             if (DeviceType == "amc") {
-                document.getElementById("table_cac").style.display = 'none';
-                _this.SetYxData_amc();
+                // document.getElementById("table_cac").style.display = 'none';
+                // _this.SetYxData_amc();
             }
             if (DeviceType == "hwcw") {
                 document.getElementById("table_cac").style.display = 'none';
@@ -209,30 +209,30 @@ jeecg.yx = function () {
                 }]]
             }
         },
-        SetYxData_amc: function () {
-            $(".tabs li:eq(2)").hide();
-            var DeviceType = $("#txtType").val();
-            var ln_inst_name = $('#txtName').val();
-            ln_inst_name = ln_inst_name.replace("#", "@");
-            var amc_id = $("#txtID").val();
-            var _box = null;
-            if (DeviceType == "amc") {
-                //alert("123");
-                var table_name = '#yx_data-list_amc';
-                _this.showData.dataGrid.url = "getYCData.do?ln_inst_name="
-                    + ln_inst_name + "&id=" + amc_id;
-                _box = new YDataGrid(_this.showData, table_name, false, true,
-                    true, false);
-                _box.init();
-            }
-            // if(DeviceType=="yx"){
-            // var table_name='#yx_data-list';
-            // _this.showData.dataGrid.url="getYXData.do?ln_inst_name="+ln_inst_name+"&ld_inst_name="+ld_inst_name;
-            // _box = new
-            // YDataGrid(_this.showData,table_name,false,true,true,true);
-            // _box.init();
-            // }
-        }
+        // SetYxData_amc: function () {
+        //     $(".tabs li:eq(2)").hide();
+        //     var DeviceType = $("#txtType").val();
+        //     var ln_inst_name = $('#txtName').val();
+        //     ln_inst_name = ln_inst_name.replace("#", "@");
+        //     var amc_id = $("#txtID").val();
+        //     var _box = null;
+        //     if (DeviceType == "amc") {
+        //         //alert("123");
+        //         var table_name = '#yx_data-list_amc';
+        //         _this.showData.dataGrid.url = "getYCData.do?ln_inst_name="
+        //             + ln_inst_name + "&id=" + amc_id;
+        //         _box = new YDataGrid(_this.showData, table_name, false, true,
+        //             true, false);
+        //         _box.init();
+        //     }
+        //     // if(DeviceType=="yx"){
+        //     // var table_name='#yx_data-list';
+        //     // _this.showData.dataGrid.url="getYXData.do?ln_inst_name="+ln_inst_name+"&ld_inst_name="+ld_inst_name;
+        //     // _box = new
+        //     // YDataGrid(_this.showData,table_name,false,true,true,true);
+        //     // _box.init();
+        //     // }
+        // }
     };
     return _this;
 }();
@@ -240,15 +240,6 @@ jeecg.yx = function () {
 function refresh(seconds) {
     setTimeout("self.location.reload()", seconds * 1000);
 }
-
-
-
-
-
-
-
-
-
 
 
 // // alert(DeviceType);

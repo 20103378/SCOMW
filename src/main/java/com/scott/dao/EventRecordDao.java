@@ -20,7 +20,7 @@ public interface EventRecordDao<T> extends BaseDao<T> {
      * @param page
      * @return
      */
-    public int AlarmRecordCount(BasePage page);
+     int AlarmRecordCount(BasePage page);
 
     /**
      * 分页查询告警事件记录
@@ -28,6 +28,6 @@ public interface EventRecordDao<T> extends BaseDao<T> {
      * @param page
      * @return
      */
-    public List<AlarmRecordEntity> getAlarmRecordList(BasePage page);
+     List<AlarmRecordEntity> getAlarmRecordList(BasePage page);
 }
 

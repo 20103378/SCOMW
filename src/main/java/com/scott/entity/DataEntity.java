@@ -13,13 +13,13 @@ import lombok.Data;
  */
 @Data
 public class DataEntity extends BaseEntity {
-	private java.lang.String id;
-	private java.lang.String refname;
-	private java.lang.String time;
-	private java.lang.String value;
-	private java.lang.String ln_inst_name;
-	private java.lang.String ld_inst_name;
-	private java.lang.String ied_type_id;
-	private java.lang.String quality;
+	private String id;
+	private String refname;
+	private String time;
+	private String value;
+	private String ln_inst_name;
+	private String ld_inst_name;
+	private String ied_type_id;
+	private String quality;
 }
 

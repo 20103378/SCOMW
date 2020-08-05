@@ -15,7 +15,6 @@ jeecg.main = function(){
 			$items.bind('click',this.treeSelect);
 		},
 		addTab:function(_title,_url){
-			debugger
 			var boxId = '#tab-box';
 			if($(boxId).tabs('exists',_title) ){
 				var tab = $(boxId).tabs('getTab',_title);
@@ -43,7 +42,6 @@ jeecg.main = function(){
 			}
 		},
 		addTab_closable:function(_title,_url){
-			debugger
 			var boxId = '#tab-box';
 			if($(boxId).tabs('exists',_title) ){
 				var tab = $(boxId).tabs('getTab',_title);

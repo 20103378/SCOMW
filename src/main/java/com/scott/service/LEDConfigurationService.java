@@ -33,14 +33,14 @@ public class LEDConfigurationService<T> extends BaseService<T>{
 		return dao;
 	}
 	
-	public void update_osicfg(OsicfgEntity entity) throws Exception{
+	public void update_osicfg(OsicfgEntity entity){
 		getDao().update_osicfg(entity);
 	}
 	public List<OsicfgEntity> findOsicfg(){
 		return getDao().findOsicfg();
 	}
 
-	public String getId() throws Exception{
+	public String getId(){
 		return getDao().getId();
 	}
 	public int findIfUsed(String AR_Name_old){

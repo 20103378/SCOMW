@@ -15,17 +15,17 @@ import java.util.List;
  * <b>日期：</b> Feb 2, 2013 <br>
  * <b>版权所有：<b>版权所有(C) 2013，www.jeecg.org<br>
  */
-public interface LEDConfigurationDao<T> extends BaseDao<T> {
+ public interface LEDConfigurationDao<T> extends BaseDao<T> {
 	
-	public void update_osicfg(OsicfgEntity entity);
-	public List<OsicfgEntity> findOsicfg();
-	public String getId();
-	public int findIfUsed(String AR_Name_old);
-	public void add_osicfg(OsicfgEntity entity);
-	public void del_osicfg(OsicfgEntity entity);
-	public void del_yc_inst(OsicfgEntity entity);
-	public void del_yx_inst(OsicfgEntity entity);
-	public void del_yk_inst(OsicfgEntity entity);
-	public void del_yc_instAll();
+	 void update_osicfg(OsicfgEntity entity);
+	 List<OsicfgEntity> findOsicfg();
+	 String getId();
+	 int findIfUsed(String AR_Name_old);
+	 void add_osicfg(OsicfgEntity entity);
+	 void del_osicfg(OsicfgEntity entity);
+	 void del_yc_inst(OsicfgEntity entity);
+	 void del_yx_inst(OsicfgEntity entity);
+	 void del_yk_inst(OsicfgEntity entity);
+	 void del_yc_instAll();
 	
 }

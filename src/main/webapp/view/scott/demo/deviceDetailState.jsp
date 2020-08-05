@@ -8,19 +8,7 @@
         <%@include file="/view/resource.jsp" %>
         <script type="text/javascript" src="<%=basePath%>/js/commons/datagrid-transposedview.js"></script>
         <style type="text/css">
-        
-
-            #d .mini-button {
-                margin-right: 10px;
-                margin-bottom: 10px;
-            } #d .mini-button {
-                margin-right: 10px;
-                margin-bottom: 10px;
-            } .tt-inner {
-                display: inline-block;
-                line-height: 22px;
-                padding-top: 10px;
-            } .tt-inner img {
+			.tt-inner img {
                 border: 0;
                 margin-right: 30px;
                 margin-bottom: 30px;
@@ -28,33 +16,20 @@
 				height:97%;
 				margin-riht: 0px;
                 margin-bottom: 0px;
-            }#YXhistory_div{
-				height:97%;
-				margin-riht: 0px;
-                margin-bottom: 0px;
             }#chartdiv{
            		float:left;
-            }#dataSpan
-       	 	{
+            }#dataSpan{
 	            width: 100%;
-	        }
-	        #tab_inf{
-	        	width:1000px;
-	        	height:700px
-	        }
-	        #tab_inf td{
+	        }#tab_inf td{
 	        	border:1px solid #9CF;
 	        	margin:0;
 	        	padding:0;
-
-	        }
+			}
 	         #tab_inf tr{
 	        	margin:0;
 	        	padding:0;
-	        }#tab_inf{
-	        	margin:0;
-	        	padding:0;
-	        }.datagrid-btable tbody tr{
+	        }
+			.datagrid-btable tbody tr{
 	        	height:30px;
 	        }
         </style>

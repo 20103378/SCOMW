@@ -19,21 +19,21 @@ import com.base.dao.BaseDao;
 public interface ConnStateDao<T> extends BaseDao<T> {
 	
 	
-	public List<TreeConnEntity> getEmuListData();
+	 List<TreeConnEntity> getEmuListData();
 	
-	public List<TreeConnEntity> getDataByID(String id);
+	 List<TreeConnEntity> getDataByID(String id);
 	
-	public List<TreeConnEntity> getHistoryData(Map<String, Object> jsonMap);
+	 List<TreeConnEntity> getHistoryData(Map<String, Object> jsonMap);
 
-	public List<TreeConnEntity> getAMCListData();
+	 List<TreeConnEntity> getAMCListData();
 
-	public List<TreeConnEntity> get104connData();
+	 List<TreeConnEntity> get104connData();
 
 	//得到程序运行状态
-	public List<CacExeStateEntity> getProgramListData();
+	 List<CacExeStateEntity> getProgramListData();
 	//cac与各装置通讯日志
-	public List<CacIedConnStateEntity> getCACStateListData();
+	 List<CacIedConnStateEntity> getCACStateListData();
 	//cac与cag通讯日志
-	public List<CacCagConnStateEntity> getCAGStateListData();
+	 List<CacCagConnStateEntity> getCAGStateListData();
 }
 
