@@ -17,7 +17,6 @@
   <![endif]-->
   <link href="plug-in/login/css/zice.style.css" rel="stylesheet" type="text/css" />
   <link href="plug-in/login/css/buttons.css" rel="stylesheet" type="text/css" />
-  <link href="plug-in/login/css/icon.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" type="text/css" href="plug-in/login/css/tipsy.css" media="all" />
   <style type="text/css">
 html {
@@ -112,11 +111,11 @@ label.iPhoneCheckLabelOn span {
    </div>
   </div>
   <!-- Link JScript-->
-  <script type="text/javascript" src="plug-in/jquery/jquery-1.8.3.min.js"></script>
-  <script type="text/javascript" src="plug-in/jquery/jquery.cookie.js"></script>
-  <script type="text/javascript" src="plug-in/login/js/jquery-jrumble.js"></script>
-  <script type="text/javascript" src="plug-in/login/js/jquery.tipsy.js"></script>
-  <script type="text/javascript" src="plug-in/login/js/iphone.check.js"></script>
+<%--  <script type="text/javascript" src="plug-in/jquery/jquery-1.8.3.min.js"></script>--%>
+<%--  <script type="text/javascript" src="plug-in/jquery/jquery.cookie.js"></script>--%>
+<%--  <script type="text/javascript" src="plug-in/login/js/jquery-jrumble.js"></script>--%>
+<%--  <script type="text/javascript" src="plug-in/login/js/jquery.tipsy.js"></script>--%>
+<%--  <script type="text/javascript" src="plug-in/login/js/iphone.check.js"></script>--%>
   <script type="text/javascript" src="plug-in/login/js/login.js"></script>
  </body>
 </html>

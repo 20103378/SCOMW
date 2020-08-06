@@ -9,24 +9,37 @@
 
 
     <!-- 扫描classpath的包下的所有类，该包路径下的类可以不需要配置bean了 -->
-    <context:component-scan base-package="com.jeecg.controller" />
-    <context:component-scan base-package="com.scott.controller" />
+    <context:component-scan base-package="com.jeecg.controller"/>
+    <context:component-scan base-package="com.scott.controller"/>
 
     <!-- Configures the @Controller programming model -->
-    <mvc:annotation-driven />
+    <!--此配置是springmvc的基础配置，很多功能都需要通过该注解来协调-->
+    <!-- 支持mvc注解驱动
+    在spring中一般采用@RequestMapping注解来完成映射关系，要想使@RequestMapping注解生效必须向上下文中注册DefaultAnnotationHandlerMapping和一个AnnotationMethodHandlerAdapter实例，
+    这两个实例分别在类级别和方法级别处理。
+    而annotation-driven配置帮助我们自动完成上述两个实例的注入。-->
+    <mvc:annotation-driven/>
+
+    <!--静态资源访问-->
+    <!-- Spring MVC不处理静态资源 -->
+    <mvc:default-servlet-handler/>
+    <!--    &lt;!&ndash; Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources/ directory &ndash;&gt;-->
+    <!--    <mvc:resources mapping="/css/**" location="/css/" />-->
+    <!--    <mvc:resources mapping="/js/**" location="/js/" />-->
+    <!--    <mvc:resources mapping="/images/**" location="/images/" />-->
+
 
     <!-- Configures Handler Interceptors -->
     <mvc:interceptors>
         <!-- Changes the locale when a 'locale' request parameter is sent; e.g. /?locale=de -->
-        <bean class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor" />
-        <bean class="com.base.interceptor.AuthInterceptor" />
-        <bean class="com.base.interceptor.ExceptionInterceptor" />
+        <!--        <bean class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor" />-->
+        <bean class="com.base.interceptor.AuthInterceptor"/>
+        <bean class="com.base.interceptor.ExceptionInterceptor"/>
     </mvc:interceptors>
 
-    <!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources/ directory -->
-    <mvc:resources mapping="/css/**" location="/css/" />
-    <mvc:resources mapping="/js/**" location="/js/" />
-    <mvc:resources mapping="/images/**" location="/images/" />
+    <!-- Saves a locale change using a cookie -->
+    <!--    <bean id="localeResolver" class="org.springframework.web.servlet.i18n.CookieLocaleResolver" />-->
+
 
     <!-- 视图解析器 -->
     <bean id="viewResolver"
@@ -35,10 +48,11 @@
         <property name="prefix" value="/view/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
-
+    <!--文件上传-->
     <bean id="multipartResolver"
           class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
         <property name="maxUploadSize" value="3500000"/>
+        <!--上传单个文件的最大值，单位byte，如果-1，表示无限制-->
         <property name="defaultEncoding" value="UTF-8"/>
     </bean>
 
