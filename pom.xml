@@ -89,7 +89,7 @@
 
         <!--xml -->
         <xstream.version>1.4.5</xstream.version>
-        <snakeyaml.version>1.18</snakeyaml.version>
+        <snakeyaml.version>1.32</snakeyaml.version>
 
         <!-- dubbo -->
         <!--<dubbo.version>2.5.3</dubbo.version>-->
